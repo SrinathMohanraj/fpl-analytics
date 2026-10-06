@@ -1,0 +1,777 @@
+{
+  "generated_at": "2026-10-06T07:54:33.432345+00:00",
+  "is_demo": true,
+  "entry_id": 1702239,
+  "current_gameweek": 5,
+  "summary": {
+    "manager_name": "Srinath M",
+    "team_name": "FPL_SRI",
+    "current_gameweek": 5,
+    "total_points": 310,
+    "overall_rank": 45161,
+    "rank_climbed": 1754839,
+    "team_value": 100.8,
+    "bank": 0.3,
+    "total_bench_points_wasted": 37,
+    "total_transfer_cost": 4,
+    "best_gameweek": {
+      "gw": 1,
+      "points": 85
+    },
+    "worst_gameweek": {
+      "gw": 4,
+      "points": 47
+    }
+  },
+  "rank_trend": [
+    {
+      "gameweek": 1,
+      "points": 85,
+      "total_points": 85,
+      "overall_rank": 1800000,
+      "bench_points": 11
+    },
+    {
+      "gameweek": 2,
+      "points": 61,
+      "total_points": 146,
+      "overall_rank": 980000,
+      "bench_points": 6
+    },
+    {
+      "gameweek": 3,
+      "points": 58,
+      "total_points": 204,
+      "overall_rank": 540000,
+      "bench_points": 9
+    },
+    {
+      "gameweek": 4,
+      "points": 47,
+      "total_points": 251,
+      "overall_rank": 97188,
+      "bench_points": 4
+    },
+    {
+      "gameweek": 5,
+      "points": 59,
+      "total_points": 310,
+      "overall_rank": 45161,
+      "bench_points": 7
+    }
+  ],
+  "bench_waste": [
+    {
+      "gameweek": 1,
+      "bench_points": 11,
+      "cumulative_bench_points": 11
+    },
+    {
+      "gameweek": 2,
+      "bench_points": 6,
+      "cumulative_bench_points": 17
+    },
+    {
+      "gameweek": 3,
+      "bench_points": 9,
+      "cumulative_bench_points": 26
+    },
+    {
+      "gameweek": 4,
+      "bench_points": 4,
+      "cumulative_bench_points": 30
+    },
+    {
+      "gameweek": 5,
+      "bench_points": 7,
+      "cumulative_bench_points": 37
+    }
+  ],
+  "current_squad": {
+    "starting_xi": [
+      {
+        "squad_slot": 1,
+        "position": "GKP",
+        "web_name": "Kinsky",
+        "team_name": "Tottenham",
+        "price_m": 4.6,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 2,
+        "position": "DEF",
+        "web_name": "Konsa",
+        "team_name": "Aston Villa",
+        "price_m": 4.4,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 3,
+        "position": "DEF",
+        "web_name": "Calafiori",
+        "team_name": "Arsenal",
+        "price_m": 6.0,
+        "multiplier": 2,
+        "role": "Captain"
+      },
+      {
+        "squad_slot": 4,
+        "position": "DEF",
+        "web_name": "Hall",
+        "team_name": "Man Utd",
+        "price_m": 4.5,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 5,
+        "position": "MID",
+        "web_name": "Palmer",
+        "team_name": "Chelsea",
+        "price_m": 10.5,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 6,
+        "position": "MID",
+        "web_name": "Cherki",
+        "team_name": "Man City",
+        "price_m": 6.5,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 7,
+        "position": "MID",
+        "web_name": "Dewsbury-Hall",
+        "team_name": "Everton",
+        "price_m": 5.6,
+        "multiplier": 1,
+        "role": "Vice-Captain"
+      },
+      {
+        "squad_slot": 8,
+        "position": "MID",
+        "web_name": "Saka",
+        "team_name": "Arsenal",
+        "price_m": 10.1,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 9,
+        "position": "MID",
+        "web_name": "Gro\u00df",
+        "team_name": "Brighton",
+        "price_m": 5.6,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 10,
+        "position": "FWD",
+        "web_name": "Barry",
+        "team_name": "Man City",
+        "price_m": 5.0,
+        "multiplier": 1,
+        "role": ""
+      },
+      {
+        "squad_slot": 11,
+        "position": "FWD",
+        "web_name": "Haaland",
+        "team_name": "Man City",
+        "price_m": 15.5,
+        "multiplier": 1,
+        "role": ""
+      }
+    ],
+    "bench": [
+      {
+        "squad_slot": 12,
+        "position": "GKP",
+        "web_name": "Dubravka",
+        "team_name": "Nott'm Forest",
+        "price_m": 4.0,
+        "multiplier": 0,
+        "role": ""
+      },
+      {
+        "squad_slot": 13,
+        "position": "FWD",
+        "web_name": "Pedro",
+        "team_name": "Chelsea",
+        "price_m": 7.7,
+        "multiplier": 0,
+        "role": ""
+      },
+      {
+        "squad_slot": 14,
+        "position": "FWD",
+        "web_name": "Thomas",
+        "team_name": "Wolves",
+        "price_m": 4.5,
+        "multiplier": 0,
+        "role": ""
+      },
+      {
+        "squad_slot": 15,
+        "position": "MID",
+        "web_name": "King",
+        "team_name": "Fulham",
+        "price_m": 4.5,
+        "multiplier": 0,
+        "role": ""
+      }
+    ],
+    "captain": "Calafiori"
+  },
+  "value_picks_overall": [
+    {
+      "web_name": "Hall",
+      "team_name": "Man Utd",
+      "position": "DEF",
+      "price_m": 4.5,
+      "total_points": 68,
+      "form": 4.0,
+      "points_per_million": 15.11,
+      "value_score": 0.984
+    },
+    {
+      "web_name": "Gro\u00df",
+      "team_name": "Brighton",
+      "position": "MID",
+      "price_m": 5.6,
+      "total_points": 71,
+      "form": 6.0,
+      "points_per_million": 12.68,
+      "value_score": 0.976
+    },
+    {
+      "web_name": "Raya",
+      "team_name": "Arsenal",
+      "position": "GKP",
+      "price_m": 5.6,
+      "total_points": 71,
+      "form": 5.0,
+      "points_per_million": 12.68,
+      "value_score": 0.959
+    },
+    {
+      "web_name": "Suzuki",
+      "team_name": "Aston Villa",
+      "position": "GKP",
+      "price_m": 5.0,
+      "total_points": 62,
+      "form": 4.0,
+      "points_per_million": 12.4,
+      "value_score": 0.914
+    },
+    {
+      "web_name": "Chalobah",
+      "team_name": "Chelsea",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 60,
+      "form": 4.0,
+      "points_per_million": 11.76,
+      "value_score": 0.854
+    },
+    {
+      "web_name": "Egan",
+      "team_name": "Tottenham",
+      "position": "DEF",
+      "price_m": 4.6,
+      "total_points": 55,
+      "form": 3.0,
+      "points_per_million": 11.96,
+      "value_score": 0.795
+    },
+    {
+      "web_name": "Thomas",
+      "team_name": "Wolves",
+      "position": "FWD",
+      "price_m": 4.5,
+      "total_points": 51,
+      "form": 3.0,
+      "points_per_million": 11.33,
+      "value_score": 0.773
+    },
+    {
+      "web_name": "Semenyo",
+      "team_name": "Bournemouth",
+      "position": "MID",
+      "price_m": 7.6,
+      "total_points": 79,
+      "form": 6.0,
+      "points_per_million": 10.39,
+      "value_score": 0.768
+    },
+    {
+      "web_name": "Senesi",
+      "team_name": "Bournemouth",
+      "position": "DEF",
+      "price_m": 4.6,
+      "total_points": 54,
+      "form": 3.0,
+      "points_per_million": 11.74,
+      "value_score": 0.762
+    },
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "DEF",
+      "price_m": 4.5,
+      "total_points": 48,
+      "form": 3.0,
+      "points_per_million": 10.67,
+      "value_score": 0.757
+    },
+    {
+      "web_name": "Egan-Riley",
+      "team_name": "Crystal Palace",
+      "position": "DEF",
+      "price_m": 5.0,
+      "total_points": 57,
+      "form": 3.0,
+      "points_per_million": 11.4,
+      "value_score": 0.708
+    },
+    {
+      "web_name": "Fernandes",
+      "team_name": "Man Utd",
+      "position": "MID",
+      "price_m": 9.0,
+      "total_points": 88,
+      "form": 6.0,
+      "points_per_million": 9.78,
+      "value_score": 0.692
+    },
+    {
+      "web_name": "Barry",
+      "team_name": "Man City",
+      "position": "FWD",
+      "price_m": 5.0,
+      "total_points": 46,
+      "form": 4.0,
+      "points_per_million": 9.2,
+      "value_score": 0.638
+    },
+    {
+      "web_name": "Gibbs-White",
+      "team_name": "Nott'm Forest",
+      "position": "MID",
+      "price_m": 7.5,
+      "total_points": 70,
+      "form": 5.0,
+      "points_per_million": 9.33,
+      "value_score": 0.619
+    },
+    {
+      "web_name": "Kinsky",
+      "team_name": "Tottenham",
+      "position": "GKP",
+      "price_m": 4.6,
+      "total_points": 44,
+      "form": 3.0,
+      "points_per_million": 9.57,
+      "value_score": 0.616
+    }
+  ],
+  "value_picks_by_position": {
+    "GKP": [
+      {
+        "web_name": "Raya",
+        "team_name": "Arsenal",
+        "position": "GKP",
+        "price_m": 5.6,
+        "total_points": 71,
+        "form": 5.0,
+        "points_per_million": 12.68,
+        "value_score": 0.959
+      },
+      {
+        "web_name": "Suzuki",
+        "team_name": "Aston Villa",
+        "position": "GKP",
+        "price_m": 5.0,
+        "total_points": 62,
+        "form": 4.0,
+        "points_per_million": 12.4,
+        "value_score": 0.914
+      },
+      {
+        "web_name": "Kinsky",
+        "team_name": "Tottenham",
+        "position": "GKP",
+        "price_m": 4.6,
+        "total_points": 44,
+        "form": 3.0,
+        "points_per_million": 9.57,
+        "value_score": 0.616
+      },
+      {
+        "web_name": "Dubravka",
+        "team_name": "Nott'm Forest",
+        "position": "GKP",
+        "price_m": 4.0,
+        "total_points": 38,
+        "form": 2.0,
+        "points_per_million": 9.5,
+        "value_score": 0.508
+      },
+      {
+        "web_name": "Tzolakis",
+        "team_name": "Liverpool",
+        "position": "GKP",
+        "price_m": 4.0,
+        "total_points": 20,
+        "form": 1.0,
+        "points_per_million": 5.0,
+        "value_score": 0.043
+      }
+    ],
+    "DEF": [
+      {
+        "web_name": "Hall",
+        "team_name": "Man Utd",
+        "position": "DEF",
+        "price_m": 4.5,
+        "total_points": 68,
+        "form": 4.0,
+        "points_per_million": 15.11,
+        "value_score": 0.984
+      },
+      {
+        "web_name": "Chalobah",
+        "team_name": "Chelsea",
+        "position": "DEF",
+        "price_m": 5.1,
+        "total_points": 60,
+        "form": 4.0,
+        "points_per_million": 11.76,
+        "value_score": 0.854
+      },
+      {
+        "web_name": "Egan",
+        "team_name": "Tottenham",
+        "position": "DEF",
+        "price_m": 4.6,
+        "total_points": 55,
+        "form": 3.0,
+        "points_per_million": 11.96,
+        "value_score": 0.795
+      },
+      {
+        "web_name": "Senesi",
+        "team_name": "Bournemouth",
+        "position": "DEF",
+        "price_m": 4.6,
+        "total_points": 54,
+        "form": 3.0,
+        "points_per_million": 11.74,
+        "value_score": 0.762
+      },
+      {
+        "web_name": "De Cuyper",
+        "team_name": "Brighton",
+        "position": "DEF",
+        "price_m": 4.5,
+        "total_points": 48,
+        "form": 3.0,
+        "points_per_million": 10.67,
+        "value_score": 0.757
+      },
+      {
+        "web_name": "Egan-Riley",
+        "team_name": "Crystal Palace",
+        "position": "DEF",
+        "price_m": 5.0,
+        "total_points": 57,
+        "form": 3.0,
+        "points_per_million": 11.4,
+        "value_score": 0.708
+      },
+      {
+        "web_name": "Konsa",
+        "team_name": "Aston Villa",
+        "position": "DEF",
+        "price_m": 4.4,
+        "total_points": 46,
+        "form": 2.0,
+        "points_per_million": 10.45,
+        "value_score": 0.573
+      },
+      {
+        "web_name": "Calafiori",
+        "team_name": "Arsenal",
+        "position": "DEF",
+        "price_m": 6.0,
+        "total_points": 58,
+        "form": 2.0,
+        "points_per_million": 9.67,
+        "value_score": 0.438
+      }
+    ],
+    "MID": [
+      {
+        "web_name": "Gro\u00df",
+        "team_name": "Brighton",
+        "position": "MID",
+        "price_m": 5.6,
+        "total_points": 71,
+        "form": 6.0,
+        "points_per_million": 12.68,
+        "value_score": 0.976
+      },
+      {
+        "web_name": "Semenyo",
+        "team_name": "Bournemouth",
+        "position": "MID",
+        "price_m": 7.6,
+        "total_points": 79,
+        "form": 6.0,
+        "points_per_million": 10.39,
+        "value_score": 0.768
+      },
+      {
+        "web_name": "Fernandes",
+        "team_name": "Man Utd",
+        "position": "MID",
+        "price_m": 9.0,
+        "total_points": 88,
+        "form": 6.0,
+        "points_per_million": 9.78,
+        "value_score": 0.692
+      },
+      {
+        "web_name": "Gibbs-White",
+        "team_name": "Nott'm Forest",
+        "position": "MID",
+        "price_m": 7.5,
+        "total_points": 70,
+        "form": 5.0,
+        "points_per_million": 9.33,
+        "value_score": 0.619
+      },
+      {
+        "web_name": "Dewsbury-Hall",
+        "team_name": "Everton",
+        "position": "MID",
+        "price_m": 5.6,
+        "total_points": 58,
+        "form": 3.0,
+        "points_per_million": 10.36,
+        "value_score": 0.611
+      },
+      {
+        "web_name": "Cherki",
+        "team_name": "Man City",
+        "position": "MID",
+        "price_m": 6.5,
+        "total_points": 60,
+        "form": 4.0,
+        "points_per_million": 9.23,
+        "value_score": 0.53
+      },
+      {
+        "web_name": "Grealish",
+        "team_name": "Everton",
+        "position": "MID",
+        "price_m": 6.7,
+        "total_points": 61,
+        "form": 4.0,
+        "points_per_million": 9.1,
+        "value_score": 0.481
+      },
+      {
+        "web_name": "King",
+        "team_name": "Fulham",
+        "position": "MID",
+        "price_m": 4.5,
+        "total_points": 33,
+        "form": 3.0,
+        "points_per_million": 7.33,
+        "value_score": 0.449
+      }
+    ],
+    "FWD": [
+      {
+        "web_name": "Thomas",
+        "team_name": "Wolves",
+        "position": "FWD",
+        "price_m": 4.5,
+        "total_points": 51,
+        "form": 3.0,
+        "points_per_million": 11.33,
+        "value_score": 0.773
+      },
+      {
+        "web_name": "Barry",
+        "team_name": "Man City",
+        "position": "FWD",
+        "price_m": 5.0,
+        "total_points": 46,
+        "form": 4.0,
+        "points_per_million": 9.2,
+        "value_score": 0.638
+      },
+      {
+        "web_name": "Mateta",
+        "team_name": "Crystal Palace",
+        "position": "FWD",
+        "price_m": 7.5,
+        "total_points": 63,
+        "form": 4.0,
+        "points_per_million": 8.4,
+        "value_score": 0.389
+      },
+      {
+        "web_name": "Pedro",
+        "team_name": "Chelsea",
+        "position": "FWD",
+        "price_m": 7.7,
+        "total_points": 66,
+        "form": 2.0,
+        "points_per_million": 8.57,
+        "value_score": 0.254
+      },
+      {
+        "web_name": "Isak",
+        "team_name": "Liverpool",
+        "position": "FWD",
+        "price_m": 10.4,
+        "total_points": 73,
+        "form": 4.0,
+        "points_per_million": 7.02,
+        "value_score": 0.178
+      },
+      {
+        "web_name": "Haaland",
+        "team_name": "Man City",
+        "position": "FWD",
+        "price_m": 15.5,
+        "total_points": 101,
+        "form": 6.0,
+        "points_per_million": 6.52,
+        "value_score": 0.162
+      },
+      {
+        "web_name": "Watkins",
+        "team_name": "Aston Villa",
+        "position": "FWD",
+        "price_m": 9.0,
+        "total_points": 55,
+        "form": 2.0,
+        "points_per_million": 6.11,
+        "value_score": 0.059
+      },
+      {
+        "web_name": "Thiago",
+        "team_name": "Brentford",
+        "position": "FWD",
+        "price_m": 8.0,
+        "total_points": 48,
+        "form": 2.0,
+        "points_per_million": 6.0,
+        "value_score": 0.059
+      }
+    ]
+  },
+  "differentials": [
+    {
+      "web_name": "Suzuki",
+      "team_name": "Aston Villa",
+      "position": "GKP",
+      "price_m": 5.0,
+      "total_points": 62,
+      "form": 4.0,
+      "selected_by_percent": 4.5
+    },
+    {
+      "web_name": "Hall",
+      "team_name": "Man Utd",
+      "position": "DEF",
+      "price_m": 4.5,
+      "total_points": 68,
+      "form": 4.0,
+      "selected_by_percent": 6.9
+    },
+    {
+      "web_name": "Cherki",
+      "team_name": "Man City",
+      "position": "MID",
+      "price_m": 6.5,
+      "total_points": 60,
+      "form": 4.0,
+      "selected_by_percent": 8.8
+    },
+    {
+      "web_name": "Chalobah",
+      "team_name": "Chelsea",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 60,
+      "form": 4.0,
+      "selected_by_percent": 7.8
+    },
+    {
+      "web_name": "King",
+      "team_name": "Fulham",
+      "position": "MID",
+      "price_m": 4.5,
+      "total_points": 33,
+      "form": 3.0,
+      "selected_by_percent": 2.0
+    },
+    {
+      "web_name": "Egan",
+      "team_name": "Tottenham",
+      "position": "DEF",
+      "price_m": 4.6,
+      "total_points": 55,
+      "form": 3.0,
+      "selected_by_percent": 1.7
+    },
+    {
+      "web_name": "Egan-Riley",
+      "team_name": "Crystal Palace",
+      "position": "DEF",
+      "price_m": 5.0,
+      "total_points": 57,
+      "form": 3.0,
+      "selected_by_percent": 8.1
+    },
+    {
+      "web_name": "Akliouche",
+      "team_name": "Aston Villa",
+      "position": "MID",
+      "price_m": 6.5,
+      "total_points": 47,
+      "form": 3.0,
+      "selected_by_percent": 5.6
+    },
+    {
+      "web_name": "Senesi",
+      "team_name": "Bournemouth",
+      "position": "DEF",
+      "price_m": 4.6,
+      "total_points": 54,
+      "form": 3.0,
+      "selected_by_percent": 9.4
+    },
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "DEF",
+      "price_m": 4.5,
+      "total_points": 48,
+      "form": 3.0,
+      "selected_by_percent": 2.2
+    }
+  ],
+  "injury_watch": []
+}

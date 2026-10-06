@@ -1,0 +1,81 @@
+name: Update FPL data & deploy dashboard
+
+on:
+  schedule:
+    # Every Tuesday at 06:00 UTC — a day or two after most gameweeks finish,
+    # so bonus points and defensive-contribution points have settled.
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
+    inputs:
+      entry_id:
+        description: "FPL entry ID to pull (defaults to the repo variable FPL_ENTRY_ID)"
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install package
+        run: pip install -e .
+
+      - name: Run pipeline
+        env:
+          ENTRY_ID: ${{ inputs.entry_id || vars.FPL_ENTRY_ID }}
+        run: |
+          if [ -z "$ENTRY_ID" ]; then
+            echo "::error::No entry ID set. Add a repo variable FPL_ENTRY_ID (Settings -> Secrets and variables -> Actions -> Variables), or pass one when running this workflow manually."
+            exit 1
+          fi
+          python -m fpl_analytics.pipeline "$ENTRY_ID"
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git add data/processed dashboard/data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit refreshed data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "fpl-analytics-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "chore: refresh FPL data [skip ci]"
+          git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+  deploy-pages:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
