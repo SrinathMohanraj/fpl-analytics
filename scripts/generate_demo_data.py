@@ -228,6 +228,43 @@ def build_entry_transfers(entry_id: int) -> list:
     ]
 
 
+def build_event_live(bootstrap: dict) -> dict:
+    """Fake /event/<gw>/live/ payloads for gameweeks 1-5, keyed by gameweek."""
+    live = {}
+    for gw in range(1, 6):
+        elements = []
+        for el in bootstrap["elements"]:
+            mins = random.choice([0, 0, 60, 90, 90, 90]) if el["minutes"] < 300 else random.choice([60, 90, 90, 90])
+            goals = random.choices([0, 1, 2], weights=[70, 24, 6])[0] if el["element_type"] in (3, 4) and mins else 0
+            assists = random.choices([0, 1], weights=[80, 20])[0] if mins else 0
+            cs = 1 if mins >= 60 and el["element_type"] <= 2 and random.random() < 0.35 else 0
+            bonus = random.choices([0, 1, 2, 3], weights=[70, 14, 10, 6])[0] if mins else 0
+            pts = (2 if mins >= 60 else (1 if mins else 0)) + goals * (6 if el["element_type"] == 3 else 4 if el["element_type"] == 4 else 6) \
+                  + assists * 3 + cs * (4 if el["element_type"] <= 2 else 1 if el["element_type"] == 3 else 0) + bonus
+            elements.append({"id": el["id"], "stats": {
+                "minutes": mins, "total_points": pts, "goals_scored": goals, "assists": assists,
+                "clean_sheets": cs, "goals_conceded": 0, "saves": 0, "bonus": bonus, "bps": bonus * 10,
+                "yellow_cards": 0, "red_cards": 0,
+                "expected_goals": str(round(random.uniform(0, 0.9), 2)) if mins else "0.00",
+                "expected_assists": str(round(random.uniform(0, 0.5), 2)) if mins else "0.00",
+                "expected_goal_involvements": "0.00", "defensive_contribution": 0}})
+        live[gw] = {"elements": elements}
+    return live
+
+
+def build_picks_by_gw(entry_id: int) -> dict:
+    """Same 15-man squad every week (demo), with GW5 captain Calafiori and one auto-sub."""
+    final = build_entry_picks(entry_id)
+    out = {}
+    for gw in range(1, 6):
+        picks = [dict(p) for p in final["picks"]]
+        payload = {"picks": picks, "automatic_subs": []}
+        if gw == 3:  # demo: bench player replaces a starter who did not play
+            payload["automatic_subs"] = [{"element_in": picks[11]["element"], "element_out": picks[9]["element"], "event": 3}]
+        out[gw] = payload
+    return out
+
+
 def main(entry_id: int = 1702239) -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     bootstrap = build_bootstrap()
@@ -238,6 +275,8 @@ def main(entry_id: int = 1702239) -> None:
         "entry_history": build_entry_history(entry_id),
         "entry_picks": build_entry_picks(entry_id),
         "entry_transfers": build_entry_transfers(entry_id),
+        "event_live": build_event_live(bootstrap),
+        "picks_by_gw": build_picks_by_gw(entry_id),
     }
     for name, data in payload.items():
         (RAW_DIR / f"{name}.json").write_text(json.dumps(data, indent=2))

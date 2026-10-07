@@ -49,7 +49,7 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          git add data/processed dashboard/data
+          git add data/processed data/powerbi dashboard/data
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

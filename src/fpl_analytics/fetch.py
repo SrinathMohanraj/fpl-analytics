@@ -74,6 +74,25 @@ def get_entry_transfers(entry_id: int) -> list:
     return _get(f"entry/{entry_id}/transfers/")
 
 
+def get_event_live(event: int) -> dict:
+    """Every player's actual stats and points for one gameweek (1 call per GW)."""
+    return _get(f"event/{event}/live/")
+
+
+def fetch_history_by_gameweek(entry_id: int, up_to_event: int) -> tuple[dict, dict]:
+    """Per-gameweek live stats and squad picks for gameweeks 1..up_to_event.
+
+    Feeds the Power BI export (player-by-gameweek facts and 'who did I own').
+    Returns ({gw: live_json}, {gw: picks_json}) keyed by gameweek number.
+    """
+    live: dict[int, dict] = {}
+    picks: dict[int, dict] = {}
+    for gw in range(1, up_to_event + 1):
+        live[gw] = get_event_live(gw)
+        picks[gw] = get_entry_picks(entry_id, gw)
+    return live, picks
+
+
 def fetch_all_for_pipeline(entry_id: int, raw_dir: Path) -> dict[str, Any]:
     """Pull everything the pipeline needs and cache raw JSON to disk.
 
@@ -93,8 +112,11 @@ def fetch_all_for_pipeline(entry_id: int, raw_dir: Path) -> dict[str, Any]:
     entry_history = get_entry_history(entry_id)
     entry_picks = get_entry_picks(entry_id, current_event)
     entry_transfers = get_entry_transfers(entry_id)
+    event_live, picks_by_gw = fetch_history_by_gameweek(entry_id, current_event)
 
     payload = {
+        "event_live": event_live,
+        "picks_by_gw": picks_by_gw,
         "bootstrap": bootstrap,
         "fixtures": fixtures,
         "entry": entry,

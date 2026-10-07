@@ -107,6 +107,15 @@ python scripts/generate_demo_data.py
 python -c "from fpl_analytics import pipeline; pipeline.run_from_raw(<entry_id>)"
 ```
 
+## Power BI report
+
+The pipeline also writes a Power BI-ready star schema to `data/powerbi/`
+(`dim_player`, `dim_team`, `dim_gameweek`, `fact_player_gw`, `fact_my_squad`,
+`fact_my_gw`, `fact_team_fixture`). Everything needed to build the report is
+in [`powerbi/`](powerbi/): Power Query loaders, DAX measures, a theme and a
+step-by-step [build guide](powerbi/BUILD_GUIDE.md). The same tables work in
+Tableau or Excel.
+
 ## Possible extensions
 
 - Captaincy optimizer (expected points by fixture/form, ranked across your squad)

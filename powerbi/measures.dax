@@ -1,0 +1,201 @@
+// =====================================================================
+// FPL Analytics — DAX measures
+// =====================================================================
+// HOW TO USE
+//  1. Home -> Enter data -> name the table "_Measures" -> Load
+//     (an empty home for your measures, keeps the field list tidy)
+//  2. Select "_Measures" in the Data pane -> Home -> New measure
+//  3. Paste ONE measure at a time (each block starts with "Name = ")
+//
+// RELATIONSHIPS (Model view; all Many-to-One, single direction, dim -> fact)
+//   dim_player[player_id]    1 -> *  fact_player_gw[player_id]
+//   dim_player[player_id]    1 -> *  fact_my_squad[player_id]
+//   dim_team[team_id]        1 -> *  dim_player[team_id]
+//   dim_team[team_id]        1 -> *  fact_team_fixture[team_id]
+//   dim_gameweek[gameweek]   1 -> *  fact_player_gw[gameweek]
+//   dim_gameweek[gameweek]   1 -> *  fact_my_squad[gameweek]
+//   dim_gameweek[gameweek]   1 -> *  fact_my_gw[gameweek]
+//   dim_gameweek[gameweek]   1 -> *  fact_team_fixture[gameweek]
+// =====================================================================
+
+
+// ------------------------- SEASON / RANK ------------------------------
+
+Latest GW =
+CALCULATE ( MAX ( fact_my_gw[gameweek] ), ALL ( dim_gameweek ) )
+
+GW Points =
+SUM ( fact_my_gw[points] )
+
+Avg Points per GW =
+AVERAGE ( fact_my_gw[points] )
+
+Total Points =
+VAR g = MAX ( fact_my_gw[gameweek] )
+RETURN
+    CALCULATE ( MAX ( fact_my_gw[total_points] ), fact_my_gw[gameweek] = g )
+
+Overall Rank =
+// Works as a card (shows latest GW) and on a line chart (shows that GW)
+VAR g = MAX ( fact_my_gw[gameweek] )
+RETURN
+    CALCULATE ( MAX ( fact_my_gw[overall_rank] ), fact_my_gw[gameweek] = g )
+
+Rank Change =
+// Positive = climbed (lower rank number is better)
+VAR g = MAX ( fact_my_gw[gameweek] )
+VAR prev =
+    CALCULATE (
+        MAX ( fact_my_gw[overall_rank] ),
+        FILTER ( ALL ( dim_gameweek[gameweek] ), dim_gameweek[gameweek] = g - 1 )
+    )
+VAR cur = [Overall Rank]
+RETURN
+    IF ( ISBLANK ( prev ), BLANK (), prev - cur )
+
+Rank Change Label =
+VAR c = [Rank Change]
+RETURN
+    IF ( ISBLANK ( c ), "–", IF ( c >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( c ), "#,0" ) )
+
+Team Value =
+VAR g = MAX ( fact_my_gw[gameweek] )
+RETURN
+    CALCULATE ( MAX ( fact_my_gw[team_value] ), fact_my_gw[gameweek] = g )
+
+Hits Cost =
+SUM ( fact_my_gw[transfer_cost] )
+
+
+// ------------------------- SQUAD & CAPTAINCY --------------------------
+
+Points Counted =
+SUM ( fact_my_squad[points_counted] )
+
+Bench Points Wasted =
+SUM ( fact_my_squad[points_on_bench] )
+
+Captain Raw Points =
+// What your captain scored before the x2
+CALCULATE ( SUM ( fact_my_squad[player_points] ), fact_my_squad[is_captain] = TRUE () )
+
+Captaincy Bonus Points =
+// Extra points the armband actually gave you (the second "copy" of his score)
+[Captain Raw Points]
+
+Best Captain Raw Points =
+// Highest score among your starters, each gameweek, summed
+SUMX (
+    VALUES ( dim_gameweek[gameweek] ),
+    CALCULATE (
+        MAXX (
+            FILTER ( fact_my_squad, fact_my_squad[started] = TRUE () ),
+            fact_my_squad[player_points]
+        )
+    )
+)
+
+Captain Regret =
+// Points left on the table by not picking the best captain (always >= 0)
+[Best Captain Raw Points] - [Captain Raw Points]
+
+Captain Hit Rate =
+// Share of gameweeks where your captain was your top scorer among starters
+VAR perGw =
+    ADDCOLUMNS (
+        VALUES ( dim_gameweek[gameweek] ),
+        "@regret",
+            CALCULATE (
+                MAXX (
+                    FILTER ( fact_my_squad, fact_my_squad[started] = TRUE () ),
+                    fact_my_squad[player_points]
+                )
+            )
+            - CALCULATE ( SUM ( fact_my_squad[player_points] ), fact_my_squad[is_captain] = TRUE () ),
+        "@has", CALCULATE ( COUNTROWS ( fact_my_squad ) )
+    )
+RETURN
+    DIVIDE (
+        COUNTROWS ( FILTER ( perGw, [@has] > 0 && [@regret] = 0 ) ),
+        COUNTROWS ( FILTER ( perGw, [@has] > 0 ) )
+    )
+
+Model Check (calc vs official) =
+// Should be ~0 once your pipeline runs on real data. Anything else = investigate.
+SUM ( fact_my_gw[points_diff_vs_official] )
+
+
+// ------------------------- PLAYER VALUE -------------------------------
+
+Minutes =
+SUM ( fact_player_gw[minutes] )
+
+Player GW Points =
+SUM ( fact_player_gw[total_points] )
+
+Points per 90 =
+DIVIDE ( [Player GW Points] * 90, [Minutes] )
+
+Points per Million =
+DIVIDE ( SUM ( dim_player[total_points] ), SUM ( dim_player[price_m] ) )
+
+Form L3 =
+// Average points over the last 3 gameweeks played in the data
+VAR g = CALCULATE ( MAX ( fact_player_gw[gameweek] ), ALL ( dim_gameweek ) )
+RETURN
+    CALCULATE (
+        AVERAGE ( fact_player_gw[total_points] ),
+        FILTER (
+            ALL ( dim_gameweek[gameweek] ),
+            dim_gameweek[gameweek] > g - 3 && dim_gameweek[gameweek] <= g
+        )
+    )
+
+Ownership % =
+AVERAGE ( dim_player[selected_by_percent] )
+
+
+// ------------------------- FIXTURES -----------------------------------
+
+Avg FDR Next 5 =
+// Lower = easier. Counts the five gameweeks after the latest finished one.
+CALCULATE (
+    AVERAGE ( fact_team_fixture[difficulty] ),
+    FILTER (
+        ALL ( dim_gameweek[gameweek] ),
+        dim_gameweek[gameweek] > [Latest GW] && dim_gameweek[gameweek] <= [Latest GW] + 5
+    )
+)
+
+Fixture Label =
+// For the fixture-ticker matrix, e.g. "ARS (H)"; double gameweeks show both
+CONCATENATEX (
+    fact_team_fixture,
+    fact_team_fixture[Opponent] & IF ( fact_team_fixture[is_home], " (H)", " (A)" ),
+    ", "
+)
+
+FDR =
+AVERAGE ( fact_team_fixture[difficulty] )
+
+
+// =====================================================================
+// CALCULATED COLUMNS (Table view -> select the table -> New column)
+// =====================================================================
+
+// On fact_team_fixture:
+Opponent =
+LOOKUPVALUE ( dim_team[short_name], dim_team[team_id], fact_team_fixture[opponent_id] )
+
+// On dim_player:
+Ownership Band =
+SWITCH (
+    TRUE (),
+    dim_player[selected_by_percent] < 5, "Differential (<5%)",
+    dim_player[selected_by_percent] < 15, "Mid (5-15%)",
+    "Template (15%+)"
+)
+
+// On dim_player (so the scatter chart can show readable names):
+Player Label =
+dim_player[web_name] & " · " & LOOKUPVALUE ( dim_team[short_name], dim_team[team_id], dim_player[team_id] )

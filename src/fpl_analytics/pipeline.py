@@ -13,12 +13,13 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import clean, fetch, metrics, squad
+from . import clean, fetch, metrics, powerbi, squad
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RAW_DIR = REPO_ROOT / "data" / "raw"
 DEFAULT_PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 DASHBOARD_DATA_DIR = REPO_ROOT / "dashboard" / "data"
+POWERBI_DIR = REPO_ROOT / "data" / "powerbi"
 
 
 def _current_event_from_bootstrap(bootstrap: dict) -> int:
@@ -46,7 +47,8 @@ def run_from_raw(entry_id: int, raw_dir: Path = DEFAULT_RAW_DIR,
     raw = {
         name: json.loads((raw_dir / f"{name}.json").read_text())
         for name in ("bootstrap", "fixtures", "entry", "entry_history",
-                      "entry_picks", "entry_transfers")
+                      "entry_picks", "entry_transfers", "event_live", "picks_by_gw")
+        if (raw_dir / f"{name}.json").exists()
     }
     raw["current_event"] = _current_event_from_bootstrap(raw["bootstrap"])
     return _process(entry_id, raw, processed_dir, is_demo=is_demo)
@@ -104,6 +106,12 @@ def _process(entry_id: int, raw: dict, processed_dir: Path, is_demo: bool) -> Pa
     # matching the "Python und Excel" half of the workflow
     players_scored.to_csv(processed_dir / "players_scored.csv", index=False)
     history.to_csv(processed_dir / "gameweek_history.csv", index=False)
+
+    # Power BI / Tableau / Excel tables (star schema), only when per-gameweek
+    # data was fetched
+    if "event_live" in raw and "picks_by_gw" in raw:
+        tables = powerbi.export_all(raw, history, POWERBI_DIR)
+        print(f"Power BI tables -> {POWERBI_DIR} ({', '.join(tables)})")
 
     print(f"Pipeline complete -> {out_path}")
     return out_path
