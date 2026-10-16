@@ -1,0 +1,61 @@
+table dim_gameweek
+	lineageTag: c981ae12-0db7-5b04-8079-73dfc577aec8
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: d877017b-495c-5467-a02f-18c211e765eb
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 597fb671-3e34-53f2-beb3-73125ebf04eb
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column deadline_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2827f6a4-8292-5fdc-bb3c-b0c7dc1dc4ff
+		summarizeBy: none
+		sourceColumn: deadline_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column finished
+		dataType: boolean
+		lineageTag: b18b101a-47e4-5552-8343-9e9d9fea5727
+		summarizeBy: none
+		sourceColumn: finished
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_current
+		dataType: boolean
+		lineageTag: 8fdb4f80-99ef-5b5b-8e0d-e44b31cc5e51
+		summarizeBy: none
+		sourceColumn: is_current
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_gameweek = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "dim_gameweek.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"name", type text},
+				        {"deadline_date", type date},
+				        {"finished", type logical},
+				        {"is_current", type logical}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

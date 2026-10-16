@@ -1,0 +1,108 @@
+table fact_my_squad
+	lineageTag: 7f5fe014-7938-5605-8b4c-d87f039ab6bf
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 45e5b1e6-2ee6-514b-acfa-47bb63af5c7a
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 20bbb9c4-737a-5035-a488-730c556991d4
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column squad_slot
+		dataType: int64
+		formatString: 0
+		lineageTag: 13c4a5b6-36c6-549b-bb52-338bbed45ab9
+		summarizeBy: none
+		sourceColumn: squad_slot
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_captain
+		dataType: boolean
+		lineageTag: 262df2da-bd57-540c-8859-a9faa7516e0c
+		summarizeBy: none
+		sourceColumn: is_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_vice_captain
+		dataType: boolean
+		lineageTag: fc842230-4b5e-562b-a981-74b79e089e1c
+		summarizeBy: none
+		sourceColumn: is_vice_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column started
+		dataType: boolean
+		lineageTag: d640f569-0dd6-510d-ad10-2267a0af36b7
+		summarizeBy: none
+		sourceColumn: started
+
+		annotation SummarizationSetBy = Automatic
+
+	column multiplier
+		dataType: int64
+		formatString: 0
+		lineageTag: 07119b9a-69d8-5a85-a951-e1c42356fa32
+		summarizeBy: none
+		sourceColumn: multiplier
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_points
+		dataType: double
+		lineageTag: 716967b5-2202-5450-b669-43f2434849f7
+		summarizeBy: none
+		sourceColumn: player_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column points_counted
+		dataType: double
+		lineageTag: 438952e1-1256-58bf-8542-aee17871df99
+		summarizeBy: none
+		sourceColumn: points_counted
+
+		annotation SummarizationSetBy = Automatic
+
+	column points_on_bench
+		dataType: double
+		lineageTag: 640a0ce7-8206-50bf-bce9-dcc5e9b166ef
+		summarizeBy: none
+		sourceColumn: points_on_bench
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_my_squad = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_my_squad.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"player_id", Int64.Type},
+				        {"squad_slot", Int64.Type},
+				        {"is_captain", type logical},
+				        {"is_vice_captain", type logical},
+				        {"started", type logical},
+				        {"multiplier", Int64.Type},
+				        {"player_points", type number},
+				        {"points_counted", type number},
+				        {"points_on_bench", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

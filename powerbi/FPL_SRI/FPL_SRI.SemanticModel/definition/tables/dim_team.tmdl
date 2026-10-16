@@ -1,0 +1,52 @@
+table dim_team
+	lineageTag: 481198f5-ab40-5657-96d2-85674be00f14
+
+	column team_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c71f39d3-0f64-52f3-937c-277ce3cd7fda
+		summarizeBy: none
+		sourceColumn: team_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_name
+		dataType: string
+		lineageTag: 7af5cc9a-2755-50ae-955f-bbeb5a39abf9
+		summarizeBy: none
+		sourceColumn: team_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column short_name
+		dataType: string
+		lineageTag: bb06ca9b-601c-57e4-b95c-bd03d7286d50
+		summarizeBy: none
+		sourceColumn: short_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column strength
+		dataType: int64
+		formatString: 0
+		lineageTag: f4b11e52-a7e1-59fb-a31b-2442560db832
+		summarizeBy: none
+		sourceColumn: strength
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_team = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "dim_team.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"team_id", Int64.Type},
+				        {"team_name", type text},
+				        {"short_name", type text},
+				        {"strength", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

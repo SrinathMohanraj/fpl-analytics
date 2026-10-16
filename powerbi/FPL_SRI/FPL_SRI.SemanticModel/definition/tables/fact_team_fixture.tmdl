@@ -1,0 +1,109 @@
+table fact_team_fixture
+	lineageTag: c1531e97-67d6-53f8-8f5b-854d709fc9fe
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 64391380-22ac-5fcc-9806-0bce6f85a8b7
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column kickoff_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f8216b6e-68dc-513e-bbca-6446476fc813
+		summarizeBy: none
+		sourceColumn: kickoff_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column finished
+		dataType: boolean
+		lineageTag: 767ed52a-612b-5b6a-8276-9020445a24a6
+		summarizeBy: none
+		sourceColumn: finished
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f09ffd4d-3bc9-5b43-ae79-10afe4aa855c
+		summarizeBy: none
+		sourceColumn: team_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column opponent_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e3cd8b4-91d7-52ea-8510-23a68f072ad1
+		summarizeBy: none
+		sourceColumn: opponent_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_home
+		dataType: boolean
+		lineageTag: c7435a0a-f1e4-56bd-b610-a799b1960895
+		summarizeBy: none
+		sourceColumn: is_home
+
+		annotation SummarizationSetBy = Automatic
+
+	column difficulty
+		dataType: int64
+		formatString: 0
+		lineageTag: a9e2d4f7-4368-587c-9bec-91e10e19b26e
+		summarizeBy: none
+		sourceColumn: difficulty
+
+		annotation SummarizationSetBy = Automatic
+
+	column goals_for
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a140cfc-6a45-5d96-8f4a-82be9932cb1c
+		summarizeBy: none
+		sourceColumn: goals_for
+
+		annotation SummarizationSetBy = Automatic
+
+	column goals_against
+		dataType: int64
+		formatString: 0
+		lineageTag: 792b8a48-c4ab-58e8-9b48-1f54db9695b0
+		summarizeBy: none
+		sourceColumn: goals_against
+
+		annotation SummarizationSetBy = Automatic
+
+	column Opponent = LOOKUPVALUE ( dim_team[short_name], dim_team[team_id], fact_team_fixture[opponent_id] )
+		dataType: string
+		lineageTag: 8d6b2544-5f55-5ad5-9743-e221b748af7c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_team_fixture = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_team_fixture.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"kickoff_time", type datetimezone},
+				        {"finished", type logical},
+				        {"team_id", Int64.Type},
+				        {"opponent_id", Int64.Type},
+				        {"is_home", type logical},
+				        {"difficulty", Int64.Type},
+				        {"goals_for", Int64.Type},
+				        {"goals_against", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
