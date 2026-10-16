@@ -8,13 +8,18 @@ on:
   workflow_dispatch:
     inputs:
       entry_id:
-        description: "FPL entry ID to pull (defaults to the repo variable FPL_ENTRY_ID)"
+        description: "FPL entry ID to pull (defaults to the repo variable FPL_ENTRY_ID, then DEFAULT_ENTRY_ID below)"
         required: false
 
 permissions:
   contents: write
   pages: write
   id-token: write
+
+env:
+  # Used when neither a manual input nor the FPL_ENTRY_ID repo variable is set,
+  # so the scheduled Tuesday run never starts without an entry ID.
+  DEFAULT_ENTRY_ID: "1702239"
 
 concurrency:
   group: "pages"
@@ -38,7 +43,7 @@ jobs:
 
       - name: Run pipeline
         env:
-          ENTRY_ID: ${{ inputs.entry_id || vars.FPL_ENTRY_ID }}
+          ENTRY_ID: ${{ inputs.entry_id || vars.FPL_ENTRY_ID || env.DEFAULT_ENTRY_ID }}
         run: |
           if [ -z "$ENTRY_ID" ]; then
             echo "::error::No entry ID set. Add a repo variable FPL_ENTRY_ID (Settings -> Secrets and variables -> Actions -> Variables), or pass one when running this workflow manually."
