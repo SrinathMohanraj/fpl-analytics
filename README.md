@@ -87,7 +87,8 @@ pytest tests/ -v
 
 1. Push this repo to GitHub.
 2. **Settings → Secrets and variables → Actions → Variables** — add
-   `FPL_ENTRY_ID` set to your entry ID.
+   `FPL_ENTRY_ID` set to your entry ID (or edit `DEFAULT_ENTRY_ID` in
+   `.github/workflows/update_data.yml`).
 3. **Settings → Pages** — set Source to "GitHub Actions".
 4. Run the **"Update FPL data & deploy dashboard"** workflow once manually
    (Actions tab → select it → "Run workflow") to generate the first live
