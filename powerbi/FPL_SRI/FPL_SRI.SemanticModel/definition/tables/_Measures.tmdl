@@ -1,0 +1,242 @@
+table _Measures
+	lineageTag: e58bc591-c0a5-59f3-9c80-c32dc317d8c9
+
+	measure 'Latest GW' = CALCULATE ( MAX ( fact_my_gw[gameweek] ), ALL ( dim_gameweek ) )
+		formatString: 0
+		lineageTag: 100e9409-07ce-565c-a663-5e729443bae2
+
+	measure 'GW Points' = SUM ( fact_my_gw[points] )
+		formatString: 0
+		lineageTag: 4417d575-88ab-5837-9f80-aecc2d1e4e8b
+
+	measure 'Avg Points per GW' = AVERAGE ( fact_my_gw[points] )
+		formatString: 0.0
+		lineageTag: 9755f871-8f59-5833-b18d-86abffc24995
+
+	measure 'Season Avg Points' = CALCULATE ( AVERAGE ( fact_my_gw[points] ), ALL ( dim_gameweek ) )
+		formatString: 0.0
+		lineageTag: c05f11da-e3b2-53e9-a8bf-8d697d0d6d74
+
+	measure 'Total Points' =
+			VAR g = MAX ( fact_my_gw[gameweek] )
+			RETURN
+			    CALCULATE ( MAX ( fact_my_gw[total_points] ), fact_my_gw[gameweek] = g )
+		formatString: #,0
+		lineageTag: 388ce109-6474-56f8-9c31-4029f1cbccad
+
+	measure 'Overall Rank' =
+			VAR g = MAX ( fact_my_gw[gameweek] )
+			RETURN
+			    CALCULATE ( MAX ( fact_my_gw[overall_rank] ), fact_my_gw[gameweek] = g )
+		formatString: #,0
+		lineageTag: 50ffe4ec-ebd0-58b7-b89a-92a076b9e6bd
+
+	measure 'Rank Change' =
+			VAR g = MAX ( fact_my_gw[gameweek] )
+			VAR prev =
+			    CALCULATE (
+			        MAX ( fact_my_gw[overall_rank] ),
+			        FILTER ( ALL ( dim_gameweek[gameweek] ), dim_gameweek[gameweek] = g - 1 )
+			    )
+			VAR cur = [Overall Rank]
+			RETURN
+			    IF ( ISBLANK ( prev ), BLANK (), prev - cur )
+		formatString: #,0
+		lineageTag: 7fa23ea9-9472-50e6-9d88-a2fc54b345ca
+
+	measure 'Rank Change Label' =
+			VAR c = [Rank Change]
+			RETURN
+			    IF ( ISBLANK ( c ), "-", IF ( c >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( c ), "#,0" ) )
+		lineageTag: b05e0aa1-6ff5-54db-b413-8e117b231c1f
+
+	measure 'Team Value' =
+			VAR g = MAX ( fact_my_gw[gameweek] )
+			RETURN
+			    CALCULATE ( MAX ( fact_my_gw[team_value] ), fact_my_gw[gameweek] = g )
+		formatString: 0.0
+		lineageTag: d2155cd9-ff23-57c9-820e-d9211ea4293b
+
+	measure 'Hits Cost' = SUM ( fact_my_gw[transfer_cost] ) + 0
+		formatString: 0
+		lineageTag: f6fef75f-304a-5367-a850-e5731802efc1
+
+	measure 'Points Counted' = SUM ( fact_my_squad[points_counted] )
+		formatString: 0
+		lineageTag: b4af25fe-1aa0-5339-b841-98128decdc87
+
+	measure 'Squad Points' = SUM ( fact_my_squad[player_points] )
+		formatString: 0
+		lineageTag: 35018a44-e126-5936-bff2-03c6430e9142
+
+	measure 'Bench Points Wasted' = SUM ( fact_my_squad[points_on_bench] ) + 0
+		formatString: 0
+		lineageTag: df1eaf51-d9de-5a62-89e0-6ccf0f2b546b
+
+	measure 'Captain Raw Points' = CALCULATE ( SUM ( fact_my_squad[player_points] ), fact_my_squad[is_captain] = TRUE () )
+		formatString: 0
+		lineageTag: 9c681768-757d-5be6-9291-2ab0280b9a07
+
+	measure 'Captain Name' =
+			CONCATENATEX (
+			    FILTER ( fact_my_squad, fact_my_squad[is_captain] = TRUE () ),
+			    RELATED ( dim_player[web_name] ),
+			    ", "
+			)
+		lineageTag: 25c5f5c3-db5c-5eb8-ab26-506d5841ff66
+
+	measure 'Best Captain Raw Points' =
+			SUMX (
+			    VALUES ( dim_gameweek[gameweek] ),
+			    CALCULATE (
+			        MAXX (
+			            FILTER ( fact_my_squad, fact_my_squad[started] = TRUE () ),
+			            fact_my_squad[player_points]
+			        )
+			    )
+			)
+		formatString: 0
+		lineageTag: e01919e9-6f2f-5897-ad06-8c267f9e3720
+
+	measure 'Best Starter Name' =
+			VAR best =
+			    MAXX ( FILTER ( fact_my_squad, fact_my_squad[started] = TRUE () ), fact_my_squad[player_points] )
+			RETURN
+			    IF (
+			        HASONEVALUE ( dim_gameweek[gameweek] ),
+			        CONCATENATEX (
+			            FILTER (
+			                fact_my_squad,
+			                fact_my_squad[started] = TRUE () && fact_my_squad[player_points] = best
+			            ),
+			            RELATED ( dim_player[web_name] ),
+			            ", "
+			        )
+			    )
+		lineageTag: 5f574b50-080c-58be-8c53-a4496205ad78
+
+	measure 'Captain Regret' = [Best Captain Raw Points] - [Captain Raw Points]
+		formatString: 0
+		lineageTag: a2db9a26-9ab0-56e3-8a74-1f229e1cd69b
+
+	measure 'Captain Hit Rate' =
+			VAR perGw =
+			    ADDCOLUMNS (
+			        VALUES ( dim_gameweek[gameweek] ),
+			        "@regret",
+			            CALCULATE (
+			                MAXX (
+			                    FILTER ( fact_my_squad, fact_my_squad[started] = TRUE () ),
+			                    fact_my_squad[player_points]
+			                )
+			            )
+			            - CALCULATE ( SUM ( fact_my_squad[player_points] ), fact_my_squad[is_captain] = TRUE () ),
+			        "@has", CALCULATE ( COUNTROWS ( fact_my_squad ) )
+			    )
+			RETURN
+			    DIVIDE (
+			        COUNTROWS ( FILTER ( perGw, [@has] > 0 && [@regret] = 0 ) ),
+			        COUNTROWS ( FILTER ( perGw, [@has] > 0 ) )
+			    ) + 0
+		formatString: 0%
+		lineageTag: d2269384-98ca-58cf-83ea-290dc8793de3
+
+	measure 'Model Check (calc vs official)' = SUM ( fact_my_gw[points_diff_vs_official] ) + 0
+		formatString: 0
+		lineageTag: a2e7ae72-d4d0-5446-be0e-b9dc3df3028b
+
+	measure Minutes = SUM ( fact_player_gw[minutes] )
+		formatString: #,0
+		lineageTag: 076b664d-b806-5787-af11-f54d2acf19df
+
+	measure 'Player GW Points' = SUM ( fact_player_gw[total_points] )
+		formatString: 0
+		lineageTag: f82074a5-ac82-58dd-979d-14749662bbe8
+
+	measure 'Points per 90' = DIVIDE ( [Player GW Points] * 90, [Minutes] )
+		formatString: 0.00
+		lineageTag: a8d52c82-2e28-5f5f-a6f5-b37d3613101a
+
+	measure 'Points per 90 (270+ min)' = IF ( [Minutes] >= 270, [Points per 90] )
+		formatString: 0.00
+		lineageTag: 20aa9a04-9444-5946-ab69-1731fcbee767
+
+	measure 'Price (270+ min)' = IF ( [Minutes] >= 270, AVERAGE ( dim_player[price_m] ) )
+		formatString: 0.0
+		lineageTag: 583e2c66-29dd-50fa-9428-1f9b3f1b1771
+
+	measure 'Points per Million' = DIVIDE ( SUM ( dim_player[total_points] ), SUM ( dim_player[price_m] ) )
+		formatString: 0.00
+		lineageTag: 537aa8a2-db55-5ebe-9aeb-b3d245d8c658
+
+	measure 'Points per Million (270+ min)' = IF ( [Minutes] >= 270, DIVIDE ( [Player GW Points], AVERAGE ( dim_player[price_m] ) ) )
+		formatString: 0.00
+		lineageTag: b6220cf9-b616-5919-86ec-00d478fd4476
+
+	measure 'Form L3' =
+			VAR g = CALCULATE ( MAX ( fact_player_gw[gameweek] ), ALL ( dim_gameweek ) )
+			RETURN
+			    CALCULATE (
+			        AVERAGE ( fact_player_gw[total_points] ),
+			        FILTER (
+			            ALL ( dim_gameweek[gameweek] ),
+			            dim_gameweek[gameweek] > g - 3 && dim_gameweek[gameweek] <= g
+			        )
+			    )
+		formatString: 0.0
+		lineageTag: 85eb0d3f-c11b-518e-82ae-f804473737f1
+
+	measure 'Ownership %' = AVERAGE ( dim_player[selected_by_percent] )
+		formatString: 0.0
+		lineageTag: 714fcc0a-4cb0-5d2f-9a76-46ef5ff64127
+
+	measure 'Avg FDR Next 5' =
+			VAR g = [Latest GW]
+			RETURN
+			    CALCULATE (
+			        AVERAGE ( fact_team_fixture[difficulty] ),
+			        FILTER (
+			            ALL ( dim_gameweek[gameweek] ),
+			            dim_gameweek[gameweek] > g && dim_gameweek[gameweek] <= g + 5
+			        )
+			    )
+		formatString: 0.00
+		lineageTag: c8c310b0-cb82-595d-a3f1-aa8de3c54d79
+
+	measure 'Fixture Label' =
+			CONCATENATEX (
+			    fact_team_fixture,
+			    fact_team_fixture[Opponent] & IF ( fact_team_fixture[is_home], " (H) ", " (A) " ) & fact_team_fixture[difficulty],
+			    " + "
+			)
+		lineageTag: 40e9793e-7013-5ea2-abac-a5f25a13cbca
+
+	measure 'Fixture Next 5' =
+			VAR g = [Latest GW]
+			VAR thisGw = MAX ( dim_gameweek[gameweek] )
+			RETURN
+			    IF ( thisGw > g && thisGw <= g + 5, [Fixture Label] )
+		lineageTag: eed0c8f0-131b-521a-8be5-c656a579747b
+
+	measure FDR = AVERAGE ( fact_team_fixture[difficulty] )
+		formatString: 0.0
+		lineageTag: df7e8dac-e2f8-5234-a11d-288abc141659
+
+	column Column1
+		dataType: string
+		isHidden
+		lineageTag: 4a83ee34-996b-5b2d-90d9-f783b46fa6a7
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = #table(type table [Column1 = text], {})
+				in
+				    Source
+
+	annotation PBI_ResultType = Table

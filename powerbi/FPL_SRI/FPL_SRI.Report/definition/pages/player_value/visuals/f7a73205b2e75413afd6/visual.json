@@ -1,0 +1,118 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "f7a73205b2e75413afd6",
+  "position": {
+    "x": 24,
+    "y": 92,
+    "z": 2000,
+    "height": 616,
+    "width": 760,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "Player Label"
+                }
+              },
+              "queryRef": "dim_player.Player Label",
+              "nativeQueryRef": "Player Label",
+              "displayName": "Player"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "position"
+                }
+              },
+              "queryRef": "dim_player.position",
+              "nativeQueryRef": "position",
+              "displayName": "Position"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Price (270+ min)"
+                }
+              },
+              "queryRef": "_Measures.Price (270+ min)",
+              "nativeQueryRef": "Price (270+ min)",
+              "displayName": "Price (£m)"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Points per 90 (270+ min)"
+                }
+              },
+              "queryRef": "_Measures.Points per 90 (270+ min)",
+              "nativeQueryRef": "Points per 90 (270+ min)",
+              "displayName": "Points per 90"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Price vs points per 90'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

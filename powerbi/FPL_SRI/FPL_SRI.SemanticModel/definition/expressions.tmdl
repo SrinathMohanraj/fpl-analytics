@@ -1,0 +1,4 @@
+expression BaseUrl = "https://raw.githubusercontent.com/SrinathMohanraj/fpl-analytics/master/data/powerbi/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: a5aeb678-9138-5835-845d-fcb778daf90f
+
+	annotation PBI_ResultType = Text

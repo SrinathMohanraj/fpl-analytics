@@ -1,0 +1,181 @@
+table fact_player_gw
+	lineageTag: 0b73ea05-0212-5695-92d0-073fd09b9f07
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4724c465-478d-50bf-b2e8-656795d8b8bd
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: aa1839a2-83c6-5517-a98f-c9e105cafd85
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column minutes
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ebd4c0d-f220-532e-b6c9-c9b248e845bc
+		summarizeBy: none
+		sourceColumn: minutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_points
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c77f246-4ee2-5202-86c9-915306f48c0f
+		summarizeBy: none
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column goals_scored
+		dataType: int64
+		formatString: 0
+		lineageTag: 32625e39-c47d-5748-b5da-b17bfefb452a
+		summarizeBy: none
+		sourceColumn: goals_scored
+
+		annotation SummarizationSetBy = Automatic
+
+	column assists
+		dataType: int64
+		formatString: 0
+		lineageTag: 47b54fe4-a73e-5377-bd7f-ddb4f6e0a53d
+		summarizeBy: none
+		sourceColumn: assists
+
+		annotation SummarizationSetBy = Automatic
+
+	column clean_sheets
+		dataType: int64
+		formatString: 0
+		lineageTag: edcb3bda-f5f8-5a6a-8925-60b741156ba4
+		summarizeBy: none
+		sourceColumn: clean_sheets
+
+		annotation SummarizationSetBy = Automatic
+
+	column goals_conceded
+		dataType: int64
+		formatString: 0
+		lineageTag: a0592423-1f65-542d-92ea-69ae44c7117b
+		summarizeBy: none
+		sourceColumn: goals_conceded
+
+		annotation SummarizationSetBy = Automatic
+
+	column saves
+		dataType: int64
+		formatString: 0
+		lineageTag: 45d40cce-72eb-5913-a406-2c55fb44252e
+		summarizeBy: none
+		sourceColumn: saves
+
+		annotation SummarizationSetBy = Automatic
+
+	column bonus
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ebe7a9e-0d2b-540e-9ec0-6c6b95d389ca
+		summarizeBy: none
+		sourceColumn: bonus
+
+		annotation SummarizationSetBy = Automatic
+
+	column bps
+		dataType: int64
+		formatString: 0
+		lineageTag: cdfb2444-d17f-5708-9850-8cb5504cad20
+		summarizeBy: none
+		sourceColumn: bps
+
+		annotation SummarizationSetBy = Automatic
+
+	column yellow_cards
+		dataType: int64
+		formatString: 0
+		lineageTag: 9425a861-9cba-5a88-8883-ac8ee16dadb2
+		summarizeBy: none
+		sourceColumn: yellow_cards
+
+		annotation SummarizationSetBy = Automatic
+
+	column red_cards
+		dataType: int64
+		formatString: 0
+		lineageTag: 256b5a3b-d018-5714-ad98-219e04c77d0d
+		summarizeBy: none
+		sourceColumn: red_cards
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_goals
+		dataType: double
+		lineageTag: 6f144cc0-8135-504e-93f8-e1e637ac331d
+		summarizeBy: none
+		sourceColumn: expected_goals
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_assists
+		dataType: double
+		lineageTag: 51d96432-c32f-537a-954f-49910a758f43
+		summarizeBy: none
+		sourceColumn: expected_assists
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_goal_involvements
+		dataType: double
+		lineageTag: 508cabef-8916-5a72-aadb-0d8dfe4451bc
+		summarizeBy: none
+		sourceColumn: expected_goal_involvements
+
+		annotation SummarizationSetBy = Automatic
+
+	column defensive_contribution
+		dataType: int64
+		formatString: 0
+		lineageTag: 3cffdff8-5753-569b-a981-6bf3ec1dcaff
+		summarizeBy: none
+		sourceColumn: defensive_contribution
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_player_gw = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_player_gw.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"player_id", Int64.Type},
+				        {"gameweek", Int64.Type},
+				        {"minutes", Int64.Type},
+				        {"total_points", Int64.Type},
+				        {"goals_scored", Int64.Type},
+				        {"assists", Int64.Type},
+				        {"clean_sheets", Int64.Type},
+				        {"goals_conceded", Int64.Type},
+				        {"saves", Int64.Type},
+				        {"bonus", Int64.Type},
+				        {"bps", Int64.Type},
+				        {"yellow_cards", Int64.Type},
+				        {"red_cards", Int64.Type},
+				        {"expected_goals", type number},
+				        {"expected_assists", type number},
+				        {"expected_goal_involvements", type number},
+				        {"defensive_contribution", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

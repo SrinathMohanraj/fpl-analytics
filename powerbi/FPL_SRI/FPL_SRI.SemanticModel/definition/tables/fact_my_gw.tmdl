@@ -1,0 +1,130 @@
+table fact_my_gw
+	lineageTag: 321c2752-02ed-5d48-a69b-1282c7249bd4
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: c92de3fd-210d-56c0-acd4-f78f3f0d1248
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column points
+		dataType: int64
+		formatString: 0
+		lineageTag: 983c96ee-f5e8-5543-9964-2b44605943b7
+		summarizeBy: none
+		sourceColumn: points
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_points
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e5aca49-255d-5e64-a072-94f6ec03df40
+		summarizeBy: none
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column gw_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: c7b190fc-bf38-55ae-bc21-dee0f4d1f3e9
+		summarizeBy: none
+		sourceColumn: gw_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b3833ac-5c8d-51b0-b6a7-6161b1013d14
+		summarizeBy: none
+		sourceColumn: overall_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column bank
+		dataType: double
+		lineageTag: 02d494fc-c535-50da-9fab-b96a51e52ca9
+		summarizeBy: none
+		sourceColumn: bank
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_value
+		dataType: double
+		lineageTag: 755b9b39-1724-5e1b-905e-3877ef8ba2ba
+		summarizeBy: none
+		sourceColumn: team_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column transfers_made
+		dataType: int64
+		formatString: 0
+		lineageTag: a29a9f05-f395-553c-ab09-22ae098b6b94
+		summarizeBy: none
+		sourceColumn: transfers_made
+
+		annotation SummarizationSetBy = Automatic
+
+	column transfer_cost
+		dataType: int64
+		formatString: 0
+		lineageTag: 0eb6af73-015b-594e-be17-b731270c907e
+		summarizeBy: none
+		sourceColumn: transfer_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column bench_points
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f4685f6-21ce-5000-8de2-0fc67c6def10
+		summarizeBy: none
+		sourceColumn: bench_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column calc_points
+		dataType: double
+		lineageTag: b9ce25d2-e394-58b9-9d1c-3a379619abf3
+		summarizeBy: none
+		sourceColumn: calc_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column points_diff_vs_official
+		dataType: double
+		lineageTag: 74c2a371-c241-5014-bb91-4c3dbe733b49
+		summarizeBy: none
+		sourceColumn: points_diff_vs_official
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_my_gw = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_my_gw.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"points", Int64.Type},
+				        {"total_points", Int64.Type},
+				        {"gw_rank", Int64.Type},
+				        {"overall_rank", Int64.Type},
+				        {"bank", type number},
+				        {"team_value", type number},
+				        {"transfers_made", Int64.Type},
+				        {"transfer_cost", Int64.Type},
+				        {"bench_points", Int64.Type},
+				        {"calc_points", type number},
+				        {"points_diff_vs_official", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

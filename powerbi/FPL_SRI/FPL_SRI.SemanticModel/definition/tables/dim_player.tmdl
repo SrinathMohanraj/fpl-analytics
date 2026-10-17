@@ -1,0 +1,114 @@
+table dim_player
+	lineageTag: 890b3903-dd77-5e61-a057-60bb5c23e61d
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8777d034-08f7-52f2-abf9-5af5bd0f59ed
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column web_name
+		dataType: string
+		lineageTag: f3543874-43fa-5875-8129-5b70fee45123
+		summarizeBy: none
+		sourceColumn: web_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_name
+		dataType: string
+		lineageTag: 4a2c5bec-9444-5cdf-809e-53d5ba6bbcda
+		summarizeBy: none
+		sourceColumn: full_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 44ccb5f7-3891-5606-a1ad-a9697728effc
+		summarizeBy: none
+		sourceColumn: team_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: string
+		lineageTag: c4eac1b1-373b-53bd-bc99-7f326e6654b0
+		summarizeBy: none
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	column price_m
+		dataType: double
+		lineageTag: 52c0fbe7-fe8c-5824-a89c-3d6940e228d3
+		summarizeBy: none
+		sourceColumn: price_m
+
+		annotation SummarizationSetBy = Automatic
+
+	column selected_by_percent
+		dataType: double
+		lineageTag: 896358b7-882f-583c-b36c-10bc015fe591
+		summarizeBy: none
+		sourceColumn: selected_by_percent
+
+		annotation SummarizationSetBy = Automatic
+
+	column form
+		dataType: double
+		lineageTag: 4dd66016-62b6-50bb-a03c-137d0228e14a
+		summarizeBy: none
+		sourceColumn: form
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_points
+		dataType: int64
+		formatString: 0
+		lineageTag: d3b6168a-57fc-51c2-8935-0fe9bbca9d94
+		summarizeBy: none
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 6589391d-b99f-503a-8349-d15b49e6f007
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Player Label' = dim_player[web_name] & " · " & LOOKUPVALUE ( dim_team[short_name], dim_team[team_id], dim_player[team_id] )
+		dataType: string
+		lineageTag: 4b5f994b-2138-5e83-8f27-0a822a6ae137
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_player = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "dim_player.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"player_id", Int64.Type},
+				        {"web_name", type text},
+				        {"full_name", type text},
+				        {"team_id", Int64.Type},
+				        {"position", type text},
+				        {"price_m", type number},
+				        {"selected_by_percent", type number},
+				        {"form", type number},
+				        {"total_points", Int64.Type},
+				        {"status", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

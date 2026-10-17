@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "af1e1057bc2f511d9563",
+  "position": {
+    "x": 646,
+    "y": 92,
+    "z": 2001,
+    "height": 358,
+    "width": 610,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_gameweek"
+                    }
+                  },
+                  "Property": "gameweek"
+                }
+              },
+              "queryRef": "dim_gameweek.gameweek",
+              "nativeQueryRef": "gameweek",
+              "displayName": "GW"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Captain Name"
+                }
+              },
+              "queryRef": "_Measures.Captain Name",
+              "nativeQueryRef": "Captain Name",
+              "displayName": "Captain"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Captain Raw Points"
+                }
+              },
+              "queryRef": "_Measures.Captain Raw Points",
+              "nativeQueryRef": "Captain Raw Points",
+              "displayName": "Pts"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Best Starter Name"
+                }
+              },
+              "queryRef": "_Measures.Best Starter Name",
+              "nativeQueryRef": "Best Starter Name",
+              "displayName": "Best starter"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Best Captain Raw Points"
+                }
+              },
+              "queryRef": "_Measures.Best Captain Raw Points",
+              "nativeQueryRef": "Best Captain Raw Points",
+              "displayName": "Pts "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Captain Regret"
+                }
+              },
+              "queryRef": "_Measures.Captain Regret",
+              "nativeQueryRef": "Captain Regret",
+              "displayName": "Regret"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dim_gameweek"
+                  }
+                },
+                "Property": "gameweek"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Armband by gameweek'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

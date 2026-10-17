@@ -1,0 +1,138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "9a2dffa70e305fe9bcf1",
+  "position": {
+    "x": 796,
+    "y": 92,
+    "z": 2001,
+    "height": 616,
+    "width": 460,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "Player Label"
+                }
+              },
+              "queryRef": "dim_player.Player Label",
+              "nativeQueryRef": "Player Label",
+              "displayName": "Player"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "position"
+                }
+              },
+              "queryRef": "dim_player.position",
+              "nativeQueryRef": "position",
+              "displayName": "Pos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Price (270+ min)"
+                }
+              },
+              "queryRef": "_Measures.Price (270+ min)",
+              "nativeQueryRef": "Price (270+ min)",
+              "displayName": "£m"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Player GW Points"
+                }
+              },
+              "queryRef": "_Measures.Player GW Points",
+              "nativeQueryRef": "Player GW Points",
+              "displayName": "Pts"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Points per Million (270+ min)"
+                }
+              },
+              "queryRef": "_Measures.Points per Million (270+ min)",
+              "nativeQueryRef": "Points per Million (270+ min)",
+              "displayName": "Pts/£m"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Points per Million (270+ min)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Best points per million'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

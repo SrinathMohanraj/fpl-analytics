@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "e4ea195b7fe75072bc26",
+  "position": {
+    "x": 24,
+    "y": 462,
+    "z": 2002,
+    "height": 246,
+    "width": 1232,
+    "tabOrder": 2002
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "web_name"
+                }
+              },
+              "queryRef": "dim_player.web_name",
+              "nativeQueryRef": "web_name",
+              "displayName": "Player"
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_gameweek"
+                    }
+                  },
+                  "Property": "gameweek"
+                }
+              },
+              "queryRef": "dim_gameweek.gameweek",
+              "nativeQueryRef": "gameweek"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Squad Points"
+                }
+              },
+              "queryRef": "_Measures.Squad Points",
+              "nativeQueryRef": "Squad Points",
+              "displayName": "Points"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Squad points by gameweek (player's own points)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
