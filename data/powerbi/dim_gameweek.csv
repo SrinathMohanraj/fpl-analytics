@@ -4,14 +4,14 @@ gameweek,name,deadline_date,finished,is_current
 3,Gameweek 3,2026-09-04,True,False
 4,Gameweek 4,2026-09-12,True,False
 5,Gameweek 5,2026-09-18,True,False
-6,Gameweek 6,2026-10-10,True,True
-7,Gameweek 7,2026-10-17,False,False
+6,Gameweek 6,2026-10-10,True,False
+7,Gameweek 7,2026-10-17,False,True
 8,Gameweek 8,2026-10-23,False,False
 9,Gameweek 9,2026-10-31,False,False
 10,Gameweek 10,2026-11-06,False,False
 11,Gameweek 11,2026-11-21,False,False
 12,Gameweek 12,2026-11-27,False,False
-13,Gameweek 13,2026-12-02,False,False
+13,Gameweek 13,2026-12-01,False,False
 14,Gameweek 14,2026-12-05,False,False
 15,Gameweek 15,2026-12-12,False,False
 16,Gameweek 16,2026-12-19,False,False
