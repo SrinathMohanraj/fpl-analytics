@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T14:44:03.397326+00:00",
+  "generated_at": "2026-11-17T15:51:58.655615+00:00",
   "is_demo": false,
   "entry_id": 1702239,
   "current_gameweek": 10,
@@ -190,7 +190,7 @@
         "position": "DEF",
         "web_name": "Konsa",
         "team_name": "Arsenal",
-        "price_m": 4.8,
+        "price_m": 4.9,
         "multiplier": 1,
         "role": ""
       },
@@ -291,34 +291,24 @@
   },
   "value_picks_overall": [
     {
-      "web_name": "Vuskovic",
-      "team_name": "Brighton",
+      "web_name": "Konsa",
+      "team_name": "Arsenal",
       "position": "DEF",
-      "price_m": 5.3,
-      "total_points": 70,
-      "form": 7.5,
-      "points_per_million": 13.21,
-      "value_score": 0.998
+      "price_m": 4.9,
+      "total_points": 57,
+      "form": 10.7,
+      "points_per_million": 11.63,
+      "value_score": 0.996
     },
     {
       "web_name": "Verbruggen",
       "team_name": "Brighton",
       "position": "GKP",
-      "price_m": 4.6,
+      "price_m": 4.7,
       "total_points": 57,
-      "form": 6.2,
-      "points_per_million": 12.39,
-      "value_score": 0.996
-    },
-    {
-      "web_name": "Konsa",
-      "team_name": "Arsenal",
-      "position": "DEF",
-      "price_m": 4.8,
-      "total_points": 57,
-      "form": 10.2,
-      "points_per_million": 11.88,
-      "value_score": 0.996
+      "form": 6.3,
+      "points_per_million": 12.13,
+      "value_score": 0.994
     },
     {
       "web_name": "Van Hecke",
@@ -328,27 +318,7 @@
       "total_points": 57,
       "form": 7.5,
       "points_per_million": 11.18,
-      "value_score": 0.994
-    },
-    {
-      "web_name": "Muharemovi\u0107",
-      "team_name": "Leeds",
-      "position": "DEF",
-      "price_m": 5.1,
-      "total_points": 56,
-      "form": 6.8,
-      "points_per_million": 10.98,
-      "value_score": 0.989
-    },
-    {
-      "web_name": "Castagne",
-      "team_name": "Fulham",
-      "position": "DEF",
-      "price_m": 4.5,
-      "total_points": 44,
-      "form": 6.0,
-      "points_per_million": 9.78,
-      "value_score": 0.984
+      "value_score": 0.992
     },
     {
       "web_name": "Trafford",
@@ -356,19 +326,19 @@
       "position": "GKP",
       "price_m": 5.0,
       "total_points": 54,
-      "form": 6.0,
+      "form": 7.3,
       "points_per_million": 10.8,
-      "value_score": 0.983
+      "value_score": 0.989
     },
     {
-      "web_name": "Evanilson",
-      "team_name": "Bournemouth",
-      "position": "FWD",
-      "price_m": 6.5,
-      "total_points": 61,
-      "form": 9.0,
-      "points_per_million": 9.38,
-      "value_score": 0.982
+      "web_name": "Muharemovi\u0107",
+      "team_name": "Leeds",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 56,
+      "form": 7.3,
+      "points_per_million": 10.98,
+      "value_score": 0.989
     },
     {
       "web_name": "Justin",
@@ -376,19 +346,19 @@
       "position": "DEF",
       "price_m": 4.5,
       "total_points": 51,
-      "form": 4.8,
+      "form": 5.7,
       "points_per_million": 11.33,
-      "value_score": 0.98
+      "value_score": 0.988
     },
     {
-      "web_name": "De Cuyper",
+      "web_name": "Vuskovic",
       "team_name": "Brighton",
       "position": "DEF",
-      "price_m": 5.5,
-      "total_points": 75,
-      "form": 5.5,
-      "points_per_million": 13.64,
-      "value_score": 0.98
+      "price_m": 5.3,
+      "total_points": 70,
+      "form": 6.3,
+      "points_per_million": 13.21,
+      "value_score": 0.987
     },
     {
       "web_name": "Barry",
@@ -396,39 +366,49 @@
       "position": "FWD",
       "price_m": 5.7,
       "total_points": 55,
-      "form": 7.2,
+      "form": 9.0,
       "points_per_million": 9.65,
-      "value_score": 0.979
+      "value_score": 0.984
     },
     {
-      "web_name": "Gomez",
-      "team_name": "Brighton",
-      "position": "MID",
-      "price_m": 5.0,
-      "total_points": 51,
-      "form": 5.5,
-      "points_per_million": 10.2,
-      "value_score": 0.977
-    },
-    {
-      "web_name": "Boscagli",
+      "web_name": "De Cuyper",
       "team_name": "Brighton",
       "position": "DEF",
-      "price_m": 4.5,
-      "total_points": 44,
-      "form": 5.0,
-      "points_per_million": 9.78,
+      "price_m": 5.5,
+      "total_points": 75,
+      "form": 5.3,
+      "points_per_million": 13.64,
       "value_score": 0.976
     },
     {
-      "web_name": "Raya",
-      "team_name": "Arsenal",
-      "position": "GKP",
-      "price_m": 6.2,
-      "total_points": 60,
-      "form": 6.8,
-      "points_per_million": 9.68,
-      "value_score": 0.974
+      "web_name": "Castagne",
+      "team_name": "Fulham",
+      "position": "DEF",
+      "price_m": 4.5,
+      "total_points": 44,
+      "form": 5.3,
+      "points_per_million": 9.78,
+      "value_score": 0.975
+    },
+    {
+      "web_name": "Evanilson",
+      "team_name": "Bournemouth",
+      "position": "FWD",
+      "price_m": 6.5,
+      "total_points": 61,
+      "form": 8.0,
+      "points_per_million": 9.38,
+      "value_score": 0.973
+    },
+    {
+      "web_name": "Bogle",
+      "team_name": "Leeds",
+      "position": "DEF",
+      "price_m": 4.8,
+      "total_points": 58,
+      "form": 4.3,
+      "points_per_million": 12.08,
+      "value_score": 0.968
     },
     {
       "web_name": "Robertson",
@@ -438,7 +418,27 @@
       "total_points": 38,
       "form": 5.2,
       "points_per_million": 8.84,
-      "value_score": 0.968
+      "value_score": 0.965
+    },
+    {
+      "web_name": "Raya",
+      "team_name": "Arsenal",
+      "position": "GKP",
+      "price_m": 6.2,
+      "total_points": 60,
+      "form": 6.0,
+      "points_per_million": 9.68,
+      "value_score": 0.965
+    },
+    {
+      "web_name": "Ajayi",
+      "team_name": "Hull City",
+      "position": "DEF",
+      "price_m": 4.2,
+      "total_points": 42,
+      "form": 4.0,
+      "points_per_million": 10.0,
+      "value_score": 0.964
     }
   ],
   "value_picks_by_position": {
@@ -447,11 +447,11 @@
         "web_name": "Verbruggen",
         "team_name": "Brighton",
         "position": "GKP",
-        "price_m": 4.6,
+        "price_m": 4.7,
         "total_points": 57,
-        "form": 6.2,
-        "points_per_million": 12.39,
-        "value_score": 0.996
+        "form": 6.3,
+        "points_per_million": 12.13,
+        "value_score": 0.994
       },
       {
         "web_name": "Trafford",
@@ -459,9 +459,9 @@
         "position": "GKP",
         "price_m": 5.0,
         "total_points": 54,
-        "form": 6.0,
+        "form": 7.3,
         "points_per_million": 10.8,
-        "value_score": 0.983
+        "value_score": 0.989
       },
       {
         "web_name": "Raya",
@@ -469,9 +469,9 @@
         "position": "GKP",
         "price_m": 6.2,
         "total_points": 60,
-        "form": 6.8,
+        "form": 6.0,
         "points_per_million": 9.68,
-        "value_score": 0.974
+        "value_score": 0.965
       },
       {
         "web_name": "Kinsky",
@@ -481,7 +481,7 @@
         "total_points": 40,
         "form": 4.8,
         "points_per_million": 9.09,
-        "value_score": 0.965
+        "value_score": 0.964
       },
       {
         "web_name": "Leno",
@@ -489,9 +489,9 @@
         "position": "GKP",
         "price_m": 4.5,
         "total_points": 39,
-        "form": 4.8,
+        "form": 4.3,
         "points_per_million": 8.67,
-        "value_score": 0.959
+        "value_score": 0.951
       },
       {
         "web_name": "Tzolakis",
@@ -499,9 +499,19 @@
         "position": "GKP",
         "price_m": 4.7,
         "total_points": 49,
-        "form": 3.2,
+        "form": 3.3,
         "points_per_million": 10.43,
-        "value_score": 0.94
+        "value_score": 0.942
+      },
+      {
+        "web_name": "Roefs",
+        "team_name": "Sunderland",
+        "position": "GKP",
+        "price_m": 4.8,
+        "total_points": 33,
+        "form": 6.3,
+        "points_per_million": 6.88,
+        "value_score": 0.931
       },
       {
         "web_name": "Petrovi\u0107",
@@ -509,40 +519,20 @@
         "position": "GKP",
         "price_m": 4.5,
         "total_points": 30,
-        "form": 5.2,
+        "form": 5.0,
         "points_per_million": 6.67,
-        "value_score": 0.922
-      },
-      {
-        "web_name": "Roefs",
-        "team_name": "Sunderland",
-        "position": "GKP",
-        "price_m": 4.9,
-        "total_points": 33,
-        "form": 5.2,
-        "points_per_million": 6.73,
-        "value_score": 0.916
+        "value_score": 0.917
       }
     ],
     "DEF": [
       {
-        "web_name": "Vuskovic",
-        "team_name": "Brighton",
-        "position": "DEF",
-        "price_m": 5.3,
-        "total_points": 70,
-        "form": 7.5,
-        "points_per_million": 13.21,
-        "value_score": 0.998
-      },
-      {
         "web_name": "Konsa",
         "team_name": "Arsenal",
         "position": "DEF",
-        "price_m": 4.8,
+        "price_m": 4.9,
         "total_points": 57,
-        "form": 10.2,
-        "points_per_million": 11.88,
+        "form": 10.7,
+        "points_per_million": 11.63,
         "value_score": 0.996
       },
       {
@@ -553,7 +543,7 @@
         "total_points": 57,
         "form": 7.5,
         "points_per_million": 11.18,
-        "value_score": 0.994
+        "value_score": 0.992
       },
       {
         "web_name": "Muharemovi\u0107",
@@ -561,19 +551,9 @@
         "position": "DEF",
         "price_m": 5.1,
         "total_points": 56,
-        "form": 6.8,
+        "form": 7.3,
         "points_per_million": 10.98,
         "value_score": 0.989
-      },
-      {
-        "web_name": "Castagne",
-        "team_name": "Fulham",
-        "position": "DEF",
-        "price_m": 4.5,
-        "total_points": 44,
-        "form": 6.0,
-        "points_per_million": 9.78,
-        "value_score": 0.984
       },
       {
         "web_name": "Justin",
@@ -581,9 +561,19 @@
         "position": "DEF",
         "price_m": 4.5,
         "total_points": 51,
-        "form": 4.8,
+        "form": 5.7,
         "points_per_million": 11.33,
-        "value_score": 0.98
+        "value_score": 0.988
+      },
+      {
+        "web_name": "Vuskovic",
+        "team_name": "Brighton",
+        "position": "DEF",
+        "price_m": 5.3,
+        "total_points": 70,
+        "form": 6.3,
+        "points_per_million": 13.21,
+        "value_score": 0.987
       },
       {
         "web_name": "De Cuyper",
@@ -591,19 +581,29 @@
         "position": "DEF",
         "price_m": 5.5,
         "total_points": 75,
-        "form": 5.5,
+        "form": 5.3,
         "points_per_million": 13.64,
-        "value_score": 0.98
+        "value_score": 0.976
       },
       {
-        "web_name": "Boscagli",
-        "team_name": "Brighton",
+        "web_name": "Castagne",
+        "team_name": "Fulham",
         "position": "DEF",
         "price_m": 4.5,
         "total_points": 44,
-        "form": 5.0,
+        "form": 5.3,
         "points_per_million": 9.78,
-        "value_score": 0.976
+        "value_score": 0.975
+      },
+      {
+        "web_name": "Bogle",
+        "team_name": "Leeds",
+        "position": "DEF",
+        "price_m": 4.8,
+        "total_points": 58,
+        "form": 4.3,
+        "points_per_million": 12.08,
+        "value_score": 0.968
       }
     ],
     "MID": [
@@ -613,19 +613,9 @@
         "position": "MID",
         "price_m": 5.0,
         "total_points": 51,
-        "form": 5.5,
+        "form": 4.7,
         "points_per_million": 10.2,
-        "value_score": 0.977
-      },
-      {
-        "web_name": "Ayari",
-        "team_name": "Brighton",
-        "position": "MID",
-        "price_m": 5.5,
-        "total_points": 46,
-        "form": 7.0,
-        "points_per_million": 8.36,
-        "value_score": 0.968
+        "value_score": 0.964
       },
       {
         "web_name": "E.Le F\u00e9e",
@@ -633,39 +623,9 @@
         "position": "MID",
         "price_m": 5.7,
         "total_points": 46,
-        "form": 6.5,
+        "form": 7.3,
         "points_per_million": 8.07,
-        "value_score": 0.957
-      },
-      {
-        "web_name": "Tavernier",
-        "team_name": "Bournemouth",
-        "position": "MID",
-        "price_m": 6.7,
-        "total_points": 58,
-        "form": 6.5,
-        "points_per_million": 8.66,
-        "value_score": 0.953
-      },
-      {
-        "web_name": "Rudoni",
-        "team_name": "Coventry City",
-        "position": "MID",
-        "price_m": 4.9,
-        "total_points": 39,
-        "form": 5.2,
-        "points_per_million": 7.96,
-        "value_score": 0.947
-      },
-      {
-        "web_name": "Gro\u00df",
-        "team_name": "Brighton",
-        "position": "MID",
-        "price_m": 6.3,
-        "total_points": 70,
-        "form": 4.2,
-        "points_per_million": 11.11,
-        "value_score": 0.941
+        "value_score": 0.961
       },
       {
         "web_name": "McGinn",
@@ -673,41 +633,81 @@
         "position": "MID",
         "price_m": 5.4,
         "total_points": 44,
-        "form": 4.2,
+        "form": 5.3,
         "points_per_million": 8.15,
-        "value_score": 0.934
+        "value_score": 0.951
       },
       {
-        "web_name": "Iwobi",
-        "team_name": "Fulham",
+        "web_name": "Rudoni",
+        "team_name": "Coventry City",
         "position": "MID",
-        "price_m": 5.4,
-        "total_points": 40,
-        "form": 5.5,
-        "points_per_million": 7.41,
-        "value_score": 0.933
+        "price_m": 4.9,
+        "total_points": 39,
+        "form": 4.8,
+        "points_per_million": 7.96,
+        "value_score": 0.945
+      },
+      {
+        "web_name": "Ayari",
+        "team_name": "Brighton",
+        "position": "MID",
+        "price_m": 5.5,
+        "total_points": 46,
+        "form": 5.0,
+        "points_per_million": 8.36,
+        "value_score": 0.944
+      },
+      {
+        "web_name": "Tavernier",
+        "team_name": "Bournemouth",
+        "position": "MID",
+        "price_m": 6.7,
+        "total_points": 58,
+        "form": 5.3,
+        "points_per_million": 8.66,
+        "value_score": 0.936
+      },
+      {
+        "web_name": "Gro\u00df",
+        "team_name": "Brighton",
+        "position": "MID",
+        "price_m": 6.3,
+        "total_points": 70,
+        "form": 4.0,
+        "points_per_million": 11.11,
+        "value_score": 0.931
+      },
+      {
+        "web_name": "Enciso",
+        "team_name": "Ipswich Town",
+        "position": "MID",
+        "price_m": 5.5,
+        "total_points": 38,
+        "form": 6.3,
+        "points_per_million": 6.91,
+        "value_score": 0.924
       }
     ],
     "FWD": [
-      {
-        "web_name": "Evanilson",
-        "team_name": "Bournemouth",
-        "position": "FWD",
-        "price_m": 6.5,
-        "total_points": 61,
-        "form": 9.0,
-        "points_per_million": 9.38,
-        "value_score": 0.982
-      },
       {
         "web_name": "Barry",
         "team_name": "Everton",
         "position": "FWD",
         "price_m": 5.7,
         "total_points": 55,
-        "form": 7.2,
+        "form": 9.0,
         "points_per_million": 9.65,
-        "value_score": 0.979
+        "value_score": 0.984
+      },
+      {
+        "web_name": "Evanilson",
+        "team_name": "Bournemouth",
+        "position": "FWD",
+        "price_m": 6.5,
+        "total_points": 61,
+        "form": 8.0,
+        "points_per_million": 9.38,
+        "value_score": 0.973
       },
       {
         "web_name": "N.Jackson",
@@ -715,19 +715,9 @@
         "position": "FWD",
         "price_m": 7.1,
         "total_points": 54,
-        "form": 8.8,
+        "form": 11.0,
         "points_per_million": 7.61,
-        "value_score": 0.951
-      },
-      {
-        "web_name": "Kostoulas",
-        "team_name": "Brighton",
-        "position": "FWD",
-        "price_m": 5.8,
-        "total_points": 47,
-        "form": 4.5,
-        "points_per_million": 8.1,
-        "value_score": 0.933
+        "value_score": 0.957
       },
       {
         "web_name": "McBurnie",
@@ -735,9 +725,9 @@
         "position": "FWD",
         "price_m": 5.5,
         "total_points": 38,
-        "form": 6.0,
+        "form": 7.3,
         "points_per_million": 6.91,
-        "value_score": 0.924
+        "value_score": 0.933
       },
       {
         "web_name": "Delap",
@@ -745,19 +735,9 @@
         "position": "FWD",
         "price_m": 5.3,
         "total_points": 30,
-        "form": 4.8,
+        "form": 5.7,
         "points_per_million": 5.66,
-        "value_score": 0.872
-      },
-      {
-        "web_name": "Calvert-Lewin",
-        "team_name": "Leeds",
-        "position": "FWD",
-        "price_m": 6.0,
-        "total_points": 39,
-        "form": 3.8,
-        "points_per_million": 6.5,
-        "value_score": 0.871
+        "value_score": 0.881
       },
       {
         "web_name": "Isak",
@@ -765,30 +745,68 @@
         "position": "FWD",
         "price_m": 9.3,
         "total_points": 61,
-        "form": 5.6,
+        "form": 6.3,
         "points_per_million": 6.56,
-        "value_score": 0.865
+        "value_score": 0.876
+      },
+      {
+        "web_name": "Kostoulas",
+        "team_name": "Brighton",
+        "position": "FWD",
+        "price_m": 5.8,
+        "total_points": 47,
+        "form": 2.0,
+        "points_per_million": 8.1,
+        "value_score": 0.852
+      },
+      {
+        "web_name": "Calvert-Lewin",
+        "team_name": "Leeds",
+        "position": "FWD",
+        "price_m": 6.0,
+        "total_points": 39,
+        "form": 2.0,
+        "points_per_million": 6.5,
+        "value_score": 0.807
       }
     ]
   },
   "differentials": [
     {
-      "web_name": "Vuskovic",
-      "team_name": "Brighton",
-      "position": "DEF",
-      "price_m": 5.3,
-      "total_points": 70,
-      "form": 7.5,
-      "selected_by_percent": 9.0
+      "web_name": "McBurnie",
+      "team_name": "Hull City",
+      "position": "FWD",
+      "price_m": 5.5,
+      "total_points": 38,
+      "form": 7.3,
+      "selected_by_percent": 1.7
     },
     {
-      "web_name": "Ayari",
-      "team_name": "Brighton",
+      "web_name": "Trafford",
+      "team_name": "Leeds",
+      "position": "GKP",
+      "price_m": 5.0,
+      "total_points": 54,
+      "form": 7.3,
+      "selected_by_percent": 6.5
+    },
+    {
+      "web_name": "Muharemovi\u0107",
+      "team_name": "Leeds",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 56,
+      "form": 7.3,
+      "selected_by_percent": 6.5
+    },
+    {
+      "web_name": "E.Le F\u00e9e",
+      "team_name": "Sunderland",
       "position": "MID",
-      "price_m": 5.5,
+      "price_m": 5.7,
       "total_points": 46,
-      "form": 7.0,
-      "selected_by_percent": 2.3
+      "form": 7.3,
+      "selected_by_percent": 2.8
     },
     {
       "web_name": "Hill",
@@ -797,7 +815,34 @@
       "price_m": 5.6,
       "total_points": 42,
       "form": 7.0,
-      "selected_by_percent": 3.0
+      "selected_by_percent": 3.1
+    },
+    {
+      "web_name": "Araujo",
+      "team_name": "Liverpool",
+      "position": "DEF",
+      "price_m": 5.5,
+      "total_points": 44,
+      "form": 7.0,
+      "selected_by_percent": 4.5
+    },
+    {
+      "web_name": "Wirtz",
+      "team_name": "Liverpool",
+      "position": "MID",
+      "price_m": 7.2,
+      "total_points": 46,
+      "form": 7.0,
+      "selected_by_percent": 5.8
+    },
+    {
+      "web_name": "Iroegbunam",
+      "team_name": "Hull City",
+      "position": "MID",
+      "price_m": 5.0,
+      "total_points": 23,
+      "form": 6.3,
+      "selected_by_percent": 0.0
     },
     {
       "web_name": "Silva",
@@ -805,62 +850,17 @@
       "position": "DEF",
       "price_m": 5.1,
       "total_points": 40,
-      "form": 6.8,
-      "selected_by_percent": 3.6
+      "form": 6.3,
+      "selected_by_percent": 3.7
     },
     {
-      "web_name": "Muharemovi\u0107",
-      "team_name": "Leeds",
+      "web_name": "Vuskovic",
+      "team_name": "Brighton",
       "position": "DEF",
-      "price_m": 5.1,
-      "total_points": 56,
-      "form": 6.8,
-      "selected_by_percent": 6.4
-    },
-    {
-      "web_name": "E.Le F\u00e9e",
-      "team_name": "Sunderland",
-      "position": "MID",
-      "price_m": 5.7,
-      "total_points": 46,
-      "form": 6.5,
-      "selected_by_percent": 2.7
-    },
-    {
-      "web_name": "McBurnie",
-      "team_name": "Hull City",
-      "position": "FWD",
-      "price_m": 5.5,
-      "total_points": 38,
-      "form": 6.0,
-      "selected_by_percent": 1.7
-    },
-    {
-      "web_name": "Castagne",
-      "team_name": "Fulham",
-      "position": "DEF",
-      "price_m": 4.5,
-      "total_points": 44,
-      "form": 6.0,
-      "selected_by_percent": 1.2
-    },
-    {
-      "web_name": "Trafford",
-      "team_name": "Leeds",
-      "position": "GKP",
-      "price_m": 5.0,
-      "total_points": 54,
-      "form": 6.0,
-      "selected_by_percent": 6.4
-    },
-    {
-      "web_name": "Truffert",
-      "team_name": "Bournemouth",
-      "position": "DEF",
-      "price_m": 5.4,
-      "total_points": 33,
-      "form": 6.0,
-      "selected_by_percent": 3.3
+      "price_m": 5.3,
+      "total_points": 70,
+      "form": 6.3,
+      "selected_by_percent": 9.6
     }
   ],
   "injury_watch": [
@@ -879,6 +879,14 @@
       "price_m": 6.3,
       "status": "u",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Zubimendi",
+      "team_name": "Arsenal",
+      "position": "MID",
+      "price_m": 5.2,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Dowman",
@@ -929,6 +937,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Cash",
+      "team_name": "Aston Villa",
+      "position": "DEF",
+      "price_m": 4.3,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "A.Garc\u00eda",
       "team_name": "Aston Villa",
       "position": "DEF",
@@ -967,6 +983,14 @@
       "price_m": 5.0,
       "status": "u",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Manzambi",
+      "team_name": "Aston Villa",
+      "position": "MID",
+      "price_m": 6.2,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Watkins",
@@ -1049,12 +1073,28 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Collins",
+      "team_name": "Brentford",
+      "position": "DEF",
+      "price_m": 5.4,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Henry",
       "team_name": "Brentford",
       "position": "DEF",
       "price_m": 4.4,
       "status": "i",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Hickey",
+      "team_name": "Brentford",
+      "position": "DEF",
+      "price_m": 4.5,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Milambo",
@@ -1169,12 +1209,28 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Hadjam",
+      "team_name": "Brighton",
+      "position": "DEF",
+      "price_m": 4.5,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Cozier-Duberry",
       "team_name": "Brighton",
       "position": "MID",
       "price_m": 5.0,
       "status": "u",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Andr\u00e9s",
+      "team_name": "Brighton",
+      "position": "MID",
+      "price_m": 5.5,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Azeez",
@@ -1465,6 +1521,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Strand Larsen",
+      "team_name": "Crystal Palace",
+      "position": "FWD",
+      "price_m": 5.9,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Mateta",
       "team_name": "Crystal Palace",
       "position": "FWD",
@@ -1577,6 +1641,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Belloumi",
+      "team_name": "Hull City",
+      "position": "MID",
+      "price_m": 5.3,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Millar",
       "team_name": "Hull City",
       "position": "MID",
@@ -1647,6 +1719,14 @@
       "price_m": 4.9,
       "status": "i",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Mendy",
+      "team_name": "Hull City",
+      "position": "DEF",
+      "price_m": 4.1,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Ansah",
@@ -1812,7 +1892,7 @@
       "web_name": "Frimpong",
       "team_name": "Liverpool",
       "position": "DEF",
-      "price_m": 5.2,
+      "price_m": 5.1,
       "status": "i",
       "chance_of_playing_next_round": 0.0
     },
@@ -1977,6 +2057,22 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Dorgu",
+      "team_name": "Man Utd",
+      "position": "MID",
+      "price_m": 5.7,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
+      "web_name": "Maguire",
+      "team_name": "Man Utd",
+      "position": "DEF",
+      "price_m": 4.6,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Shaw",
       "team_name": "Man Utd",
       "position": "DEF",
@@ -2081,6 +2177,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "N.Williams",
+      "team_name": "Nott'm Forest",
+      "position": "DEF",
+      "price_m": 4.9,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Morato",
       "team_name": "Nott'm Forest",
       "position": "DEF",
@@ -2135,6 +2239,14 @@
       "price_m": 4.8,
       "status": "i",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Schlager",
+      "team_name": "Nott'm Forest",
+      "position": "MID",
+      "price_m": 5.0,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "S\u00e1vio",
