@@ -11,6 +11,9 @@ on:
       entry_id:
         description: "FPL entry ID to pull (defaults to the repo variable FPL_ENTRY_ID, then DEFAULT_ENTRY_ID below)"
         required: false
+      league_ids:
+        description: "Mini-league IDs for the rival tracker, comma-separated (defaults to the repo variable FPL_LEAGUE_IDS, then DEFAULT_LEAGUE_IDS below)"
+        required: false
 
 permissions:
   contents: write
@@ -21,6 +24,9 @@ env:
   # Used when neither a manual input nor the FPL_ENTRY_ID repo variable is set,
   # so the scheduled daily run never starts without an entry ID.
   DEFAULT_ENTRY_ID: "1702239"
+  # Rival tracker leagues (the number in the league's URL). 26756 = Trichy
+  # Premier League. Set to "auto" to use your smallest private league.
+  DEFAULT_LEAGUE_IDS: "26756"
 
 concurrency:
   group: "pages"
@@ -45,12 +51,13 @@ jobs:
       - name: Run pipeline
         env:
           ENTRY_ID: ${{ inputs.entry_id || vars.FPL_ENTRY_ID || env.DEFAULT_ENTRY_ID }}
+          LEAGUE_IDS: ${{ inputs.league_ids || vars.FPL_LEAGUE_IDS || env.DEFAULT_LEAGUE_IDS }}
         run: |
           if [ -z "$ENTRY_ID" ]; then
             echo "::error::No entry ID set. Add a repo variable FPL_ENTRY_ID (Settings -> Secrets and variables -> Actions -> Variables), or pass one when running this workflow manually."
             exit 1
           fi
-          python -m fpl_analytics.pipeline "$ENTRY_ID"
+          python -m fpl_analytics.pipeline "$ENTRY_ID" --leagues "$LEAGUE_IDS"
 
       - name: Check for changes
         id: diff

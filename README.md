@@ -23,6 +23,11 @@ explorer. Runs itself on a schedule via GitHub Actions.
 - **Value-pick analytics** — a blended points-per-£m / form-per-£m score,
   filterable by position, plus a differentials table (low-ownership players
   still producing) and an injury-watch list.
+- **Rival tracker**: me against everyone in my mini-league. The league
+  table with the gap to me, each manager's league rank gameweek by gameweek,
+  a head to head with any rival (players only I own, players only they own,
+  captaincy differences and what they were worth this gameweek), my league
+  differentials, and the league's template players I don't own.
 - **Captain picker** — ranks my squad for the next gameweek by expected
   points (season points per game, xG/xA, recent form, minutes, fixture
   difficulty, injury flags) with a one-line reason per player, and backtests
@@ -53,6 +58,8 @@ src/fpl_analytics/
 ├── clean.py      # raw JSON -> tidy pandas DataFrames
 ├── metrics.py    # value-pick scoring, differentials, injury watch
 ├── squad.py      # season summary, rank trend, bench-waste tracking
+├── rivals.py     # mini-league rival tracker (standings, rank trend,
+│                 #   head-to-head differentials, league ownership)
 └── pipeline.py   # orchestrates the four stages, exports dashboard.json
 ```
 
@@ -118,6 +125,33 @@ value; selling value can be lower because FPL only returns half of a price
 rise. Transfers for the next gameweek appear after its deadline, since the
 public API only shows the squad picked for the current gameweek.
 
+### Rival tracker (mini-leagues)
+
+`src/fpl_analytics/rivals.py` pulls the standings of the tracked mini-leagues,
+every manager's gameweek history, and every manager's picks for the current
+gameweek. It writes `dashboard/data/rivals.json` for the dashboard and three
+tables to `data/powerbi/`:
+
+- `dim_league_entry.csv`: one row per manager per league (names, rank, total).
+- `fact_league_gw.csv`: one row per manager per gameweek with points, hits,
+  chip, league rank that week and the gap to me (+ means I'm ahead).
+- `fact_league_picks.csv`: who owned and captained whom. The API gives one
+  gameweek's picks per call, so each run saves the current gameweek and keeps
+  the earlier ones already in the file.
+
+Choose the leagues with the number in the league's URL
+(`fantasy.premierleague.com/leagues/<id>/standings/c`):
+
+```bash
+python -m fpl_analytics.pipeline <your_entry_id> --leagues 26756,123456
+```
+
+In GitHub Actions, set the repo variable `FPL_LEAGUE_IDS` (same place as
+`FPL_ENTRY_ID`), or change `DEFAULT_LEAGUE_IDS` in the workflow. `auto` (or
+leaving it empty) picks your smallest private league. Big public leagues are
+cut to their top 50 managers plus you. If the league fetch fails, the rest of
+the pipeline still finishes.
+
 ### Demo data
 
 This repo ships with sample data (`scripts/generate_demo_data.py`) so the
@@ -143,7 +177,6 @@ Tableau or Excel.
 
 - Captaincy optimizer (expected points by fixture/form, ranked across your squad)
 - Transfer suggestions weighted by your remaining budget and free transfers
-- Mini-league comparison view
 - Historical season-over-season trends once more data has accumulated
 
 ## License

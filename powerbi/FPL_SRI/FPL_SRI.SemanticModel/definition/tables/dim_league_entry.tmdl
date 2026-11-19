@@ -1,0 +1,109 @@
+table dim_league_entry
+	lineageTag: 097a40ab-e9b2-559c-95d2-efb78895533b
+
+	column league_entry_key
+		dataType: string
+		lineageTag: cc15d9ae-672a-5131-baca-c0f483317425
+		summarizeBy: none
+		sourceColumn: league_entry_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f8040226-8501-5cd6-9710-0f25c9b42449
+		summarizeBy: none
+		sourceColumn: league_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_name
+		dataType: string
+		lineageTag: f3279e2b-6d33-587d-9580-30639984dfba
+		summarizeBy: none
+		sourceColumn: league_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c8f79bca-0c93-5beb-badb-e5ec582235a3
+		summarizeBy: none
+		sourceColumn: entry_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_name
+		dataType: string
+		lineageTag: bd3dbea0-a0d0-5417-8164-936e29bdaa38
+		summarizeBy: none
+		sourceColumn: entry_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column manager_name
+		dataType: string
+		lineageTag: 6a34d5af-a885-59f3-ac78-7204716e014b
+		summarizeBy: none
+		sourceColumn: manager_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_me
+		dataType: boolean
+		lineageTag: 259f07ed-e18c-5a0f-9e19-55aeeeec7857
+		summarizeBy: none
+		sourceColumn: is_me
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fd41931-9124-520b-a7f6-646760614e7c
+		summarizeBy: none
+		sourceColumn: league_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: cdd9552f-4910-51da-a187-02d76ac2f608
+		summarizeBy: none
+		sourceColumn: last_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_points
+		dataType: int64
+		formatString: 0
+		lineageTag: 2103b643-47d4-56ee-abd7-6f5036769c09
+		summarizeBy: none
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_league_entry = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "dim_league_entry.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"league_entry_key", type text},
+				        {"league_id", Int64.Type},
+				        {"league_name", type text},
+				        {"entry_id", Int64.Type},
+				        {"entry_name", type text},
+				        {"manager_name", type text},
+				        {"is_me", type logical},
+				        {"league_rank", Int64.Type},
+				        {"last_rank", Int64.Type},
+				        {"total_points", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

@@ -13,7 +13,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import clean, fetch, metrics, powerbi, squad
+from . import clean, fetch, metrics, powerbi, rivals, squad
 from . import history as value_history_mod
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -31,10 +31,32 @@ def _current_event_from_bootstrap(bootstrap: dict) -> int:
 
 
 def run(entry_id: int, raw_dir: Path = DEFAULT_RAW_DIR,
-         processed_dir: Path = DEFAULT_PROCESSED_DIR) -> Path:
+         processed_dir: Path = DEFAULT_PROCESSED_DIR,
+         league_ids: list[int] | None = None) -> Path:
     """Full pipeline against the LIVE FPL API (needs internet access)."""
     raw = fetch.fetch_all_for_pipeline(entry_id, raw_dir)
-    return _process(entry_id, raw, processed_dir, is_demo=False)
+    out = _process(entry_id, raw, processed_dir, is_demo=False)
+    run_rivals(entry_id, raw, processed_dir, league_ids or [])
+    return out
+
+
+def run_rivals(entry_id: int, raw: dict, processed_dir: Path, league_ids: list[int]) -> None:
+    """Mini-league rival tracker -> rivals.json + league tables for Power BI.
+
+    Kept separate (and failure-tolerant) so a league problem never stops the
+    main dashboard from refreshing.
+    """
+    try:
+        payload = rivals.run(
+            raw, entry_id, league_ids, POWERBI_DIR,
+            out_paths=[processed_dir / "rivals.json", DASHBOARD_DATA_DIR / "rivals.json"],
+        )
+    except Exception as exc:  # noqa: BLE001 - log and carry on
+        print(f"Rival tracker skipped: {exc}")
+        return
+    for lg in payload["leagues"]:
+        print(f"Rival tracker -> {lg['league_name']} ({lg['size']} managers, "
+              f"I'm {lg['my_rank']})")
 
 
 def run_from_raw(entry_id: int, raw_dir: Path = DEFAULT_RAW_DIR,
@@ -142,8 +164,12 @@ def _process(entry_id: int, raw: dict, processed_dir: Path, is_demo: bool) -> Pa
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the full FPL analytics pipeline.")
     parser.add_argument("entry_id", type=int, help="Your FPL team/entry ID")
+    parser.add_argument(
+        "--leagues", default="",
+        help="Mini-league IDs to track, comma-separated (e.g. 26756). "
+             "Empty or 'auto' = your smallest private league.")
     args = parser.parse_args()
-    run(args.entry_id)
+    run(args.entry_id, league_ids=rivals.parse_league_ids(args.leagues))
 
 
 if __name__ == "__main__":

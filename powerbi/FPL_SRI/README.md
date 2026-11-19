@@ -1,9 +1,9 @@
 # FPL_SRI Power BI project
 
 A ready-made Power BI project (PBIP) with the whole report already built:
-the 9 tables loaded from this repo's `data/powerbi/` CSVs (7 star-schema
-tables plus the daily history tables `fact_value_daily` and `fact_price_daily`),
-the 11 relationships, all measures from `measures.dax` plus a few extras, the
+the 12 tables loaded from this repo's `data/powerbi/` CSVs (7 star-schema
+tables plus the daily history tables `fact_value_daily` and `fact_price_daily` and the three rival tracker tables),
+the 16 relationships, all measures from `measures.dax` plus a few extras, the
 `fpl_theme.json` theme, and four pages:
 
 1. **Season overview**: total points, overall rank, rank change, team value,
@@ -22,6 +22,22 @@ uses them yet): **Team Value Today**, **Team Value Change Today**, **Team
 Value Change Since Tracking**, **Price Change**, **My Squad Price Change** and
 **Latest Price**. For a team value chart, add a line chart with
 `fact_value_daily[snapshot_date]` on the X axis and `team_value` as the value.
+
+### Rival tracker tables
+
+Three more tables come from the mini-league rival tracker: `dim_league_entry`
+(one row per manager per league, with `is_me`), `fact_league_gw` (points,
+total, league rank and gap to me per gameweek) and `fact_league_picks` (who
+owned and captained whom). They join on `league_entry_key`, and to
+`dim_gameweek` and `dim_player`. Measures: **League Rank**, **My League
+Rank**, **League Total Points**, **League GW Points**, **Gap To Me**,
+**Points Behind Leader**, **League Owners**, **League Ownership %**,
+**League Captained By** and **I Own (League)**. Quick visuals to try: a line
+chart of `fact_league_gw[gameweek]` vs **League Rank** with
+`dim_league_entry[entry_name]` as the legend (reverse the Y axis so 1st is at
+the top), and a table of `dim_player[web_name]` with **League Ownership %**
+and **I Own (League)**. Add a slicer on `dim_league_entry[league_name]` if
+you track more than one league.
 
 ## Open it
 

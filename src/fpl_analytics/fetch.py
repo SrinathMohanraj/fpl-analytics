@@ -74,6 +74,11 @@ def get_entry_transfers(entry_id: int) -> list:
     return _get(f"entry/{entry_id}/transfers/")
 
 
+def get_league_standings(league_id: int, page: int = 1) -> dict:
+    """A classic mini-league's table (50 managers per page)."""
+    return _get(f"leagues-classic/{league_id}/standings/?page_standings={page}")
+
+
 def get_event_live(event: int) -> dict:
     """Every player's actual stats and points for one gameweek (1 call per GW)."""
     return _get(f"event/{event}/live/")

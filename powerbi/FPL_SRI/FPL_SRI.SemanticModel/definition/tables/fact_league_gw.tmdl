@@ -1,0 +1,142 @@
+table fact_league_gw
+	lineageTag: 4cd48b28-68bf-5ad1-b359-cbe38373b47e
+
+	column league_entry_key
+		dataType: string
+		lineageTag: c526f933-38d5-5948-aac9-d2a348fea01c
+		summarizeBy: none
+		sourceColumn: league_entry_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 56eff980-2c59-5b96-9a52-cc4757fc069a
+		summarizeBy: none
+		sourceColumn: league_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f8813bb-3183-56e1-bc99-03070f9e6163
+		summarizeBy: none
+		sourceColumn: entry_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: a0922509-6025-5abd-8b98-8fe87dd8f8d9
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column points
+		dataType: int64
+		formatString: 0
+		lineageTag: a819499b-4c67-5bbf-b985-07bcf0582159
+		summarizeBy: none
+		sourceColumn: points
+
+		annotation SummarizationSetBy = Automatic
+
+	column transfer_cost
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e575ed3-dfaa-5084-8c64-595562321e17
+		summarizeBy: none
+		sourceColumn: transfer_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column net_points
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ca0cb14-befe-5638-95d0-fbcd522435b3
+		summarizeBy: none
+		sourceColumn: net_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_points
+		dataType: int64
+		formatString: 0
+		lineageTag: f6bc9030-a243-52d5-be65-67407422dfed
+		summarizeBy: none
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column points_on_bench
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ca2e4af-89bd-59a4-8ae5-0bc523caacd4
+		summarizeBy: none
+		sourceColumn: points_on_bench
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 56bdcf58-f7aa-503e-be15-2433934ac217
+		summarizeBy: none
+		sourceColumn: overall_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column chip
+		dataType: string
+		lineageTag: 4bf5da08-831f-569b-8074-91a3076e1e4d
+		summarizeBy: none
+		sourceColumn: chip
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: c7870e6e-324f-5540-9577-9d861798b43f
+		summarizeBy: none
+		sourceColumn: league_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column gap_to_me
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b5a21c8-24cb-55c7-bdb3-2cd8da00c82f
+		summarizeBy: none
+		sourceColumn: gap_to_me
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_league_gw = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_league_gw.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"league_entry_key", type text},
+				        {"league_id", Int64.Type},
+				        {"entry_id", Int64.Type},
+				        {"gameweek", Int64.Type},
+				        {"points", Int64.Type},
+				        {"transfer_cost", Int64.Type},
+				        {"net_points", Int64.Type},
+				        {"total_points", Int64.Type},
+				        {"points_on_bench", Int64.Type},
+				        {"overall_rank", Int64.Type},
+				        {"chip", type text},
+				        {"league_rank", Int64.Type},
+				        {"gap_to_me", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
