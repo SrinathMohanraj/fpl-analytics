@@ -28,6 +28,12 @@ explorer. Runs itself on a schedule via GitHub Actions.
   a head to head with any rival (players only I own, players only they own,
   captaincy differences and what they were worth this gameweek), my league
   differentials, and the league's template players I don't own.
+- **Captain picker** — ranks my squad for the next gameweek by expected
+  points (season points per game, xG/xA, recent form, minutes, fixture
+  difficulty, injury flags) with a one-line reason per player, and backtests
+  the picker against the captains I actually chose. Also exported for Power BI
+  as `data/powerbi/fact_captain_pick.csv` and `fact_captain_backtest.csv`.
+  Refresh it from the saved CSVs without the API: `python -m fpl_analytics.captain`.
 - Refreshes itself automatically: a scheduled GitHub Action re-runs the
   pipeline, commits the new data, and redeploys the dashboard — no manual
   step required once it's set up.

@@ -191,6 +191,21 @@
   .swing.good { color: var(--good); } .swing.bad { color: var(--critical); }
   .chip-list { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip-list .pos-pill { font-weight: 600; }
+  .captain-callout {
+    display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline;
+    background: var(--page-plane); border: 1px solid var(--border); border-left: 4px solid var(--series-1);
+    border-radius: 8px; padding: 12px 16px; margin-bottom: 16px;
+  }
+  .captain-callout .big { font-size: 20px; font-weight: 700; }
+  .captain-callout .small { font-size: 13px; color: var(--text-secondary); }
+  .table-scroll { overflow-x: auto; }
+  .xp-cell { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .xp-bar { height: 8px; border-radius: 4px; background: var(--series-1); }
+  table.data-table td.why { color: var(--text-secondary); font-size: 12.5px; min-width: 220px; }
+  tr.on-bench td { color: var(--text-muted); }
+  table.data-table td.good { color: var(--good); font-weight: 700; }
+  table.data-table td.bad { color: var(--critical); font-weight: 700; }
+  .sub-head { font-size: 13px; font-weight: 700; margin: 22px 0 6px; }
 
   footer.page-foot { text-align: center; color: var(--text-muted); font-size: 12.5px; margin-top: 32px; }
   footer.page-foot a { color: var(--text-muted); text-decoration: underline; }
@@ -309,6 +324,30 @@
     <div class="squad-grid" id="bench-squad"></div>
   </section>
 
+  <section class="panel" id="captain-panel" style="display:none">
+    <h2 id="captain-title">Captain picker</h2>
+    <p class="panel-sub">Expected points for each player in my squad, from season points per game (50%), xG and xA (30%), last-4-week form (20%), minutes played, fixture difficulty and injury flags. Based on my latest squad, so transfers show up after the deadline.</p>
+    <div class="captain-callout" id="captain-callout"></div>
+    <div class="table-scroll">
+      <table class="data-table" id="captain-table">
+        <thead>
+          <tr><th class="num">#</th><th>Player</th><th>Pos</th><th>Fixture</th><th class="num">Exp. pts</th><th>Why</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="sub-head">Would it have helped? Backtest against my real captains</div>
+    <p class="panel-sub" id="captain-bt-sub"></p>
+    <div class="table-scroll">
+      <table class="data-table" id="captain-bt-table">
+        <thead>
+          <tr><th>GW</th><th>Picker said</th><th class="num">Pts</th><th>I picked</th><th class="num">Pts</th><th class="num">Picker vs me</th><th>Best in my XI</th><th class="num">Pts</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="panel">
     <h2>Value picks</h2>
     <p class="panel-sub">Blended score: 60% points-per-£m (season-long output) + 40% form-per-£m (recent form). Minutes ≥ 90, available only.</p>
@@ -416,6 +455,7 @@
     renderValueTable(d.value_picks_overall, d.value_picks_by_position);
     renderDiffTable(d.differentials);
     renderInjuryTable(d.injury_watch);
+    renderCaptainPicker(d.captain_picker);
   }
 
   // ---- stat tiles -----------------------------------------------------
@@ -655,6 +695,50 @@
         draw(btn.getAttribute("data-pos"));
       });
     });
+  }
+
+  // ---- captain picker ---------------------------------------------------
+  function renderCaptainPicker(cp) {
+    if (!cp || !cp.ranking || !cp.ranking.length) return;  // needs per-gameweek data
+    document.getElementById("captain-panel").style.display = "";
+    var gw = cp.next_gameweek;
+    document.getElementById("captain-title").textContent = "Captain picker · GW" + gw;
+
+    var starters = cp.ranking.filter(function (r) { return !r.on_bench; });
+    var cap = starters[0], vice = starters[1];
+    document.getElementById("captain-callout").innerHTML =
+      '<span class="big">Captain: ' + cap.web_name + "</span>" +
+      '<span class="small">' + cap.expected_points.toFixed(1) + " expected pts · " + cap.fixtures + "</span>" +
+      (vice ? '<span class="small">Vice: <strong>' + vice.web_name + "</strong> (" + vice.expected_points.toFixed(1) + ")</span>" : "");
+
+    var maxXp = Math.max.apply(null, cp.ranking.map(function (r) { return r.expected_points; }).concat([1]));
+    document.querySelector("#captain-table tbody").innerHTML = cp.ranking.map(function (r) {
+      var w = Math.round(60 * r.expected_points / maxXp);
+      return '<tr class="' + (r.on_bench ? "on-bench" : "") + '"><td class="num">' + r.rank + "</td>" +
+        "<td>" + r.web_name + (r.on_bench ? ' <span class="pos-pill">bench</span>' : "") + "</td>" +
+        '<td><span class="pos-pill">' + r.position + "</span></td><td>" + r.fixtures + "</td>" +
+        '<td class="num"><div class="xp-cell"><span class="xp-bar" style="width:' + w + 'px"></span>' +
+        r.expected_points.toFixed(1) + "</div></td>" +
+        '<td class="why">' + r.reason + "</td></tr>";
+    }).join("");
+
+    var s = cp.summary || {};
+    var bt = cp.backtest || [];
+    if (!bt.length) { document.getElementById("captain-bt-sub").textContent = "Not enough gameweeks yet."; return; }
+    var gain = s.picker_gain;
+    document.getElementById("captain-bt-sub").textContent =
+      "GW" + s.from_gw + " to GW" + s.to_gw + ", picking from the XI I actually fielded and using only data from before each deadline. " +
+      "The picker's captains scored " + s.picker_points + " pts against my " + s.my_points + " (" + (gain >= 0 ? "+" : "") + gain +
+      "). It was better in " + s.picker_better_weeks + " weeks and worse in " + s.picker_worse_weeks +
+      ". Nobody finds the best captain often: hindsight's picks scored " + s.best_points + ". Points shown are the captain's own score, which is also what the armband added.";
+    document.querySelector("#captain-bt-table tbody").innerHTML = bt.map(function (r) {
+      var d = r.picker_vs_me;
+      var cls = d > 0 ? "good" : (d < 0 ? "bad" : "");
+      return "<tr><td>" + r.gameweek + "</td><td>" + r.picker_captain + '</td><td class="num">' + r.picker_points +
+        "</td><td>" + r.my_captain + '</td><td class="num">' + r.my_points + "</td>" +
+        '<td class="num ' + cls + '">' + (d > 0 ? "+" : "") + d + "</td>" +
+        "<td>" + r.best_captain + '</td><td class="num">' + r.best_points + "</td></tr>";
+    }).join("");
   }
 
   function renderDiffTable(rows) {
