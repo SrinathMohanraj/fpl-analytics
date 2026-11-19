@@ -119,8 +119,10 @@ cameo will top every ranking.
 
 ## Refreshing
 
-Each Tuesday the Action updates the CSVs on GitHub. In Power BI Desktop click
-**Refresh** (Aktualisieren) to load the new gameweek.
+Every day the Action updates the CSVs on GitHub, including the daily history
+tables `fact_value_daily` (team value per day) and `fact_price_daily` (every
+player's price per day). In Power BI Desktop click **Refresh** (Aktualisieren)
+to load the latest data.
 
 ## Common problems
 

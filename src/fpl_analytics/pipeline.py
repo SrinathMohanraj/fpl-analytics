@@ -1,4 +1,4 @@
-"""Orchestrates the full weekly workflow: fetch -> clean -> analyze -> export.
+"""Orchestrates the full daily workflow: fetch -> clean -> analyze -> export.
 
 Run with:
     python -m fpl_analytics.pipeline <your_entry_id>
@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import clean, fetch, metrics, powerbi, squad
+from . import history as value_history_mod
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -75,6 +76,18 @@ def _process(entry_id: int, raw: dict, processed_dir: Path, is_demo: bool) -> Pa
     bench_waste = squad.bench_waste_by_gw(history)
     squad_now = squad.current_squad_breakdown(picks)
 
+    # Daily value / price history. Appends a dated snapshot instead of
+    # overwriting, so team value and price changes can be charted over time.
+    # Skipped for demo data so fake prices never land in the real history.
+    value_history: list[dict] = []
+    price_moves: list[dict] = []
+    if not is_demo:
+        values, prices = value_history_mod.record_daily_snapshot(raw, POWERBI_DIR)
+        value_history = values.to_dict(orient="records")
+        price_moves = value_history_mod.squad_price_moves(prices, raw["bootstrap"])
+        print(f"Daily snapshot -> team value £{values['team_value'].iloc[-1]}m "
+              f"({len(values)} days of history)")
+
     # 4. Visualize / Export --------------------------------------------------
     processed_dir.mkdir(parents=True, exist_ok=True)
     dashboard_payload = {
@@ -90,6 +103,8 @@ def _process(entry_id: int, raw: dict, processed_dir: Path, is_demo: bool) -> Pa
         "value_picks_by_position": value_picks_by_position,
         "differentials": diffs.to_dict(orient="records"),
         "injury_watch": injuries.to_dict(orient="records"),
+        "value_history": value_history,
+        "squad_price_moves": price_moves,
     }
 
     # Captain picker: ranks my squad for the next gameweek and backtests the

@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["BaseUrl","dim_team","dim_player","dim_gameweek","fact_player_gw","fact_my_squad","fact_my_gw","fact_team_fixture","_Measures"]
+annotation PBI_QueryOrder = ["BaseUrl","dim_team","dim_player","dim_gameweek","fact_player_gw","fact_my_squad","fact_my_gw","fact_team_fixture","fact_value_daily","fact_price_daily","_Measures"]
 
 ref table dim_team
 ref table dim_player
@@ -18,4 +18,6 @@ ref table fact_player_gw
 ref table fact_my_squad
 ref table fact_my_gw
 ref table fact_team_fixture
+ref table fact_value_daily
+ref table fact_price_daily
 ref table _Measures

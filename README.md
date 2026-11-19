@@ -1,6 +1,6 @@
 # FPL Analytics Dashboard
 
-A weekly data pipeline and interactive dashboard for Fantasy Premier League —
+A daily data pipeline and interactive dashboard for Fantasy Premier League —
 pulls live data from the official FPL API, cleans and analyzes it with
 Python/pandas, and publishes an interactive squad tracker + value-pick
 explorer. Runs itself on a schedule via GitHub Actions.
@@ -39,7 +39,7 @@ explorer. Runs itself on a schedule via GitHub Actions.
 Datenabruf          Bereinigung         Analyse              Visualisierung       Publikation
 (fetch.py)    ->    (clean.py)    ->    (metrics.py,   ->    (dashboard/     ->   (GitHub Pages,
 official FPL         raw JSON ->         squad.py)            index.html,          GitHub Actions,
-API, no auth          tidy pandas        value scores,         inline SVG           weekly cron)
+API, no auth          tidy pandas        value scores,         inline SVG           daily cron)
 needed                 DataFrames         rank trend,           charts, no
                                            bench waste           chart library)
 ```
@@ -98,9 +98,25 @@ pytest tests/ -v
 3. **Settings → Pages** — set Source to "GitHub Actions".
 4. Run the **"Update FPL data & deploy dashboard"** workflow once manually
    (Actions tab → select it → "Run workflow") to generate the first live
-   deploy. After that it runs weekly on its own (Tuesdays, 06:00 UTC —
-   adjust the cron in `.github/workflows/update_data.yml` if you'd rather
-   it ran right after your gameweek deadline).
+   deploy. After that it runs daily on its own (03:00 UTC, just after FPL's
+   overnight price changes; GitHub often starts scheduled runs a few hours
+   late). Adjust the cron in `.github/workflows/update_data.yml` if needed.
+
+### Daily team value and price history
+
+Every run appends one dated snapshot (instead of overwriting) to two tables
+in `data/powerbi/`, built by `src/fpl_analytics/history.py`:
+
+- `fact_value_daily.csv`: one row per day with the market value of the 15
+  players picked for the current gameweek, the bank, the total, the change
+  since the previous day, and how many of my players rose or fell.
+- `fact_price_daily.csv`: one row per player per day with price, price
+  change, ownership, transfers in/out this gameweek, and whether I own them.
+
+Running twice on the same day replaces that day's rows. The value is market
+value; selling value can be lower because FPL only returns half of a price
+rise. Transfers for the next gameweek appear after its deadline, since the
+public API only shows the squad picked for the current gameweek.
 
 ### Demo data
 

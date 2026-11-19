@@ -222,6 +222,43 @@ table _Measures
 		formatString: 0.0
 		lineageTag: df7e8dac-e2f8-5234-a11d-288abc141659
 
+	measure 'Team Value Today' =
+			VAR d = MAX ( fact_value_daily[snapshot_date] )
+			RETURN
+			    CALCULATE ( MAX ( fact_value_daily[team_value] ), fact_value_daily[snapshot_date] = d )
+		formatString: £0.0
+		lineageTag: c60bd259-b365-5b4b-8d16-6e24badabd83
+
+	measure 'Team Value Change Today' =
+			VAR d = MAX ( fact_value_daily[snapshot_date] )
+			RETURN
+			    CALCULATE ( SUM ( fact_value_daily[value_change] ), fact_value_daily[snapshot_date] = d )
+		formatString: +£0.0;-£0.0;£0.0
+		lineageTag: ed28e86f-7dd0-5aff-b4e5-e52fd24a1b08
+
+	measure 'Team Value Change Since Tracking' =
+			VAR firstDay = CALCULATE ( MIN ( fact_value_daily[snapshot_date] ), ALL ( fact_value_daily ) )
+			VAR startValue = CALCULATE ( MAX ( fact_value_daily[team_value] ), ALL ( fact_value_daily ), fact_value_daily[snapshot_date] = firstDay )
+			RETURN
+			    [Team Value Today] - startValue
+		formatString: +£0.0;-£0.0;£0.0
+		lineageTag: e04efce6-6f08-5a5a-a7e9-480cd0a55897
+
+	measure 'Price Change' = SUM ( fact_price_daily[price_change] )
+		formatString: +£0.0;-£0.0;£0.0
+		lineageTag: 1d4517c4-5bf0-5f72-8b93-e365eaccdc9f
+
+	measure 'My Squad Price Change' = CALCULATE ( SUM ( fact_price_daily[price_change] ), fact_price_daily[in_my_squad] = TRUE () )
+		formatString: +£0.0;-£0.0;£0.0
+		lineageTag: e07a5411-3d44-5843-ab02-70ba839a53fa
+
+	measure 'Latest Price' =
+			VAR d = MAX ( fact_price_daily[snapshot_date] )
+			RETURN
+			    CALCULATE ( MAX ( fact_price_daily[price_m] ), fact_price_daily[snapshot_date] = d )
+		formatString: £0.0
+		lineageTag: 449f0f71-1349-5bee-acea-7d419cfa0ac0
+
 	column Column1
 		dataType: string
 		isHidden

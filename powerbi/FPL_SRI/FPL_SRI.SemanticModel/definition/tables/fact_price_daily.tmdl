@@ -1,0 +1,103 @@
+table fact_price_daily
+	lineageTag: 5099cadd-94f2-57bb-be37-d13d20f508c2
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d15c5623-e371-56a5-84f6-9550846fece5
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: fd1f9886-6ebd-56e4-8887-513d79d3f84f
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ef41e1f-db50-5a18-8627-7d71f005b613
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column price_m
+		dataType: double
+		formatString: 0.0
+		lineageTag: 41098c94-f693-5def-988c-439324e378d0
+		summarizeBy: none
+		sourceColumn: price_m
+
+		annotation SummarizationSetBy = Automatic
+
+	column price_change
+		dataType: double
+		formatString: 0.0
+		lineageTag: 94bffa19-520c-5e24-808a-0aa67b14d693
+		summarizeBy: none
+		sourceColumn: price_change
+
+		annotation SummarizationSetBy = Automatic
+
+	column selected_by_percent
+		dataType: double
+		formatString: 0.0
+		lineageTag: c30202b2-7c1b-51f7-a83e-aad76b4b9323
+		summarizeBy: none
+		sourceColumn: selected_by_percent
+
+		annotation SummarizationSetBy = Automatic
+
+	column transfers_in_event
+		dataType: int64
+		formatString: 0
+		lineageTag: 402c2390-511d-55e6-ba5b-e30760bb88f9
+		summarizeBy: none
+		sourceColumn: transfers_in_event
+
+		annotation SummarizationSetBy = Automatic
+
+	column transfers_out_event
+		dataType: int64
+		formatString: 0
+		lineageTag: 6876c893-1af7-5b7f-ab58-f3a176868ec1
+		summarizeBy: none
+		sourceColumn: transfers_out_event
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_my_squad
+		dataType: boolean
+		lineageTag: f204bbb1-3b40-5c6e-adb0-256d19559525
+		summarizeBy: none
+		sourceColumn: in_my_squad
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_price_daily = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_price_daily.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"snapshot_date", type date},
+				        {"gameweek", Int64.Type},
+				        {"player_id", Int64.Type},
+				        {"price_m", type number},
+				        {"price_change", type number},
+				        {"selected_by_percent", type number},
+				        {"transfers_in_event", Int64.Type},
+				        {"transfers_out_event", Int64.Type},
+				        {"in_my_squad", type logical}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
