@@ -1,0 +1,101 @@
+table fact_league_picks
+	lineageTag: 425cbd8e-b3ed-501b-86ef-b7d4a27d58d4
+
+	column league_entry_key
+		dataType: string
+		lineageTag: 19cbb2a4-f7e2-5459-acc7-4936ffd574ad
+		summarizeBy: none
+		sourceColumn: league_entry_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e22933b-46cc-5eff-8510-9d5c7c744b1d
+		summarizeBy: none
+		sourceColumn: league_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ee3945a9-8a72-523e-a7bd-a79c5d7542c8
+		summarizeBy: none
+		sourceColumn: entry_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 89973290-13b2-502e-b3f7-b263000522a6
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 13839b2c-f052-58d8-bc35-4a706ea0fc21
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column squad_slot
+		dataType: int64
+		formatString: 0
+		lineageTag: bf2490f1-c1cc-505f-8811-e679e3262439
+		summarizeBy: none
+		sourceColumn: squad_slot
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_starter
+		dataType: boolean
+		lineageTag: 845914f1-ac62-53a0-aa76-306c08890de1
+		summarizeBy: none
+		sourceColumn: is_starter
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_captain
+		dataType: boolean
+		lineageTag: b91a66ba-35bf-5808-b982-2a7d99dff010
+		summarizeBy: none
+		sourceColumn: is_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column multiplier
+		dataType: int64
+		formatString: 0
+		lineageTag: 24b2fa86-b255-5823-a47b-1a25b1ed8f2e
+		summarizeBy: none
+		sourceColumn: multiplier
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_league_picks = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_league_picks.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"league_entry_key", type text},
+				        {"league_id", Int64.Type},
+				        {"entry_id", Int64.Type},
+				        {"gameweek", Int64.Type},
+				        {"player_id", Int64.Type},
+				        {"squad_slot", Int64.Type},
+				        {"is_starter", type logical},
+				        {"is_captain", type logical},
+				        {"multiplier", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

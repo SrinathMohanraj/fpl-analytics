@@ -259,6 +259,80 @@ table _Measures
 		formatString: £0.0
 		lineageTag: 449f0f71-1349-5bee-acea-7d419cfa0ac0
 
+	measure 'League Rank' =
+			VAR g = MAX ( fact_league_gw[gameweek] )
+			RETURN
+			    CALCULATE ( MIN ( fact_league_gw[league_rank] ), fact_league_gw[gameweek] = g )
+		formatString: 0
+		lineageTag: 940673d3-3743-5177-8dba-ff5143e1fc57
+
+	measure 'My League Rank' =
+			VAR g = CALCULATE ( MAX ( fact_league_gw[gameweek] ), ALLEXCEPT ( dim_league_entry, dim_league_entry[league_id] ) )
+			RETURN
+			    CALCULATE (
+			        MIN ( fact_league_gw[league_rank] ),
+			        ALLEXCEPT ( dim_league_entry, dim_league_entry[league_id] ),
+			        dim_league_entry[is_me] = TRUE (),
+			        fact_league_gw[gameweek] = g
+			    )
+		formatString: 0
+		lineageTag: c287a8d6-e502-58ac-87f3-367484bdc181
+
+	measure 'League Total Points' =
+			VAR g = MAX ( fact_league_gw[gameweek] )
+			RETURN
+			    CALCULATE ( SUM ( fact_league_gw[total_points] ), fact_league_gw[gameweek] = g )
+		formatString: #,0
+		lineageTag: 87bc9671-594a-5677-868a-c03ea1f824bb
+
+	measure 'League GW Points' = SUM ( fact_league_gw[points] )
+		formatString: 0
+		lineageTag: 274efac6-2082-5a95-89a5-ba06307d862b
+
+	measure 'Gap To Me' =
+			VAR g = MAX ( fact_league_gw[gameweek] )
+			RETURN
+			    CALCULATE ( SUM ( fact_league_gw[gap_to_me] ), fact_league_gw[gameweek] = g )
+		formatString: +0;-0;0
+		lineageTag: 41e6bd1b-8626-5483-88b0-ef0094cc58d6
+
+	measure 'Points Behind Leader' =
+			VAR g = CALCULATE ( MAX ( fact_league_gw[gameweek] ), ALLEXCEPT ( dim_league_entry, dim_league_entry[league_id] ) )
+			VAR leader = CALCULATE ( MAX ( fact_league_gw[total_points] ), ALLEXCEPT ( dim_league_entry, dim_league_entry[league_id] ), fact_league_gw[gameweek] = g )
+			VAR mine = CALCULATE ( MAX ( fact_league_gw[total_points] ), ALLEXCEPT ( dim_league_entry, dim_league_entry[league_id] ), dim_league_entry[is_me] = TRUE (), fact_league_gw[gameweek] = g )
+			RETURN
+			    leader - mine
+		formatString: 0
+		lineageTag: a9ff5dc1-b9a0-57cc-9545-a03ef16b6362
+
+	measure 'League Owners' =
+			VAR g = CALCULATE ( MAX ( fact_league_picks[gameweek] ), ALL ( dim_player ) )
+			RETURN
+			    CALCULATE ( DISTINCTCOUNT ( fact_league_picks[entry_id] ), fact_league_picks[gameweek] = g )
+		formatString: 0
+		lineageTag: 4714940b-8672-5698-ae97-10458dc0e2e6
+
+	measure 'League Ownership %' =
+			VAR g = CALCULATE ( MAX ( fact_league_picks[gameweek] ), ALL ( dim_player ) )
+			VAR managers = CALCULATE ( DISTINCTCOUNT ( fact_league_picks[entry_id] ), ALL ( dim_player ), fact_league_picks[gameweek] = g )
+			RETURN
+			    DIVIDE ( [League Owners], managers )
+		formatString: 0%
+		lineageTag: 193430c9-6d23-5b45-abb8-9ad74b1692ef
+
+	measure 'League Captained By' =
+			VAR g = CALCULATE ( MAX ( fact_league_picks[gameweek] ), ALL ( dim_player ) )
+			RETURN
+			    CALCULATE ( DISTINCTCOUNT ( fact_league_picks[entry_id] ), fact_league_picks[gameweek] = g, fact_league_picks[is_captain] = TRUE () )
+		formatString: 0
+		lineageTag: 2c20165d-7914-5bba-8d8c-52cf08eb5141
+
+	measure 'I Own (League)' =
+			VAR g = CALCULATE ( MAX ( fact_league_picks[gameweek] ), ALL ( dim_player ) )
+			RETURN
+			    IF ( CALCULATE ( COUNTROWS ( fact_league_picks ), fact_league_picks[gameweek] = g, dim_league_entry[is_me] = TRUE () ) > 0, "Yes", "No" )
+		lineageTag: 104edd45-c7ec-5d66-98b9-15a4a3fe3d29
+
 	column Column1
 		dataType: string
 		isHidden

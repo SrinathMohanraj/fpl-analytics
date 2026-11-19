@@ -41,3 +41,23 @@ relationship caff8f46-d71f-5519-b587-10544304791b
 relationship c9ab396b-d355-523e-b6d0-64a77b3a2c61
 	fromColumn: fact_price_daily.gameweek
 	toColumn: dim_gameweek.gameweek
+
+relationship 12ed09df-8223-512f-a27a-9aaccfdeac13
+	fromColumn: fact_league_gw.league_entry_key
+	toColumn: dim_league_entry.league_entry_key
+
+relationship b550f561-8abb-5709-ad4f-c3fc463ecdbe
+	fromColumn: fact_league_gw.gameweek
+	toColumn: dim_gameweek.gameweek
+
+relationship 4c208bb1-d385-599e-b176-200adbea7d40
+	fromColumn: fact_league_picks.league_entry_key
+	toColumn: dim_league_entry.league_entry_key
+
+relationship 579713f0-3b2d-5e73-94cf-455025edf19c
+	fromColumn: fact_league_picks.player_id
+	toColumn: dim_player.player_id
+
+relationship bfbb5af6-ee60-55a2-be3e-72ac90762c6a
+	fromColumn: fact_league_picks.gameweek
+	toColumn: dim_gameweek.gameweek
