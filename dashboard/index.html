@@ -215,6 +215,13 @@
     </div>
   </section>
 
+  <section class="panel" id="value-panel" style="display:none">
+    <h2>Team value, day by day</h2>
+    <p class="panel-sub" id="value-sub">Market value of my 15 players plus the bank, recorded every day. Your selling value can be a little lower, because FPL only gives back half of a price rise.</p>
+    <svg class="chart" id="value-chart" viewBox="0 0 980 220" preserveAspectRatio="xMidYMid meet"></svg>
+    <p class="panel-sub" id="price-moves" style="margin-top:12px"></p>
+  </section>
+
   <section class="panel">
     <h2>Current squad</h2>
     <p class="panel-sub" id="squad-sub"></p>
@@ -325,6 +332,7 @@
     renderStatGrid(s);
     renderRankChart(d.rank_trend);
     renderBenchChart(d.bench_waste);
+    renderValueChart(d.value_history || [], d.squad_price_moves || []);
     renderSquad(d.current_squad);
     renderValueTable(d.value_picks_overall, d.value_picks_by_position);
     renderDiffTable(d.differentials);
@@ -416,6 +424,67 @@
       });
       hit.addEventListener("mouseleave", hideTooltip);
     });
+  }
+
+  // ---- daily team value line chart ---------------------------------------
+  function renderValueChart(rows, moves) {
+    if (!rows.length) return;  // history starts once the daily run has saved a snapshot
+    document.getElementById("value-panel").style.display = "";
+    var svg = document.getElementById("value-chart");
+    var W = 980, H = 220, padL = 56, padR = 16, padT = 20, padB = 28;
+    var innerW = W - padL - padR, innerH = H - padT - padB;
+    var vals = rows.map(function (r) { return r.team_value; });
+    var yMin = Math.min.apply(null, vals) - 0.3, yMax = Math.max.apply(null, vals) + 0.3;
+
+    function x(i) { return rows.length === 1 ? padL + innerW / 2 : padL + (innerW * i) / (rows.length - 1); }
+    function y(v) { return padT + innerH * (1 - (v - yMin) / (yMax - yMin)); }
+    function fmtDate(s) { return new Date(s + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" }); }
+    function fmtChange(c) { return (c > 0 ? "+" : c < 0 ? "-" : "±") + "£" + Math.abs(c).toFixed(1) + "m"; }
+
+    var parts = [];
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + (innerH * g) / 4;
+      var val = yMax - ((yMax - yMin) * g) / 4;
+      parts.push('<line class="gridline" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + gy + '" y2="' + gy + '"/>');
+      parts.push('<text class="axis-label" x="' + (padL - 8) + '" y="' + (gy + 4) + '" text-anchor="end">£' + val.toFixed(1) + "m</text>");
+    }
+    parts.push('<line class="baseline" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + (H - padB) + '" y2="' + (H - padB) + '"/>');
+
+    var pathD = rows.map(function (r, i) { return (i === 0 ? "M" : "L") + x(i) + "," + y(r.team_value); }).join(" ");
+    parts.push('<path d="' + pathD + '" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
+
+    var every = Math.max(1, Math.ceil(rows.length / 10));  // at most ~10 date labels
+    rows.forEach(function (r, i) {
+      var cx = x(i), cy = y(r.team_value);
+      if (rows.length <= 40) parts.push('<circle cx="' + cx + '" cy="' + cy + '" r="3.5" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>');
+      if (i % every === 0 || i === rows.length - 1) {
+        parts.push('<text class="axis-label" x="' + cx + '" y="' + (H - padB + 18) + '" text-anchor="middle">' + fmtDate(r.snapshot_date) + "</text>");
+      }
+      parts.push('<circle class="hit" data-i="' + i + '" cx="' + cx + '" cy="' + cy + '" r="10" fill="transparent"/>');
+    });
+    var last = rows[rows.length - 1];
+    parts.push('<text class="data-label" x="' + x(rows.length - 1) + '" y="' + (y(last.team_value) - 10) + '" text-anchor="end">£' + last.team_value.toFixed(1) + "m</text>");
+    svg.innerHTML = parts.join("");
+
+    svg.querySelectorAll(".hit").forEach(function (hit) {
+      hit.addEventListener("mouseenter", function () {
+        var i = Number(hit.getAttribute("data-i"));
+        var r = rows[i];
+        var rect = svg.getBoundingClientRect();
+        var scale = rect.width / W;
+        showTooltip(rect.left + x(i) * scale + window.scrollX, rect.top + y(r.team_value) * scale + window.scrollY,
+          "<strong>" + fmtDate(r.snapshot_date) + " · GW" + r.gameweek + "</strong><br>Team value: £" + r.team_value.toFixed(1) +
+          "m<br>Squad £" + r.squad_value.toFixed(1) + "m + bank £" + r.bank.toFixed(1) + "m<br>Change: " + fmtChange(r.value_change));
+      });
+      hit.addEventListener("mouseleave", hideTooltip);
+    });
+
+    var movesEl = document.getElementById("price-moves");
+    movesEl.textContent = moves.length
+      ? "Price changes in my squad on " + fmtDate(last.snapshot_date) + ": " + moves.map(function (m) {
+          return m.web_name + " " + fmtChange(m.price_change) + " (now £" + m.price_m.toFixed(1) + "m)";
+        }).join(", ") + "."
+      : "No price changes in my squad on " + fmtDate(last.snapshot_date) + ".";
   }
 
   // ---- bench waste bar chart -------------------------------------------

@@ -1,8 +1,9 @@
 # FPL_SRI Power BI project
 
 A ready-made Power BI project (PBIP) with the whole report already built:
-the 7 star-schema tables loaded from this repo's `data/powerbi/` CSVs, the 8
-relationships, all measures from `measures.dax` plus a few extras, the
+the 9 tables loaded from this repo's `data/powerbi/` CSVs (7 star-schema
+tables plus the daily history tables `fact_value_daily` and `fact_price_daily`),
+the 11 relationships, all measures from `measures.dax` plus a few extras, the
 `fpl_theme.json` theme, and four pages:
 
 1. **Season overview**: total points, overall rank, rank change, team value,
@@ -15,6 +16,12 @@ relationships, all measures from `measures.dax` plus a few extras, the
    minutes), a position slicer, and a points-per-£m table.
 4. **Fixtures**: a fixture ticker for the next five gameweeks after the latest
    finished one, with difficulty, and the teams with the easiest run.
+
+The daily history tables have measures ready for your own visuals (no page
+uses them yet): **Team Value Today**, **Team Value Change Today**, **Team
+Value Change Since Tracking**, **Price Change**, **My Squad Price Change** and
+**Latest Price**. For a team value chart, add a line chart with
+`fact_value_daily[snapshot_date]` on the X axis and `team_value` as the value.
 
 ## Open it
 

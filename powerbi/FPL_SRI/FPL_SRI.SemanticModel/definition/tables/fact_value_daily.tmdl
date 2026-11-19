@@ -1,0 +1,94 @@
+table fact_value_daily
+	lineageTag: 9512de4a-b7c5-568f-8528-f2a9054d57c7
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7467100b-26e2-5089-ada1-c15f625f8890
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bac9dde-b0a2-56bf-abb3-262b73493096
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column squad_value
+		dataType: double
+		formatString: 0.0
+		lineageTag: 1953a9a4-3d51-5d05-a0d2-4f981ed7d50b
+		summarizeBy: none
+		sourceColumn: squad_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column bank
+		dataType: double
+		formatString: 0.0
+		lineageTag: 1380c1b6-52cd-5663-8bb0-bef888f87219
+		summarizeBy: none
+		sourceColumn: bank
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_value
+		dataType: double
+		formatString: 0.0
+		lineageTag: 83b98e51-9a10-5747-b6ce-7a81d3d8d253
+		summarizeBy: none
+		sourceColumn: team_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_change
+		dataType: double
+		formatString: 0.0
+		lineageTag: 566e602f-24c5-573c-83c8-9765130cd0b3
+		summarizeBy: none
+		sourceColumn: value_change
+
+		annotation SummarizationSetBy = Automatic
+
+	column players_rising
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f46f654-5377-5396-984e-2134bcf32077
+		summarizeBy: none
+		sourceColumn: players_rising
+
+		annotation SummarizationSetBy = Automatic
+
+	column players_falling
+		dataType: int64
+		formatString: 0
+		lineageTag: efda5d0d-1ef5-51a4-9037-fa8b1025698a
+		summarizeBy: none
+		sourceColumn: players_falling
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_value_daily = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_value_daily.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"snapshot_date", type date},
+				        {"gameweek", Int64.Type},
+				        {"squad_value", type number},
+				        {"bank", type number},
+				        {"team_value", type number},
+				        {"value_change", type number},
+				        {"players_rising", Int64.Type},
+				        {"players_falling", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

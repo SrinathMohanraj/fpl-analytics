@@ -29,3 +29,15 @@ relationship 3eab4bfb-b92b-5018-8072-d60442fc408c
 relationship e8167fb3-1add-56a5-b800-1886b5419437
 	fromColumn: fact_team_fixture.gameweek
 	toColumn: dim_gameweek.gameweek
+
+relationship 7498351c-e14e-570e-a169-b87736d4a52a
+	fromColumn: fact_value_daily.gameweek
+	toColumn: dim_gameweek.gameweek
+
+relationship caff8f46-d71f-5519-b587-10544304791b
+	fromColumn: fact_price_daily.player_id
+	toColumn: dim_player.player_id
+
+relationship c9ab396b-d355-523e-b6d0-64a77b3a2c61
+	fromColumn: fact_price_daily.gameweek
+	toColumn: dim_gameweek.gameweek

@@ -2,9 +2,10 @@ name: Update FPL data & deploy dashboard
 
 on:
   schedule:
-    # Every Tuesday at 06:00 UTC — a day or two after most gameweeks finish,
-    # so bonus points and defensive-contribution points have settled.
-    - cron: "0 6 * * 2"
+    # Every day at 03:00 UTC, after FPL's overnight price changes (~01:30 UK
+    # time), so each run saves that day's team value and player prices to the
+    # daily history tables. GitHub often starts scheduled runs a few hours late.
+    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       entry_id:
@@ -18,7 +19,7 @@ permissions:
 
 env:
   # Used when neither a manual input nor the FPL_ENTRY_ID repo variable is set,
-  # so the scheduled Tuesday run never starts without an entry ID.
+  # so the scheduled daily run never starts without an entry ID.
   DEFAULT_ENTRY_ID: "1702239"
 
 concurrency:
