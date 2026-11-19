@@ -92,6 +92,13 @@ def _process(entry_id: int, raw: dict, processed_dir: Path, is_demo: bool) -> Pa
         "injury_watch": injuries.to_dict(orient="records"),
     }
 
+    # Captain picker: ranks my squad for the next gameweek and backtests the
+    # idea against the captains I actually picked. Also writes 2 Power BI CSVs.
+    # (Imported here rather than at the top, so this change does not collide
+    # with other branches that edit the import lines.)
+    from . import captain
+    dashboard_payload["captain_picker"] = captain.pipeline_step(raw, players, POWERBI_DIR)
+
     out_path = processed_dir / "dashboard.json"
     payload_json = json.dumps(dashboard_payload, indent=2, default=str)
     out_path.write_text(payload_json)
