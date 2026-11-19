@@ -103,6 +103,9 @@ def test_default_league_is_smallest_private_one():
     assert rivals.default_league_ids(entry) == [8]
     assert rivals.parse_league_ids("26756, 123") == [26756, 123]
     assert rivals.parse_league_ids("auto") == []
+    # an invite code is skipped instead of crashing the whole refresh
+    assert rivals.parse_league_ids("tozclr") == []
+    assert rivals.parse_league_ids("tozclr, 26756") == [26756]
 
 
 def test_run_writes_tables_and_keeps_older_gameweek_picks(tmp_path):

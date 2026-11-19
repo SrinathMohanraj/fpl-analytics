@@ -53,7 +53,19 @@ def parse_league_ids(value: str | None) -> list[int]:
     """'26756, 123' -> [26756, 123]. Empty / 'auto' -> [] (auto-pick)."""
     if not value or value.strip().lower() == "auto":
         return []
-    return [int(v) for v in value.replace(";", ",").split(",") if v.strip()]
+    ids = []
+    for v in value.replace(";", ",").split(","):
+        v = v.strip()
+        if not v:
+            continue
+        if v.isdigit():
+            ids.append(int(v))
+        else:
+            # e.g. an invite code like 'abc123' instead of the league number
+            print(f"Warning: ignoring league '{v}': use the number in the league's "
+                  "URL (fantasy.premierleague.com/leagues/<number>/standings/c), "
+                  "not the invite code.")
+    return ids
 
 
 def my_classic_leagues(entry: dict) -> list[dict]:

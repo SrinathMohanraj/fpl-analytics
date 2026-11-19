@@ -38,9 +38,9 @@ jobs:
     outputs:
       changed: ${{ steps.diff.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: "pip"
@@ -56,6 +56,13 @@ jobs:
           if [ -z "$ENTRY_ID" ]; then
             echo "::error::No entry ID set. Add a repo variable FPL_ENTRY_ID (Settings -> Secrets and variables -> Actions -> Variables), or pass one when running this workflow manually."
             exit 1
+          fi
+          # League IDs must be numbers (from the league's URL), or "auto".
+          # Anything else (e.g. an invite code) falls back to the default
+          # so the daily refresh still runs.
+          if ! echo "$LEAGUE_IDS" | grep -Eqi '^(auto|[0-9 ,;]*)$'; then
+            echo "::warning::League IDs '$LEAGUE_IDS' aren't numbers (an invite code?). Using $DEFAULT_LEAGUE_IDS instead. Use the number from the league's URL."
+            LEAGUE_IDS="$DEFAULT_LEAGUE_IDS"
           fi
           python -m fpl_analytics.pipeline "$ENTRY_ID" --leagues "$LEAGUE_IDS"
 
