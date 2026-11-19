@@ -1,0 +1,2987 @@
+{
+  "generated_at": "2026-11-19T18:14:44.951567+00:00",
+  "entry_id": 1702239,
+  "current_gameweek": 10,
+  "available_leagues": [
+    {
+      "id": 16,
+      "name": "Man Utd",
+      "private": false,
+      "rank": 3891,
+      "size": 1834474
+    },
+    {
+      "id": 120,
+      "name": "India",
+      "private": false,
+      "rank": 455,
+      "size": 251169
+    },
+    {
+      "id": 276,
+      "name": "Gameweek 1",
+      "private": false,
+      "rank": 20335,
+      "size": 8887779
+    },
+    {
+      "id": 314,
+      "name": "Overall",
+      "private": false,
+      "rank": 20335,
+      "size": 11202041
+    },
+    {
+      "id": 322,
+      "name": "Top 10% 25/26 League",
+      "private": false,
+      "rank": 11879,
+      "size": 1225207
+    },
+    {
+      "id": 26756,
+      "name": "Trichy Premier League",
+      "private": true,
+      "rank": 1,
+      "size": 15
+    },
+    {
+      "id": 431170,
+      "name": "Adobe Express Badge League",
+      "private": false,
+      "rank": 6525,
+      "size": 2894570
+    },
+    {
+      "id": 1234984,
+      "name": "Jio Star League",
+      "private": false,
+      "rank": 455,
+      "size": 251169
+    },
+    {
+      "id": 2430021,
+      "name": "Second Chance",
+      "private": false,
+      "rank": 245334,
+      "size": 11202023
+    }
+  ],
+  "leagues": [
+    {
+      "league_id": 26756,
+      "league_name": "Trichy Premier League",
+      "size": 15,
+      "my_rank": 1,
+      "members": [
+        {
+          "entry_id": 1702239,
+          "entry_name": "Suiiii FC 2.0",
+          "manager_name": "Srinath M",
+          "is_me": true,
+          "rank": 1,
+          "last_rank": 1,
+          "total": 722,
+          "gw_points": 66,
+          "gap_to_me": 0,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": null
+        },
+        {
+          "entry_id": 224075,
+          "entry_name": "Jose Crizz",
+          "manager_name": "Siva Crizz",
+          "is_me": false,
+          "rank": 2,
+          "last_rank": 2,
+          "total": 685,
+          "gw_points": 72,
+          "gap_to_me": 37,
+          "transfer_cost": 0,
+          "chip": "3xc",
+          "captain": "Tavernier",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 57
+              },
+              {
+                "player_id": 334,
+                "name": "Muharemovi\u0107",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 0,
+                "season_points": 56
+              },
+              {
+                "player_id": 290,
+                "name": "Slater",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 24
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Tavernier",
+                "my_multiplier": 1,
+                "their_multiplier": 3,
+                "swing": -6
+              },
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              },
+              {
+                "name": "Konsa",
+                "my_multiplier": 1,
+                "their_multiplier": 0,
+                "swing": 8
+              }
+            ],
+            "shared": 12,
+            "gw_swing": -6
+          }
+        },
+        {
+          "entry_id": 1729610,
+          "entry_name": "RedDeadRedemption",
+          "manager_name": "Shrish gogul S",
+          "is_me": false,
+          "rank": 3,
+          "last_rank": 3,
+          "total": 649,
+          "gw_points": 65,
+          "gap_to_me": 73,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 68,
+                "name": "Tavernier",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 58
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 236,
+                "name": "Dewsbury-Hall",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 50
+              },
+              {
+                "player_id": 367,
+                "name": "Gakpo",
+                "team": "LIV",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 40
+              },
+              {
+                "player_id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 39
+              },
+              {
+                "player_id": 332,
+                "name": "Justin",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 51
+              },
+              {
+                "player_id": 572,
+                "name": "Tzolakis",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 49
+              },
+              {
+                "player_id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
+                "starter": false,
+                "captain": false,
+                "gw_points": 5,
+                "counted": 0,
+                "season_points": 39
+              },
+              {
+                "player_id": 305,
+                "name": "Davis",
+                "team": "IPS",
+                "starter": false,
+                "captain": false,
+                "gw_points": -1,
+                "counted": 0,
+                "season_points": 28
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": 1
+          }
+        },
+        {
+          "entry_id": 632077,
+          "entry_name": "Badman",
+          "manager_name": "Better call Badman",
+          "is_me": false,
+          "rank": 4,
+          "last_rank": 4,
+          "total": 623,
+          "gw_points": 71,
+          "gap_to_me": 99,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "De Cuyper",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 166,
+                "name": "N.Jackson",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 11,
+                "counted": 11,
+                "season_points": 54
+              },
+              {
+                "player_id": 87,
+                "name": "Ajer",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 42
+              },
+              {
+                "player_id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
+                "starter": false,
+                "captain": false,
+                "gw_points": 5,
+                "counted": 0,
+                "season_points": 39
+              },
+              {
+                "player_id": 277,
+                "name": "Egan",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 38
+              },
+              {
+                "player_id": 623,
+                "name": "Bentley",
+                "team": "COV",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "De Cuyper",
+                "my_multiplier": 1,
+                "their_multiplier": 2,
+                "swing": -6
+              },
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 10,
+            "gw_swing": -5
+          }
+        },
+        {
+          "entry_id": 947867,
+          "entry_name": "Bardarjisadii",
+          "manager_name": "Abhishek Jambunathan",
+          "is_me": false,
+          "rank": 5,
+          "last_rank": 6,
+          "total": 601,
+          "gw_points": 68,
+          "gap_to_me": 121,
+          "transfer_cost": 12,
+          "chip": "bboost",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 166,
+                "name": "N.Jackson",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 11,
+                "counted": 11,
+                "season_points": 54
+              },
+              {
+                "player_id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 46
+              },
+              {
+                "player_id": 398,
+                "name": "Foden",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 21
+              },
+              {
+                "player_id": 286,
+                "name": "Belloumi",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 48
+              },
+              {
+                "player_id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 44
+              },
+              {
+                "player_id": 57,
+                "name": "Petrovi\u0107",
+                "team": "BOU",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 30
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Hall",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -4
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 9,
+            "gw_swing": -2
+          }
+        },
+        {
+          "entry_id": 368954,
+          "entry_name": "Akatsuki XI",
+          "manager_name": "Mathesh D",
+          "is_me": false,
+          "rank": 6,
+          "last_rank": 5,
+          "total": 598,
+          "gw_points": 51,
+          "gap_to_me": 124,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Rayan",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 68,
+                "name": "Tavernier",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 58
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 124,
+                "name": "Gro\u00df",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 0,
+                "season_points": 70
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 385,
+                "name": "Trafford",
+                "team": "LEE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 10,
+                "season_points": 54
+              },
+              {
+                "player_id": 566,
+                "name": "Silva",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 40
+              },
+              {
+                "player_id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
+                "starter": true,
+                "captain": false,
+                "gw_points": 5,
+                "counted": 5,
+                "season_points": 39
+              },
+              {
+                "player_id": 268,
+                "name": "King",
+                "team": "FUL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 39
+              },
+              {
+                "player_id": 67,
+                "name": "Rayan",
+                "team": "BOU",
+                "starter": true,
+                "captain": true,
+                "gw_points": 2,
+                "counted": 4,
+                "season_points": 30
+              },
+              {
+                "player_id": 569,
+                "name": "Gonzalo",
+                "team": "FUL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 24
+              },
+              {
+                "player_id": 165,
+                "name": "Jo\u00e3o Pedro",
+                "team": "CHE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 47
+              },
+              {
+                "player_id": 98,
+                "name": "Janelt",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 37
+              },
+              {
+                "player_id": 282,
+                "name": "Giles",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 0,
+                "season_points": 31
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              }
+            ],
+            "shared": 6,
+            "gw_swing": 15
+          }
+        },
+        {
+          "entry_id": 130491,
+          "entry_name": "Vetri Nichiyam CF",
+          "manager_name": "Abishek Schumacher",
+          "is_me": false,
+          "rank": 7,
+          "last_rank": 8,
+          "total": 589,
+          "gw_points": 69,
+          "gap_to_me": 133,
+          "transfer_cost": 0,
+          "chip": "bboost",
+          "captain": "Isak",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 75
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 8,
+                "name": "Calafiori",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 379,
+                "name": "Isak",
+                "team": "LIV",
+                "starter": true,
+                "captain": true,
+                "gw_points": 8,
+                "counted": 16,
+                "season_points": 61
+              },
+              {
+                "player_id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 44
+              },
+              {
+                "player_id": 362,
+                "name": "Jacquet",
+                "team": "LIV",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 44
+              },
+              {
+                "player_id": 496,
+                "name": "Kinsky",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 40
+              },
+              {
+                "player_id": 400,
+                "name": "Doku",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 25
+              },
+              {
+                "player_id": 330,
+                "name": "Bogle",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 7,
+                "counted": 7,
+                "season_points": 58
+              },
+              {
+                "player_id": 597,
+                "name": "Suzuki",
+                "team": "AVL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 31
+              },
+              {
+                "player_id": 515,
+                "name": "Maddison",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 14
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": -3
+          }
+        },
+        {
+          "entry_id": 8326959,
+          "entry_name": "Kundi Adi confirm X!",
+          "manager_name": "Ashwin Saravanan",
+          "is_me": false,
+          "rank": 8,
+          "last_rank": 7,
+          "total": 587,
+          "gw_points": 45,
+          "gap_to_me": 135,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 75
+              },
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 138,
+                "name": "Kostoulas",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 94,
+                "name": "Schade",
+                "team": "BRE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 46
+              },
+              {
+                "player_id": 496,
+                "name": "Kinsky",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 40
+              },
+              {
+                "player_id": 469,
+                "name": "N.Williams",
+                "team": "NFO",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 34
+              },
+              {
+                "player_id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 57
+              },
+              {
+                "player_id": 165,
+                "name": "Jo\u00e3o Pedro",
+                "team": "CHE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 47
+              },
+              {
+                "player_id": 305,
+                "name": "Davis",
+                "team": "IPS",
+                "starter": false,
+                "captain": false,
+                "gw_points": -1,
+                "counted": 0,
+                "season_points": 28
+              },
+              {
+                "player_id": 329,
+                "name": "Rodon",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 0,
+                "season_points": 8
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Hall",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -4
+              },
+              {
+                "name": "Cherki",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -9
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": 21
+          }
+        },
+        {
+          "entry_id": 2178600,
+          "entry_name": "Thanda Funda 11",
+          "manager_name": "Anas Mohammed",
+          "is_me": false,
+          "rank": 9,
+          "last_rank": 9,
+          "total": 578,
+          "gw_points": 67,
+          "gap_to_me": 144,
+          "transfer_cost": 8,
+          "chip": "",
+          "captain": "Evanilson",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 8,
+                "name": "Calafiori",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 504,
+                "name": "Vuskovic",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 12,
+                "counted": 12,
+                "season_points": 70
+              },
+              {
+                "player_id": 229,
+                "name": "Tarkowski",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 56
+              },
+              {
+                "player_id": 53,
+                "name": "Manzambi",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 40
+              },
+              {
+                "player_id": 400,
+                "name": "Doku",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 25
+              },
+              {
+                "player_id": 94,
+                "name": "Schade",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 82,
+                "name": "Kelleher",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 35
+              },
+              {
+                "player_id": 440,
+                "name": "Zirkzee",
+                "team": "MUN",
+                "starter": false,
+                "captain": false,
+                "gw_points": 5,
+                "counted": 0,
+                "season_points": 9
+              },
+              {
+                "player_id": 535,
+                "name": "Alderete",
+                "team": "SUN",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 1
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Evanilson",
+                "my_multiplier": 1,
+                "their_multiplier": 2,
+                "swing": -9
+              },
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": -1
+          }
+        },
+        {
+          "entry_id": 143123,
+          "entry_name": "Mad Max",
+          "manager_name": "Sriram M",
+          "is_me": false,
+          "rank": 10,
+          "last_rank": 11,
+          "total": 570,
+          "gw_points": 60,
+          "gap_to_me": 152,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 166,
+                "name": "N.Jackson",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 11,
+                "counted": 11,
+                "season_points": 54
+              },
+              {
+                "player_id": 332,
+                "name": "Justin",
+                "team": "LEE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 51
+              },
+              {
+                "player_id": 138,
+                "name": "Kostoulas",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 204,
+                "name": "Mitchell",
+                "team": "CRY",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 33
+              },
+              {
+                "player_id": 572,
+                "name": "Tzolakis",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 49
+              },
+              {
+                "player_id": 286,
+                "name": "Belloumi",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 48
+              },
+              {
+                "player_id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 173,
+                "name": "Thomas",
+                "team": "COV",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 32
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": 6
+          }
+        },
+        {
+          "entry_id": 8548127,
+          "entry_name": "Sanda Seirom",
+          "manager_name": "Sri Sudarsan",
+          "is_me": false,
+          "rank": 11,
+          "last_rank": 10,
+          "total": 560,
+          "gw_points": 51,
+          "gap_to_me": 162,
+          "transfer_cost": 4,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 44
+              },
+              {
+                "player_id": 53,
+                "name": "Manzambi",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 40
+              },
+              {
+                "player_id": 330,
+                "name": "Bogle",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 7,
+                "counted": 0,
+                "season_points": 58
+              },
+              {
+                "player_id": 572,
+                "name": "Tzolakis",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 49
+              },
+              {
+                "player_id": 138,
+                "name": "Kostoulas",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 47
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Hall",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -4
+              },
+              {
+                "name": "Cherki",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -9
+              }
+            ],
+            "shared": 10,
+            "gw_swing": 15
+          }
+        },
+        {
+          "entry_id": 3796696,
+          "entry_name": "THE XI",
+          "manager_name": "mohamed asif",
+          "is_me": false,
+          "rank": 12,
+          "last_rank": 12,
+          "total": 539,
+          "gw_points": 46,
+          "gap_to_me": 183,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 379,
+                "name": "Isak",
+                "team": "LIV",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 61
+              },
+              {
+                "player_id": 138,
+                "name": "Kostoulas",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 453,
+                "name": "Barnes",
+                "team": "NEW",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 44
+              },
+              {
+                "player_id": 226,
+                "name": "Pickford",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 39
+              },
+              {
+                "player_id": 388,
+                "name": "Gu\u00e9hi",
+                "team": "MCI",
+                "starter": true,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 37
+              },
+              {
+                "player_id": 286,
+                "name": "Belloumi",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 48
+              },
+              {
+                "player_id": 258,
+                "name": "Castagne",
+                "team": "FUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 7,
+                "counted": 0,
+                "season_points": 44
+              },
+              {
+                "player_id": 279,
+                "name": "Ajayi",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 42
+              },
+              {
+                "player_id": 82,
+                "name": "Kelleher",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 0,
+                "season_points": 35
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 6,
+            "gw_swing": 20
+          }
+        },
+        {
+          "entry_id": 227520,
+          "entry_name": "AbcdeFC",
+          "manager_name": "Naresh Babu",
+          "is_me": false,
+          "rank": 13,
+          "last_rank": 13,
+          "total": 528,
+          "gw_points": 53,
+          "gap_to_me": 194,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Manzambi",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 68,
+                "name": "Tavernier",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 58
+              },
+              {
+                "player_id": 8,
+                "name": "Calafiori",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 379,
+                "name": "Isak",
+                "team": "LIV",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 61
+              },
+              {
+                "player_id": 138,
+                "name": "Kostoulas",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 453,
+                "name": "Barnes",
+                "team": "NEW",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 44
+              },
+              {
+                "player_id": 53,
+                "name": "Manzambi",
+                "team": "AVL",
+                "starter": true,
+                "captain": true,
+                "gw_points": 2,
+                "counted": 4,
+                "season_points": 40
+              },
+              {
+                "player_id": 88,
+                "name": "Kayode",
+                "team": "BRE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 34
+              },
+              {
+                "player_id": 330,
+                "name": "Bogle",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 7,
+                "counted": 0,
+                "season_points": 58
+              },
+              {
+                "player_id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "starter": false,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 0,
+                "season_points": 45
+              },
+              {
+                "player_id": 483,
+                "name": "Ndoye",
+                "team": "NFO",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 29
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Hall",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -4
+              },
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 7,
+            "gw_swing": 13
+          }
+        },
+        {
+          "entry_id": 6004632,
+          "entry_name": "Soldier boy",
+          "manager_name": "Ashraff Arshath",
+          "is_me": false,
+          "rank": 14,
+          "last_rank": 14,
+          "total": 526,
+          "gw_points": 68,
+          "gap_to_me": 196,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Haaland",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 75
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 68,
+                "name": "Tavernier",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 58
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "starter": false,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 0,
+                "season_points": 54
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 166,
+                "name": "N.Jackson",
+                "team": "AVL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 11,
+                "counted": 11,
+                "season_points": 54
+              },
+              {
+                "player_id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "starter": true,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 10,
+                "season_points": 45
+              },
+              {
+                "player_id": 279,
+                "name": "Ajayi",
+                "team": "HUL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 42
+              },
+              {
+                "player_id": 503,
+                "name": "Van de Ven",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 31
+              },
+              {
+                "player_id": 593,
+                "name": "Dedi\u0107",
+                "team": "NEW",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 29
+              },
+              {
+                "player_id": 286,
+                "name": "Belloumi",
+                "team": "HUL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 48
+              },
+              {
+                "player_id": 605,
+                "name": "Yalcouy\u00e9",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 0,
+                "season_points": 25
+              },
+              {
+                "player_id": 32,
+                "name": "Cash",
+                "team": "AVL",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 18
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Gro\u00df",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -10
+              }
+            ],
+            "shared": 6,
+            "gw_swing": -2
+          }
+        },
+        {
+          "entry_id": 5161173,
+          "entry_name": "Red devil",
+          "manager_name": "Gokula Rajan M",
+          "is_me": false,
+          "rank": 15,
+          "last_rank": 15,
+          "total": 452,
+          "gw_points": 38,
+          "gap_to_me": 270,
+          "transfer_cost": 0,
+          "chip": "",
+          "captain": "Jo\u00e3o Pedro",
+          "head_to_head": {
+            "mine_only": [
+              {
+                "player_id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 75
+              },
+              {
+                "player_id": 79,
+                "name": "Evanilson",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 9,
+                "counted": 9,
+                "season_points": 61
+              },
+              {
+                "player_id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 60
+              },
+              {
+                "player_id": 68,
+                "name": "Tavernier",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 3,
+                "counted": 3,
+                "season_points": 58
+              },
+              {
+                "player_id": 8,
+                "name": "Calafiori",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 57
+              },
+              {
+                "player_id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "starter": true,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 57
+              },
+              {
+                "player_id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 8,
+                "counted": 8,
+                "season_points": 57
+              },
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 16,
+                "counted": 16,
+                "season_points": 55
+              },
+              {
+                "player_id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
+              },
+              {
+                "player_id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 47
+              },
+              {
+                "player_id": 124,
+                "name": "Gro\u00df",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 0,
+                "season_points": 70
+              },
+              {
+                "player_id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "starter": false,
+                "captain": false,
+                "gw_points": 4,
+                "counted": 0,
+                "season_points": 46
+              },
+              {
+                "player_id": 497,
+                "name": "Dubravka",
+                "team": "TOT",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 0
+              }
+            ],
+            "theirs_only": [
+              {
+                "player_id": 165,
+                "name": "Jo\u00e3o Pedro",
+                "team": "CHE",
+                "starter": true,
+                "captain": true,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 47
+              },
+              {
+                "player_id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "starter": true,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 20,
+                "season_points": 45
+              },
+              {
+                "player_id": 88,
+                "name": "Kayode",
+                "team": "BRE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 34
+              },
+              {
+                "player_id": 61,
+                "name": "Truffert",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 33
+              },
+              {
+                "player_id": 204,
+                "name": "Mitchell",
+                "team": "CRY",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 33
+              },
+              {
+                "player_id": 69,
+                "name": "Scott",
+                "team": "BOU",
+                "starter": true,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 30
+              },
+              {
+                "player_id": 412,
+                "name": "Lammens",
+                "team": "MUN",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 21
+              },
+              {
+                "player_id": 19,
+                "name": "Zubimendi",
+                "team": "ARS",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 7
+              },
+              {
+                "player_id": 256,
+                "name": "Tete",
+                "team": "FUL",
+                "starter": true,
+                "captain": false,
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 4
+              },
+              {
+                "player_id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 6,
+                "counted": 0,
+                "season_points": 57
+              },
+              {
+                "player_id": 335,
+                "name": "Stach",
+                "team": "LEE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 33
+              },
+              {
+                "player_id": 113,
+                "name": "F.Kad\u0131o\u011flu",
+                "team": "BHA",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 29
+              },
+              {
+                "player_id": 248,
+                "name": "Beto",
+                "team": "EVE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 2
+              }
+            ],
+            "multiplier_diffs": [
+              {
+                "name": "Haaland",
+                "my_multiplier": 2,
+                "their_multiplier": 1,
+                "swing": 2
+              },
+              {
+                "name": "Cherki",
+                "my_multiplier": 0,
+                "their_multiplier": 1,
+                "swing": -9
+              }
+            ],
+            "shared": 2,
+            "gw_swing": 28
+          }
+        }
+      ],
+      "gameweeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "rank_trend": {
+        "130491": [
+          10,
+          10,
+          7,
+          8,
+          9,
+          9,
+          11,
+          10,
+          8,
+          7
+        ],
+        "143123": [
+          7,
+          9,
+          9,
+          9,
+          10,
+          8,
+          8,
+          11,
+          11,
+          10
+        ],
+        "224075": [
+          2,
+          1,
+          2,
+          3,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "227520": [
+          11,
+          13,
+          13,
+          12,
+          14,
+          14,
+          13,
+          13,
+          13,
+          13
+        ],
+        "368954": [
+          5,
+          3,
+          4,
+          2,
+          2,
+          4,
+          5,
+          4,
+          5,
+          6
+        ],
+        "632077": [
+          6,
+          7,
+          10,
+          10,
+          11,
+          11,
+          10,
+          8,
+          4,
+          4
+        ],
+        "947867": [
+          12,
+          8,
+          8,
+          5,
+          6,
+          7,
+          6,
+          5,
+          6,
+          5
+        ],
+        "1702239": [
+          3,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "1729610": [
+          1,
+          2,
+          2,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "2178600": [
+          13,
+          14,
+          11,
+          11,
+          7,
+          10,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3796696": [
+          15,
+          15,
+          15,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "5161173": [
+          14,
+          12,
+          12,
+          13,
+          13,
+          13,
+          14,
+          15,
+          15,
+          15
+        ],
+        "6004632": [
+          9,
+          11,
+          14,
+          15,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14
+        ],
+        "8326959": [
+          7,
+          6,
+          5,
+          6,
+          5,
+          5,
+          4,
+          6,
+          7,
+          8
+        ],
+        "8548127": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          6,
+          7,
+          7,
+          10,
+          11
+        ]
+      },
+      "my_unique_players": [
+        {
+          "player_id": 249,
+          "name": "Barry",
+          "team": "EVE",
+          "owners": 2,
+          "share": 0.133,
+          "captained_by": 0,
+          "i_own": true,
+          "season_points": 55,
+          "gw_points": 16
+        }
+      ],
+      "template_players_i_miss": [],
+      "league_captains": [
+        {
+          "name": "Haaland",
+          "count": 8
+        },
+        {
+          "name": "De Cuyper",
+          "count": 1
+        },
+        {
+          "name": "Tavernier",
+          "count": 1
+        },
+        {
+          "name": "Evanilson",
+          "count": 1
+        },
+        {
+          "name": "Isak",
+          "count": 1
+        },
+        {
+          "name": "Jo\u00e3o Pedro",
+          "count": 1
+        },
+        {
+          "name": "Manzambi",
+          "count": 1
+        },
+        {
+          "name": "Rayan",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
