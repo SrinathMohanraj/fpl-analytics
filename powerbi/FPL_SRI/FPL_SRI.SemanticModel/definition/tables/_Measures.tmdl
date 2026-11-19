@@ -333,6 +333,53 @@ table _Measures
 			    IF ( CALCULATE ( COUNTROWS ( fact_league_picks ), fact_league_picks[gameweek] = g, dim_league_entry[is_me] = TRUE () ) > 0, "Yes", "No" )
 		lineageTag: 104edd45-c7ec-5d66-98b9-15a4a3fe3d29
 
+	measure 'Captain Pick' =
+			VAR g = MAX ( fact_captain_pick[gameweek] )
+			RETURN
+			    CALCULATE ( SELECTEDVALUE ( fact_captain_pick[web_name] ), fact_captain_pick[gameweek] = g, fact_captain_pick[rank] = 1 )
+		lineageTag: e1018ed8-3df6-552d-8fac-915bd30adb45
+
+	measure 'Captain Pick Expected Points' =
+			VAR g = MAX ( fact_captain_pick[gameweek] )
+			RETURN
+			    CALCULATE ( MAX ( fact_captain_pick[expected_points] ), fact_captain_pick[gameweek] = g, fact_captain_pick[rank] = 1 )
+		formatString: 0.0
+		lineageTag: d85be17f-9997-55d0-ae63-f78c45c19594
+
+	measure 'Captain Pick Gameweek' = MAX ( fact_captain_pick[gameweek] )
+		formatString: 0
+		lineageTag: 17b0b0f1-0a9a-5b83-8320-40f5fe6297be
+
+	measure 'Expected Points' = SUM ( fact_captain_pick[expected_points] )
+		formatString: 0.0
+		lineageTag: 38aa25ce-e0be-5126-ade9-07e5b73a0644
+
+	measure 'Picker Captain Points' = SUM ( fact_captain_backtest[picker_points] )
+		formatString: 0
+		lineageTag: 40cb1191-34c7-5028-a2c6-cf51895ecfa7
+
+	measure 'Backtest My Captain Points' = SUM ( fact_captain_backtest[my_points] )
+		formatString: 0
+		lineageTag: 9e00af9e-62e1-534b-89d2-550cb6996a65
+
+	measure 'Backtest Best Captain Points' = SUM ( fact_captain_backtest[best_points] )
+		formatString: 0
+		lineageTag: 7c34910b-c858-5916-b91c-fe5c6d418f41
+
+	measure 'Picker vs Me' = SUM ( fact_captain_backtest[picker_vs_me] )
+		formatString: +0;-0;0
+		lineageTag: 165ead44-513b-59c4-b100-c76b03319d9c
+
+	measure 'I Own (Rivals Table)' = IF ( [League Owners] > 0, [I Own (League)] )
+		lineageTag: 402f24d2-f86c-5b68-ac0b-255fc7c4a4ee
+
+	measure 'My Squad Latest Price' =
+			VAR d = CALCULATE ( MAX ( fact_price_daily[snapshot_date] ), ALL ( fact_price_daily ) )
+			RETURN
+			    CALCULATE ( MAX ( fact_price_daily[price_m] ), fact_price_daily[snapshot_date] = d, fact_price_daily[in_my_squad] = TRUE () )
+		formatString: £0.0
+		lineageTag: 07cf6d20-9c7a-5e1a-9d2e-f55a2d7bcfa5
+
 	column Column1
 		dataType: string
 		isHidden

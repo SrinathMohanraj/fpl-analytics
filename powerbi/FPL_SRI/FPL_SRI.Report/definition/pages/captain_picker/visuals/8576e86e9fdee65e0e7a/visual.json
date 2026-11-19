@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "8576e86e9fdee65e0e7a",
+  "position": {
+    "x": 24,
+    "y": 220,
+    "z": 2000,
+    "height": 488,
+    "width": 740,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_pick"
+                    }
+                  },
+                  "Property": "rank"
+                }
+              },
+              "queryRef": "fact_captain_pick.rank",
+              "nativeQueryRef": "rank",
+              "displayName": "#"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_pick"
+                    }
+                  },
+                  "Property": "web_name"
+                }
+              },
+              "queryRef": "fact_captain_pick.web_name",
+              "nativeQueryRef": "web_name",
+              "displayName": "Player"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_pick"
+                    }
+                  },
+                  "Property": "position"
+                }
+              },
+              "queryRef": "fact_captain_pick.position",
+              "nativeQueryRef": "position",
+              "displayName": "Pos"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_pick"
+                    }
+                  },
+                  "Property": "fixtures"
+                }
+              },
+              "queryRef": "fact_captain_pick.fixtures",
+              "nativeQueryRef": "fixtures",
+              "displayName": "Fixture"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Expected Points"
+                }
+              },
+              "queryRef": "_Measures.Expected Points",
+              "nativeQueryRef": "Expected Points",
+              "displayName": "Exp. pts"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_pick"
+                    }
+                  },
+                  "Property": "reason"
+                }
+              },
+              "queryRef": "fact_captain_pick.reason",
+              "nativeQueryRef": "reason",
+              "displayName": "Why"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_captain_pick"
+                  }
+                },
+                "Property": "rank"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Squad ranked for the armband'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

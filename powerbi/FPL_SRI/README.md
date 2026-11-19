@@ -1,10 +1,10 @@
 # FPL_SRI Power BI project
 
 A ready-made Power BI project (PBIP) with the whole report already built:
-the 12 tables loaded from this repo's `data/powerbi/` CSVs (7 star-schema
-tables plus the daily history tables `fact_value_daily` and `fact_price_daily` and the three rival tracker tables),
-the 16 relationships, all measures from `measures.dax` plus a few extras, the
-`fpl_theme.json` theme, and four pages:
+the 14 tables loaded from this repo's `data/powerbi/` CSVs (7 star-schema
+tables plus the daily history tables `fact_value_daily` and `fact_price_daily`, the three rival tracker tables and the two captain picker tables),
+the 19 relationships, all measures from `measures.dax` plus a few extras, the
+`fpl_theme.json` theme, and seven pages:
 
 1. **Season overview**: total points, overall rank, rank change, team value,
    bench points wasted and hits cards, the inverted overall rank line (log
@@ -16,12 +16,18 @@ the 16 relationships, all measures from `measures.dax` plus a few extras, the
    minutes), a position slicer, and a points-per-£m table.
 4. **Fixtures**: a fixture ticker for the next five gameweeks after the latest
    finished one, with difficulty, and the teams with the easiest run.
+5. **Team value**: team value today, change today, change since tracking
+   and your players' price moves cards, a day-by-day team value line, and
+   your squad's current prices.
+6. **Captain picker**: next gameweek's pick and its expected points, the
+   whole squad ranked for the armband with the reason, and the backtest
+   (picker's captain vs yours vs the best starter per gameweek).
+7. **Rivals**: your league rank, points behind the leader, standings,
+   league rank by gameweek per team, and who the league owns and captains.
 
-The daily history tables have measures ready for your own visuals (no page
-uses them yet): **Team Value Today**, **Team Value Change Today**, **Team
+The daily history tables (used on the Team value page) have these measures: **Team Value Today**, **Team Value Change Today**, **Team
 Value Change Since Tracking**, **Price Change**, **My Squad Price Change** and
-**Latest Price**. For a team value chart, add a line chart with
-`fact_value_daily[snapshot_date]` on the X axis and `team_value` as the value.
+**Latest Price**.
 
 ### Rival tracker tables
 

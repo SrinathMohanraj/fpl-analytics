@@ -1,0 +1,159 @@
+table fact_captain_pick
+	lineageTag: f44c88f2-8f93-5994-a4fe-fac96fc725ca
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: f381a519-14be-5cdb-86f9-a31f123523c4
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e09f017-26fd-5035-85b8-9f88b3ec9865
+		summarizeBy: none
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c525ab1f-26d7-5978-8333-4a27a216047a
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column web_name
+		dataType: string
+		lineageTag: 7efbefd7-6c1e-5162-b56e-1c37379a98b1
+		summarizeBy: none
+		sourceColumn: web_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: string
+		lineageTag: 8a9f847f-952a-5f9d-93c3-96a95e329c94
+		summarizeBy: none
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	column on_bench
+		dataType: boolean
+		lineageTag: 74c57d96-7774-5ed1-8622-7353ff30c8fa
+		summarizeBy: none
+		sourceColumn: on_bench
+
+		annotation SummarizationSetBy = Automatic
+
+	column fixtures
+		dataType: string
+		lineageTag: c4a24fc6-0d92-5f99-bdf1-d9a32b0c9ef5
+		summarizeBy: none
+		sourceColumn: fixtures
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_points
+		dataType: double
+		formatString: 0.0
+		lineageTag: 4baf8412-a886-5346-82c8-5364a38b8c18
+		summarizeBy: none
+		sourceColumn: expected_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column form
+		dataType: double
+		formatString: 0.0
+		lineageTag: c4367f26-15b0-511e-8640-3e368c9a8627
+		summarizeBy: none
+		sourceColumn: form
+
+		annotation SummarizationSetBy = Automatic
+
+	column season_ppg
+		dataType: double
+		formatString: 0.0
+		lineageTag: 17230c32-9bc0-52e4-9aca-05e073364369
+		summarizeBy: none
+		sourceColumn: season_ppg
+
+		annotation SummarizationSetBy = Automatic
+
+	column threat
+		dataType: double
+		formatString: 0.0
+		lineageTag: 89bb4da6-6925-5d63-acaa-42eefb956673
+		summarizeBy: none
+		sourceColumn: threat
+
+		annotation SummarizationSetBy = Automatic
+
+	column minutes_security
+		dataType: double
+		formatString: 0.0
+		lineageTag: 26dc9d92-5c0a-5ff0-be92-1f00be267720
+		summarizeBy: none
+		sourceColumn: minutes_security
+
+		annotation SummarizationSetBy = Automatic
+
+	column fixture_factor
+		dataType: double
+		formatString: 0.0
+		lineageTag: dc00675d-5b7a-5249-a6b4-fd07841b8278
+		summarizeBy: none
+		sourceColumn: fixture_factor
+
+		annotation SummarizationSetBy = Automatic
+
+	column availability
+		dataType: double
+		formatString: 0.0
+		lineageTag: 7dc14b6e-f1fc-5fe9-9257-02e39afaaad4
+		summarizeBy: none
+		sourceColumn: availability
+
+		annotation SummarizationSetBy = Automatic
+
+	column reason
+		dataType: string
+		lineageTag: 0d02a943-ca32-5093-a4b2-2e530091f111
+		summarizeBy: none
+		sourceColumn: reason
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_captain_pick = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_captain_pick.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"rank", Int64.Type},
+				        {"player_id", Int64.Type},
+				        {"web_name", type text},
+				        {"position", type text},
+				        {"on_bench", type logical},
+				        {"fixtures", type text},
+				        {"expected_points", type number},
+				        {"form", type number},
+				        {"season_ppg", type number},
+				        {"threat", type number},
+				        {"minutes_security", type number},
+				        {"fixture_factor", type number},
+				        {"availability", type number},
+				        {"reason", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

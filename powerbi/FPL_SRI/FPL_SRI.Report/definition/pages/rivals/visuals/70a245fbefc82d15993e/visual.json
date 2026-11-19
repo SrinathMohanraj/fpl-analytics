@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "70a245fbefc82d15993e",
+  "position": {
+    "x": 438,
+    "y": 404,
+    "z": 2002,
+    "height": 304,
+    "width": 818,
+    "tabOrder": 2002
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_player"
+                    }
+                  },
+                  "Property": "web_name"
+                }
+              },
+              "queryRef": "dim_player.web_name",
+              "nativeQueryRef": "web_name",
+              "displayName": "Player"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "League Ownership %"
+                }
+              },
+              "queryRef": "_Measures.League Ownership %",
+              "nativeQueryRef": "League Ownership %",
+              "displayName": "Owned by"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "League Captained By"
+                }
+              },
+              "queryRef": "_Measures.League Captained By",
+              "nativeQueryRef": "League Captained By",
+              "displayName": "Captained by"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "I Own (Rivals Table)"
+                }
+              },
+              "queryRef": "_Measures.I Own (Rivals Table)",
+              "nativeQueryRef": "I Own (Rivals Table)",
+              "displayName": "I own"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "League Ownership %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Who the league owns (latest gameweek)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

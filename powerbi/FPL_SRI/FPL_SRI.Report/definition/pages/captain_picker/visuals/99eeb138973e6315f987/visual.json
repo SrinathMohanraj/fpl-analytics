@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "99eeb138973e6315f987",
+  "position": {
+    "x": 776,
+    "y": 220,
+    "z": 2001,
+    "height": 488,
+    "width": 480,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_captain_backtest"
+                    }
+                  },
+                  "Property": "gameweek"
+                }
+              },
+              "queryRef": "fact_captain_backtest.gameweek",
+              "nativeQueryRef": "gameweek"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Picker Captain Points"
+                }
+              },
+              "queryRef": "_Measures.Picker Captain Points",
+              "nativeQueryRef": "Picker Captain Points",
+              "displayName": "Picker's captain"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Backtest My Captain Points"
+                }
+              },
+              "queryRef": "_Measures.Backtest My Captain Points",
+              "nativeQueryRef": "Backtest My Captain Points",
+              "displayName": "Your captain"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Backtest Best Captain Points"
+                }
+              },
+              "queryRef": "_Measures.Backtest Best Captain Points",
+              "nativeQueryRef": "Backtest Best Captain Points",
+              "displayName": "Best starter"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Backtest: captain points by gameweek'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

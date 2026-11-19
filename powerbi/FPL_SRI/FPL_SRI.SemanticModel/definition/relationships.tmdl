@@ -61,3 +61,15 @@ relationship 579713f0-3b2d-5e73-94cf-455025edf19c
 relationship bfbb5af6-ee60-55a2-be3e-72ac90762c6a
 	fromColumn: fact_league_picks.gameweek
 	toColumn: dim_gameweek.gameweek
+
+relationship 0e7466a1-4387-5be0-94cd-377a8386f9df
+	fromColumn: fact_captain_pick.player_id
+	toColumn: dim_player.player_id
+
+relationship 040c6a60-abf6-5ab0-8d6f-06ec34246257
+	fromColumn: fact_captain_pick.gameweek
+	toColumn: dim_gameweek.gameweek
+
+relationship 65f2c79b-13f2-5b2d-af71-6c991096bc44
+	fromColumn: fact_captain_backtest.gameweek
+	toColumn: dim_gameweek.gameweek

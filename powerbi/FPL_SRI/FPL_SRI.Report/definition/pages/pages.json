@@ -4,7 +4,10 @@
     "season_overview",
     "squad_captaincy",
     "player_value",
-    "fixtures"
+    "fixtures",
+    "team_value",
+    "captain_picker",
+    "rivals"
   ],
   "activePageName": "season_overview"
 }

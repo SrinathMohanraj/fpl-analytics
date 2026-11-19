@@ -1,0 +1,121 @@
+table fact_captain_backtest
+	lineageTag: 8879e5ce-840a-5518-8871-77ce67432513
+
+	column gameweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 88b98b35-ebf3-5081-bd43-da500dc7bf38
+		summarizeBy: none
+		sourceColumn: gameweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column picker_captain
+		dataType: string
+		lineageTag: 61d0d65b-8660-5f69-b630-8cadaf6b6e39
+		summarizeBy: none
+		sourceColumn: picker_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column picker_expected
+		dataType: double
+		formatString: 0.0
+		lineageTag: 5fa30d2e-f3ee-5bbe-8981-5878dc7a7e49
+		summarizeBy: none
+		sourceColumn: picker_expected
+
+		annotation SummarizationSetBy = Automatic
+
+	column picker_points
+		dataType: double
+		formatString: 0.0
+		lineageTag: 479ffa37-8dd4-5308-8a9c-7897b53f36c5
+		summarizeBy: none
+		sourceColumn: picker_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column my_captain
+		dataType: string
+		lineageTag: 8f03136c-2dfe-52d5-a48f-247c2e6b4240
+		summarizeBy: none
+		sourceColumn: my_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column my_points
+		dataType: double
+		formatString: 0.0
+		lineageTag: 37aaa08c-0c75-566c-b783-5ac571e4219c
+		summarizeBy: none
+		sourceColumn: my_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column best_captain
+		dataType: string
+		lineageTag: 2a8f3d0b-2eb5-57e8-9deb-df6c73ce9ab4
+		summarizeBy: none
+		sourceColumn: best_captain
+
+		annotation SummarizationSetBy = Automatic
+
+	column best_points
+		dataType: double
+		formatString: 0.0
+		lineageTag: 41ca15fe-fc13-5ee9-b376-a20a824524d5
+		summarizeBy: none
+		sourceColumn: best_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column picker_vs_me
+		dataType: double
+		formatString: 0.0
+		lineageTag: ffd0f2ce-e0db-5d9a-a759-0ef566918f10
+		summarizeBy: none
+		sourceColumn: picker_vs_me
+
+		annotation SummarizationSetBy = Automatic
+
+	column my_regret
+		dataType: double
+		formatString: 0.0
+		lineageTag: 8dd538b5-077b-570d-aee6-7d6e362730b6
+		summarizeBy: none
+		sourceColumn: my_regret
+
+		annotation SummarizationSetBy = Automatic
+
+	column picker_regret
+		dataType: double
+		formatString: 0.0
+		lineageTag: 76261628-2df9-5885-a231-0cbe69c0ea08
+		summarizeBy: none
+		sourceColumn: picker_regret
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_captain_backtest = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents(BaseUrl & "fact_captain_backtest.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"gameweek", Int64.Type},
+				        {"picker_captain", type text},
+				        {"picker_expected", type number},
+				        {"picker_points", type number},
+				        {"my_captain", type text},
+				        {"my_points", type number},
+				        {"best_captain", type text},
+				        {"best_points", type number},
+				        {"picker_vs_me", type number},
+				        {"my_regret", type number},
+				        {"picker_regret", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

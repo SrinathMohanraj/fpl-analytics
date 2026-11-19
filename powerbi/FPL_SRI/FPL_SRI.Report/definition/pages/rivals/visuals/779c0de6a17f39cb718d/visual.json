@@ -1,0 +1,138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
+  "name": "779c0de6a17f39cb718d",
+  "position": {
+    "x": 438,
+    "y": 92,
+    "z": 2000,
+    "height": 300,
+    "width": 818,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_league_entry"
+                    }
+                  },
+                  "Property": "entry_name"
+                }
+              },
+              "queryRef": "dim_league_entry.entry_name",
+              "nativeQueryRef": "entry_name",
+              "displayName": "Team"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_league_entry"
+                    }
+                  },
+                  "Property": "manager_name"
+                }
+              },
+              "queryRef": "dim_league_entry.manager_name",
+              "nativeQueryRef": "manager_name",
+              "displayName": "Manager"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "League Rank"
+                }
+              },
+              "queryRef": "_Measures.League Rank",
+              "nativeQueryRef": "League Rank",
+              "displayName": "Rank"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "League Total Points"
+                }
+              },
+              "queryRef": "_Measures.League Total Points",
+              "nativeQueryRef": "League Total Points",
+              "displayName": "Total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Gap To Me"
+                }
+              },
+              "queryRef": "_Measures.Gap To Me",
+              "nativeQueryRef": "Gap To Me",
+              "displayName": "Gap to me"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "League Rank"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Standings'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
