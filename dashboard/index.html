@@ -834,10 +834,10 @@
     document.querySelector("#h2h-mine tbody").innerHTML = rows(h.mine_only);
     document.querySelector("#h2h-theirs tbody").innerHTML = rows(h.theirs_only);
     document.getElementById("h2h-caps").textContent = h.multiplier_diffs.length
-      ? "Captaincy on shared players: " + h.multiplier_diffs.map(function (c) {
+      ? "Shared players we used differently (captain, bench): " + h.multiplier_diffs.map(function (c) {
           return c.name + " (me x" + c.my_multiplier + ", them x" + c.their_multiplier + ", " + signed(c.swing) + " pts)";
         }).join("; ") + "."
-      : "Same captain multipliers on every shared player.";
+      : "We used every shared player the same way (same captain, same bench).";
 
     function pills(list, empty) {
       return list.map(function (p) {
