@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T18:14:40.076942+00:00",
+  "generated_at": "2026-11-20T10:47:33.165591+00:00",
   "is_demo": false,
   "entry_id": 1702239,
   "current_gameweek": 10,
@@ -301,16 +301,6 @@
       "value_score": 0.996
     },
     {
-      "web_name": "Van Hecke",
-      "team_name": "Spurs",
-      "position": "DEF",
-      "price_m": 5.1,
-      "total_points": 57,
-      "form": 8.7,
-      "points_per_million": 11.18,
-      "value_score": 0.994
-    },
-    {
       "web_name": "Verbruggen",
       "team_name": "Brighton",
       "position": "GKP",
@@ -318,6 +308,16 @@
       "total_points": 57,
       "form": 6.3,
       "points_per_million": 12.13,
+      "value_score": 0.994
+    },
+    {
+      "web_name": "Van Hecke",
+      "team_name": "Spurs",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 57,
+      "form": 8.7,
+      "points_per_million": 11.18,
       "value_score": 0.994
     },
     {
@@ -381,16 +381,6 @@
       "value_score": 0.977
     },
     {
-      "web_name": "Kinsky",
-      "team_name": "Spurs",
-      "position": "GKP",
-      "price_m": 4.4,
-      "total_points": 40,
-      "form": 5.7,
-      "points_per_million": 9.09,
-      "value_score": 0.974
-    },
-    {
       "web_name": "Castagne",
       "team_name": "Fulham",
       "position": "DEF",
@@ -398,6 +388,16 @@
       "total_points": 44,
       "form": 5.3,
       "points_per_million": 9.78,
+      "value_score": 0.974
+    },
+    {
+      "web_name": "Kinsky",
+      "team_name": "Spurs",
+      "position": "GKP",
+      "price_m": 4.4,
+      "total_points": 40,
+      "form": 5.7,
+      "points_per_million": 9.09,
       "value_score": 0.974
     },
     {
@@ -628,16 +628,6 @@
         "value_score": 0.962
       },
       {
-        "web_name": "McGinn",
-        "team_name": "Aston Villa",
-        "position": "MID",
-        "price_m": 5.5,
-        "total_points": 44,
-        "form": 5.3,
-        "points_per_million": 8.0,
-        "value_score": 0.944
-      },
-      {
         "web_name": "Ayari",
         "team_name": "Brighton",
         "position": "MID",
@@ -645,6 +635,16 @@
         "total_points": 46,
         "form": 5.0,
         "points_per_million": 8.36,
+        "value_score": 0.944
+      },
+      {
+        "web_name": "McGinn",
+        "team_name": "Aston Villa",
+        "position": "MID",
+        "price_m": 5.5,
+        "total_points": 44,
+        "form": 5.3,
+        "points_per_million": 8.0,
         "value_score": 0.944
       },
       {
@@ -713,11 +713,11 @@
         "web_name": "N.Jackson",
         "team_name": "Aston Villa",
         "position": "FWD",
-        "price_m": 7.1,
+        "price_m": 7.2,
         "total_points": 54,
         "form": 11.0,
-        "points_per_million": 7.61,
-        "value_score": 0.956
+        "points_per_million": 7.5,
+        "value_score": 0.953
       },
       {
         "web_name": "McBurnie",
@@ -773,11 +773,29 @@
   },
   "differentials": [
     {
+      "web_name": "McBurnie",
+      "team_name": "Hull City",
+      "position": "FWD",
+      "price_m": 5.5,
+      "total_points": 38,
+      "form": 7.3,
+      "selected_by_percent": 1.7
+    },
+    {
       "web_name": "Trafford",
       "team_name": "Leeds",
       "position": "GKP",
       "price_m": 5.0,
       "total_points": 54,
+      "form": 7.3,
+      "selected_by_percent": 6.6
+    },
+    {
+      "web_name": "Muharemovi\u0107",
+      "team_name": "Leeds",
+      "position": "DEF",
+      "price_m": 5.1,
+      "total_points": 56,
       "form": 7.3,
       "selected_by_percent": 6.6
     },
@@ -791,22 +809,22 @@
       "selected_by_percent": 2.9
     },
     {
-      "web_name": "McBurnie",
-      "team_name": "Hull City",
-      "position": "FWD",
+      "web_name": "Araujo",
+      "team_name": "Liverpool",
+      "position": "DEF",
       "price_m": 5.5,
-      "total_points": 38,
-      "form": 7.3,
-      "selected_by_percent": 1.7
+      "total_points": 44,
+      "form": 7.0,
+      "selected_by_percent": 4.6
     },
     {
-      "web_name": "Muharemovi\u0107",
-      "team_name": "Leeds",
-      "position": "DEF",
-      "price_m": 5.1,
-      "total_points": 56,
-      "form": 7.3,
-      "selected_by_percent": 6.5
+      "web_name": "Wirtz",
+      "team_name": "Liverpool",
+      "position": "MID",
+      "price_m": 7.2,
+      "total_points": 46,
+      "form": 7.0,
+      "selected_by_percent": 6.2
     },
     {
       "web_name": "Hill",
@@ -818,33 +836,6 @@
       "selected_by_percent": 3.2
     },
     {
-      "web_name": "Wirtz",
-      "team_name": "Liverpool",
-      "position": "MID",
-      "price_m": 7.2,
-      "total_points": 46,
-      "form": 7.0,
-      "selected_by_percent": 6.1
-    },
-    {
-      "web_name": "Araujo",
-      "team_name": "Liverpool",
-      "position": "DEF",
-      "price_m": 5.5,
-      "total_points": 44,
-      "form": 7.0,
-      "selected_by_percent": 4.6
-    },
-    {
-      "web_name": "Silva",
-      "team_name": "Bournemouth",
-      "position": "DEF",
-      "price_m": 5.1,
-      "total_points": 40,
-      "form": 6.3,
-      "selected_by_percent": 3.7
-    },
-    {
       "web_name": "Enciso",
       "team_name": "Ipswich Town",
       "position": "MID",
@@ -852,6 +843,15 @@
       "total_points": 38,
       "form": 6.3,
       "selected_by_percent": 1.1
+    },
+    {
+      "web_name": "Iroegbunam",
+      "team_name": "Hull City",
+      "position": "MID",
+      "price_m": 5.0,
+      "total_points": 23,
+      "form": 6.3,
+      "selected_by_percent": 0.1
     },
     {
       "web_name": "Alysson",
@@ -885,8 +885,8 @@
       "team_name": "Arsenal",
       "position": "MID",
       "price_m": 5.2,
-      "status": "d",
-      "chance_of_playing_next_round": 75.0
+      "status": "i",
+      "chance_of_playing_next_round": 0.0
     },
     {
       "web_name": "Dowman",
@@ -1321,6 +1321,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Caicedo",
+      "team_name": "Chelsea",
+      "position": "MID",
+      "price_m": 5.3,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "D.Essugo",
       "team_name": "Chelsea",
       "position": "MID",
@@ -1409,6 +1417,14 @@
       "chance_of_playing_next_round": 0.0
     },
     {
+      "web_name": "Mason-Clark",
+      "team_name": "Coventry City",
+      "position": "MID",
+      "price_m": 5.3,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
+    },
+    {
       "web_name": "Eccles",
       "team_name": "Coventry City",
       "position": "MID",
@@ -1455,6 +1471,14 @@
       "price_m": 4.5,
       "status": "u",
       "chance_of_playing_next_round": 0.0
+    },
+    {
+      "web_name": "Yirenkyi",
+      "team_name": "Coventry City",
+      "position": "MID",
+      "price_m": 4.8,
+      "status": "d",
+      "chance_of_playing_next_round": 75.0
     },
     {
       "web_name": "Sosa",
@@ -2444,6 +2468,16 @@
   "value_history": [
     {
       "snapshot_date": "2026-11-19",
+      "gameweek": 10,
+      "squad_value": 103.7,
+      "bank": 0.7,
+      "team_value": 104.4,
+      "value_change": 0.0,
+      "players_rising": 0,
+      "players_falling": 0
+    },
+    {
+      "snapshot_date": "2026-11-20",
       "gameweek": 10,
       "squad_value": 103.7,
       "bank": 0.7,
