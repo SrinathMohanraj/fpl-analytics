@@ -206,6 +206,14 @@
   table.data-table td.good { color: var(--good); font-weight: 700; }
   table.data-table td.bad { color: var(--critical); font-weight: 700; }
   .sub-head { font-size: 13px; font-weight: 700; margin: 22px 0 6px; }
+  .xfer-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .xfer-stats .stat-tile .value { font-size: 20px; }
+  .style-pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); }
+  .style-pill.Shield { background: color-mix(in srgb, var(--series-1) 14%, transparent); color: var(--series-1); }
+  .style-pill.Differential { background: color-mix(in srgb, var(--series-2) 14%, transparent); color: var(--series-2); }
+  .style-pill.Balanced { background: var(--page-plane); color: var(--text-secondary); }
+  .xfer-move { white-space: nowrap; font-weight: 600; }
+  .xfer-move .arrow { color: var(--text-muted); margin: 0 4px; }
 
   footer.page-foot { text-align: center; color: var(--text-muted); font-size: 12.5px; margin-top: 32px; }
   footer.page-foot a { color: var(--text-muted); text-decoration: underline; }
@@ -345,6 +353,56 @@
         </thead>
         <tbody></tbody>
       </table>
+    </div>
+  </section>
+
+  <section class="panel" id="transfer-panel" style="display:none">
+    <h2 id="xfer-title">Transfer suggester</h2>
+    <p class="panel-sub" id="xfer-sub"></p>
+    <div class="xfer-stats" id="xfer-stats"></div>
+    <div class="captain-callout" id="xfer-verdict"></div>
+
+    <div class="sub-head">Best transfers by expected points</div>
+    <p class="panel-sub">Expected points over the next gameweeks (captain picker model), and roughly how many places that is worth at my rank. Ownership doesn't change the expected effect, it changes the risk. Haul risk uses a <span id="xfer-haul">12</span>-point haul: "covers" is what the incoming player's haul would have cost me without him (high top-10k ownership = a shield), "risks" is what the sold player's haul costs me once he's gone.</p>
+    <div class="table-scroll">
+      <table class="data-table" id="xfer-best">
+        <thead><tr><th>Transfer</th><th>Pos</th><th class="num">Exp. pts</th><th class="num">≈ places</th><th class="num">Top 10k own</th><th>Type</th><th>Haul risk (places)</th><th>Why</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="sub-head">Follow the top 10k</div>
+    <p class="panel-sub">The players the top 10k bought most at the last deadline that I don't own, each with the sale from my squad that costs me least.</p>
+    <div class="table-scroll">
+      <table class="data-table" id="xfer-follow">
+        <thead><tr><th>Transfer</th><th>Pos</th><th class="num">Exp. pts</th><th class="num">≈ places</th><th class="num">Top 10k own</th><th>Type</th><th>Haul risk (places)</th><th>Why</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="h2h-grid" style="margin-top:20px">
+      <div>
+        <h3 id="xfer-bought-title">Top 10k bought</h3>
+        <table class="data-table" id="xfer-bought"><thead><tr><th>Player</th><th class="num">Bought by</th><th class="num">Own</th><th class="num">Overall own</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div>
+        <h3 id="xfer-sold-title">Top 10k sold</h3>
+        <table class="data-table" id="xfer-sold"><thead><tr><th>Player</th><th class="num">Sold by</th><th class="num">Own</th><th class="num">Overall own</th></tr></thead><tbody></tbody></table>
+      </div>
+    </div>
+    <p class="panel-sub" id="xfer-everyone" style="margin-top:10px"></p>
+
+    <div class="h2h-grid" style="margin-top:12px">
+      <div>
+        <h3>Top 10k players I don't own</h3>
+        <p class="panel-sub" style="margin-bottom:8px">EO = effective ownership: captains count twice, benched players zero. If one of these hauls, I lose ground.</p>
+        <table class="data-table" id="xfer-threats"><thead><tr><th>Player</th><th class="num">EO</th><th class="num">If he hauls</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div>
+        <h3>My squad against the top 10k</h3>
+        <p class="panel-sub" style="margin-bottom:8px">Exposure = my multiplier minus their EO. Above 0, I gain on them when he scores; below 0, I fall behind even though I own him.</p>
+        <table class="data-table" id="xfer-exposure"><thead><tr><th>Player</th><th class="num">Me</th><th class="num">EO</th><th class="num">Exposure</th></tr></thead><tbody></tbody></table>
+      </div>
     </div>
   </section>
 
@@ -931,6 +989,105 @@
     }
     document.getElementById("my-unique").innerHTML = pills(league.my_unique_players, "None right now.");
     document.getElementById("template-miss").innerHTML = pills(league.template_players_i_miss, "I own every template player.");
+  }
+})();
+</script>
+<script>
+// ---- Transfer suggester (reads data/transfers.json, written by transfers.py) --
+(function () {
+  "use strict";
+  function esc(v) {
+    return String(v === null || v === undefined ? "" : v).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function pct(x) { return x === null || x === undefined ? "—" : Math.round(x * 100) + "%"; }
+  function num(n) { return n === null || n === undefined ? "—" : Number(n).toLocaleString("en-GB"); }
+  function signed(n, dp) {
+    if (n === null || n === undefined) return "—";
+    var v = dp ? Number(n).toFixed(dp) : Number(n).toLocaleString("en-GB");
+    return (n > 0 ? "+" : "") + v;
+  }
+
+  fetch("./data/transfers.json")
+    .then(function (r) { if (!r.ok) throw new Error("no transfers data"); return r.json(); })
+    .then(render)
+    .catch(function (err) { console.info("Transfer suggester:", err.message); });
+
+  function render(d) {
+    if (!d.sample_size) return;
+    document.getElementById("transfer-panel").style.display = "";
+    var me = d.me || {}, h = d.horizon || [];
+    var span = h.length ? "GW" + h[0] + (h.length > 1 ? "-" + h[h.length - 1] : "") : "";
+    document.getElementById("xfer-title").textContent = "Transfer suggester · GW" + d.next_gameweek;
+    document.getElementById("xfer-haul").textContent = d.haul_points;
+    document.getElementById("xfer-sub").textContent =
+      "Top 10k = " + d.sample_size + " managers sampled evenly from ranks 1 to " + num(d.top_n) +
+      " of the Overall league, using their GW" + d.sample_gameweek + " squads and the transfers they made for it " +
+      "(moves for the next deadline stay private until it passes). Points are judged over " + span + ".";
+
+    var tiles = [
+      ["My overall rank", num(me.overall_rank)],
+      ["Free transfers (est.)", me.free_transfers],
+      ["In the bank", "£" + Number(me.bank_m || 0).toFixed(1) + "m"],
+      ["1 point ≈", me.ranks_per_point ? num(Math.round(me.ranks_per_point)) + " places" : "—"]
+    ];
+    document.getElementById("xfer-stats").innerHTML = tiles.map(function (t) {
+      return '<div class="stat-tile"><div class="label">' + t[0] + '</div><div class="value">' + esc(t[1]) + "</div></div>";
+    }).join("");
+    document.getElementById("xfer-verdict").innerHTML = '<span class="big" style="font-size:16px">' + esc(d.verdict) + "</span>";
+
+    function rows(list) {
+      if (!list || !list.length) return '<tr><td colspan="8" class="muted">Nothing in budget right now.</td></tr>';
+      return list.map(function (r) {
+        var risk = [];
+        if (r.risk_removed_ranks) risk.push('<span class="move up" title="If ' + esc(r.in_name) + ' hauls, this is what not owning him would have cost me">covers ' + num(r.risk_removed_ranks) + "</span>");
+        if (r.risk_added_ranks) risk.push('<span class="move down" title="If ' + esc(r.out_name) + ' hauls after I sell him, this is what I lose">risks ' + num(r.risk_added_ranks) + "</span>");
+        var gainCls = r.net_gain > 0 ? "good" : (r.net_gain < 0 ? "bad" : "");
+        return '<tr><td class="xfer-move">' + esc(r.out_name) + '<span class="arrow">→</span>' + esc(r.in_name) +
+          ' <span class="muted">' + esc(r.in_team) + " £" + Number(r.buy_price_m).toFixed(1) + "m</span></td>" +
+          '<td><span class="pos-pill">' + esc(r.position) + "</span></td>" +
+          '<td class="num ' + gainCls + '">' + signed(r.net_gain, 1) + (r.hit_cost ? ' <span class="muted">(after -' + r.hit_cost + ")</span>" : "") + "</td>" +
+          '<td class="num ' + gainCls + '">' + signed(r.expected_rank_change) + "</td>" +
+          '<td class="num">' + pct(r.own_in_top10k) + '<br><span class="muted">EO ' + pct(r.eo_in) + "</span></td>" +
+          '<td><span class="style-pill ' + esc(r.style) + '">' + esc(r.style) + "</span></td>" +
+          '<td style="font-size:12px">' + (risk.join("<br>") || '<span class="muted">little change</span>') + "</td>" +
+          '<td class="why">' + esc(r.reason) + "</td></tr>";
+      }).join("");
+    }
+    document.querySelector("#xfer-best tbody").innerHTML = rows(d.suggestions);
+    document.querySelector("#xfer-follow tbody").innerHTML = rows(d.follow_top10k);
+
+    function moves(list, key) {
+      if (!list || !list.length) return '<tr><td colspan="4" class="muted">No moves in the sample.</td></tr>';
+      return list.map(function (p) {
+        var n = key === "in" ? p.transfers_in : p.transfers_out;
+        return "<tr><td>" + esc(p.web_name) + ' <span class="muted">' + esc(p.team) + "</span>" +
+          (p.i_own ? ' <span class="pos-pill">mine</span>' : "") + "</td>" +
+          '<td class="num">' + pct(n / d.sample_size) + '</td><td class="num">' + pct(p.ownership) +
+          '</td><td class="num muted">' + pct(p.overall_ownership) + "</td></tr>";
+      }).join("");
+    }
+    document.getElementById("xfer-bought-title").textContent = "Top 10k bought for GW" + d.sample_gameweek;
+    document.getElementById("xfer-sold-title").textContent = "Top 10k sold for GW" + d.sample_gameweek;
+    document.querySelector("#xfer-bought tbody").innerHTML = moves(d.top10k_bought, "in");
+    document.querySelector("#xfer-sold tbody").innerHTML = moves(d.top10k_sold, "out");
+    function names(list) { return (list || []).map(function (p) { return p.web_name; }).join(", "); }
+    document.getElementById("xfer-everyone").textContent =
+      "All managers since the last deadline: most bought " + (names(d.everyone_bought) || "—") +
+      "; most sold " + (names(d.everyone_sold) || "—") + ".";
+
+    document.querySelector("#xfer-threats tbody").innerHTML = (d.threats || []).map(function (p) {
+      return "<tr><td>" + esc(p.web_name) + ' <span class="muted">' + esc(p.team) + '</span></td><td class="num">' + pct(p.effective_ownership) +
+        '</td><td class="num bad">' + (p.haul_cost_ranks ? "−" + num(p.haul_cost_ranks) + " places" : "—") + "</td></tr>";
+    }).join("") || '<tr><td colspan="3" class="muted">I own every big top-10k player.</td></tr>';
+
+    document.querySelector("#xfer-exposure tbody").innerHTML = (d.my_exposure || []).map(function (p) {
+      var cls = p.exposure > 0.05 ? "good" : (p.exposure < -0.05 ? "bad" : "");
+      return "<tr><td>" + esc(p.web_name) + ' <span class="muted">' + esc(p.team) + '</span></td><td class="num">' +
+        (p.my_multiplier ? "x" + p.my_multiplier : '<span class="muted">bench</span>') + '</td><td class="num">' + pct(p.effective_ownership) +
+        '</td><td class="num ' + cls + '">' + signed(p.exposure, 2) + "</td></tr>";
+    }).join("");
   }
 })();
 </script>
