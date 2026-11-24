@@ -37,7 +37,26 @@ def run(entry_id: int, raw_dir: Path = DEFAULT_RAW_DIR,
     raw = fetch.fetch_all_for_pipeline(entry_id, raw_dir)
     out = _process(entry_id, raw, processed_dir, is_demo=False)
     run_rivals(entry_id, raw, processed_dir, league_ids or [])
+    run_transfers(entry_id, raw, processed_dir)
     return out
+
+
+def run_transfers(entry_id: int, raw: dict, processed_dir: Path) -> None:
+    """Transfer suggester (top-10k ownership + rank impact) -> transfers.json
+    + 2 Power BI tables. Failure-tolerant like the rival tracker: if FPL's
+    Overall league is slow or down, the rest of the dashboard still refreshes.
+    """
+    from . import transfers
+    try:
+        payload = transfers.run(
+            raw, entry_id, POWERBI_DIR,
+            out_paths=[processed_dir / "transfers.json", DASHBOARD_DATA_DIR / "transfers.json"],
+        )
+    except Exception as exc:  # noqa: BLE001 - log and carry on
+        print(f"Transfer suggester skipped: {exc}")
+        return
+    print(f"Transfer suggester -> {payload['sample_size']} top-10k managers sampled; "
+          f"{payload['verdict']}")
 
 
 def run_rivals(entry_id: int, raw: dict, processed_dir: Path, league_ids: list[int]) -> None:

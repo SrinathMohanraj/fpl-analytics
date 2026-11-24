@@ -34,6 +34,17 @@ explorer. Runs itself on a schedule via GitHub Actions.
   the picker against the captains I actually chose. Also exported for Power BI
   as `data/powerbi/fact_captain_pick.csv` and `fact_captain_backtest.csv`.
   Refresh it from the saved CSVs without the API: `python -m fpl_analytics.captain`.
+- **Transfer suggester**: samples 400 managers spread across the top 10,000
+  of the Overall league each day and shows what they bought and sold at the
+  last deadline, their ownership and effective ownership (EO) next to
+  everyone's, the top-10k players I don't own, and my exposure to each of my
+  players. Then it ranks single transfers (same position, in budget, max 3
+  per club) by how much they add to my best XI over the next 3 gameweeks,
+  turns that into roughly how many places it's worth at my rank, and shows the
+  rank risk each one covers or adds if a player hauls. A second list follows
+  the top 10k's most-bought players. Power BI: `fact_top10k_ownership.csv`
+  (one row per player per gameweek, history kept) and
+  `fact_transfer_suggestion.csv`.
 - Refreshes itself automatically: a scheduled GitHub Action re-runs the
   pipeline, commits the new data, and redeploys the dashboard — no manual
   step required once it's set up.
@@ -60,6 +71,8 @@ src/fpl_analytics/
 ├── squad.py      # season summary, rank trend, bench-waste tracking
 ├── rivals.py     # mini-league rival tracker (standings, rank trend,
 │                 #   head-to-head differentials, league ownership)
+├── transfers.py  # transfer suggester (top-10k ownership and moves,
+│                 #   expected points gain, rank impact and haul risk)
 └── pipeline.py   # orchestrates the four stages, exports dashboard.json
 ```
 
