@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:36:38.178641+00:00",
+  "generated_at": "2026-11-24T13:10:00.113371+00:00",
   "entry_id": 1702239,
   "current_gameweek": 11,
   "available_leagues": [
@@ -7,36 +7,36 @@
       "id": 16,
       "name": "Man Utd",
       "private": false,
-      "rank": 6845,
-      "size": 1841614
+      "rank": 6179,
+      "size": 1841624
     },
     {
       "id": 120,
       "name": "India",
       "private": false,
-      "rank": 879,
-      "size": 252130
+      "rank": 797,
+      "size": 252131
     },
     {
       "id": 276,
       "name": "Gameweek 1",
       "private": false,
-      "rank": 37046,
-      "size": 8886384
+      "rank": 33619,
+      "size": 8886230
     },
     {
       "id": 314,
       "name": "Overall",
       "private": false,
-      "rank": 37046,
-      "size": 11261649
+      "rank": 33619,
+      "size": 11261393
     },
     {
       "id": 322,
       "name": "Top 10% 25/26 League",
       "private": false,
-      "rank": 21148,
-      "size": 1225232
+      "rank": 19204,
+      "size": 1225220
     },
     {
       "id": 26756,
@@ -49,22 +49,22 @@
       "id": 431170,
       "name": "Adobe Express Badge League",
       "private": false,
-      "rank": 11602,
-      "size": 2926903
+      "rank": 10575,
+      "size": 2927944
     },
     {
       "id": 1234984,
       "name": "Jio Star League",
       "private": false,
-      "rank": 879,
-      "size": 252130
+      "rank": 797,
+      "size": 252131
     },
     {
       "id": 2430021,
       "name": "Second Chance",
       "private": false,
-      "rank": 424930,
-      "size": 11261640
+      "rank": 397398,
+      "size": 11261386
     }
   ],
   "leagues": [
@@ -81,8 +81,8 @@
           "is_me": true,
           "rank": 1,
           "last_rank": 1,
-          "total": 751,
-          "gw_points": 29,
+          "total": 753,
+          "gw_points": 31,
           "gap_to_me": 0,
           "transfer_cost": 0,
           "chip": "",
@@ -98,12 +98,22 @@
           "last_rank": 2,
           "total": 725,
           "gw_points": 40,
-          "gap_to_me": 26,
+          "gap_to_me": 28,
           "transfer_cost": 0,
           "chip": "",
           "captain": "N.Jackson",
           "head_to_head": {
             "mine_only": [
+              {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
               {
                 "player_id": 399,
                 "name": "Cherki",
@@ -112,16 +122,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -214,7 +214,7 @@
               }
             ],
             "shared": 11,
-            "gw_swing": -11
+            "gw_swing": -9
           }
         },
         {
@@ -224,9 +224,9 @@
           "is_me": false,
           "rank": 3,
           "last_rank": 3,
-          "total": 672,
-          "gw_points": 23,
-          "gap_to_me": 79,
+          "total": 676,
+          "gw_points": 27,
+          "gap_to_me": 77,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Haaland",
@@ -263,6 +263,16 @@
                 "season_points": 57
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -270,16 +280,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -340,19 +340,19 @@
                 "team": "EVE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 50
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 52
               },
               {
-                "player_id": 367,
-                "name": "Gakpo",
-                "team": "LIV",
+                "player_id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 40
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 41
               },
               {
                 "player_id": 572,
@@ -375,14 +375,14 @@
                 "season_points": 55
               },
               {
-                "player_id": 480,
-                "name": "Gibbs-White",
-                "team": "NFO",
+                "player_id": 367,
+                "name": "Gakpo",
+                "team": "LIV",
                 "starter": false,
                 "captain": false,
-                "gw_points": 2,
+                "gw_points": 0,
                 "counted": 0,
-                "season_points": 41
+                "season_points": 40
               },
               {
                 "player_id": 305,
@@ -416,7 +416,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": 6
+            "gw_swing": 4
           }
         },
         {
@@ -428,7 +428,7 @@
           "last_rank": 4,
           "total": 655,
           "gw_points": 32,
-          "gap_to_me": 96,
+          "gap_to_me": 98,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Palmer",
@@ -445,6 +445,16 @@
                 "season_points": 63
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -452,16 +462,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -512,9 +512,9 @@
                 "team": "BRE",
                 "starter": false,
                 "captain": false,
-                "gw_points": 0,
+                "gw_points": 6,
                 "counted": 0,
-                "season_points": 42
+                "season_points": 48
               },
               {
                 "player_id": 277,
@@ -564,7 +564,7 @@
               }
             ],
             "shared": 10,
-            "gw_swing": -3
+            "gw_swing": -1
           }
         },
         {
@@ -576,7 +576,7 @@
           "last_rank": 5,
           "total": 636,
           "gw_points": 35,
-          "gap_to_me": 115,
+          "gap_to_me": 117,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Haaland",
@@ -603,6 +603,16 @@
                 "season_points": 57
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -610,16 +620,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -726,7 +726,7 @@
               }
             ],
             "shared": 9,
-            "gw_swing": -6
+            "gw_swing": -4
           }
         },
         {
@@ -738,7 +738,7 @@
           "last_rank": 6,
           "total": 628,
           "gw_points": 34,
-          "gap_to_me": 123,
+          "gap_to_me": 125,
           "transfer_cost": 4,
           "chip": "",
           "captain": "Haaland",
@@ -765,6 +765,16 @@
                 "season_points": 63
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -772,16 +782,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -877,6 +877,16 @@
                 "season_points": 56
               },
               {
+                "player_id": 98,
+                "name": "Janelt",
+                "team": "BRE",
+                "starter": false,
+                "captain": false,
+                "gw_points": 10,
+                "counted": 0,
+                "season_points": 47
+              },
+              {
                 "player_id": 165,
                 "name": "Jo\u00e3o Pedro",
                 "team": "CHE",
@@ -885,16 +895,6 @@
                 "gw_points": 0,
                 "counted": 0,
                 "season_points": 47
-              },
-              {
-                "player_id": 98,
-                "name": "Janelt",
-                "team": "BRE",
-                "starter": false,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 37
               },
               {
                 "player_id": 282,
@@ -922,7 +922,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": -5
+            "gw_swing": -3
           }
         },
         {
@@ -934,7 +934,7 @@
           "last_rank": 7,
           "total": 628,
           "gw_points": 39,
-          "gap_to_me": 123,
+          "gap_to_me": 125,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Haaland",
@@ -971,6 +971,16 @@
                 "season_points": 58
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -978,16 +988,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -1138,7 +1138,7 @@
               }
             ],
             "shared": 6,
-            "gw_swing": -10
+            "gw_swing": -8
           }
         },
         {
@@ -1148,9 +1148,9 @@
           "is_me": false,
           "rank": 8,
           "last_rank": 8,
-          "total": 620,
-          "gw_points": 33,
-          "gap_to_me": 131,
+          "total": 621,
+          "gw_points": 34,
+          "gap_to_me": 132,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Haaland",
@@ -1212,9 +1212,9 @@
                 "team": "EVE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 55
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
               },
               {
                 "player_id": 154,
@@ -1264,9 +1264,9 @@
                 "team": "BRE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 46
+                "gw_points": 1,
+                "counted": 1,
+                "season_points": 47
               },
               {
                 "player_id": 469,
@@ -1340,7 +1340,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": -4
+            "gw_swing": -3
           }
         },
         {
@@ -1352,7 +1352,7 @@
           "last_rank": 10,
           "total": 620,
           "gw_points": 50,
-          "gap_to_me": 131,
+          "gap_to_me": 133,
           "transfer_cost": 0,
           "chip": "bboost",
           "captain": "Haaland",
@@ -1389,6 +1389,16 @@
                 "season_points": 58
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -1396,16 +1406,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -1542,7 +1542,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": -21
+            "gw_swing": -19
           }
         },
         {
@@ -1552,9 +1552,9 @@
           "is_me": false,
           "rank": 10,
           "last_rank": 9,
-          "total": 611,
-          "gw_points": 33,
-          "gap_to_me": 140,
+          "total": 607,
+          "gw_points": 29,
+          "gap_to_me": 146,
           "transfer_cost": 0,
           "chip": "",
           "captain": "N.Jackson",
@@ -1601,6 +1601,16 @@
                 "season_points": 57
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -1608,16 +1618,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -1663,16 +1663,6 @@
                 "season_points": 70
               },
               {
-                "player_id": 229,
-                "name": "Tarkowski",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 56
-              },
-              {
                 "player_id": 166,
                 "name": "N.Jackson",
                 "team": "AVL",
@@ -1681,6 +1671,16 @@
                 "gw_points": 2,
                 "counted": 4,
                 "season_points": 56
+              },
+              {
+                "player_id": 229,
+                "name": "Tarkowski",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": -4,
+                "counted": -4,
+                "season_points": 52
               },
               {
                 "player_id": 53,
@@ -1708,9 +1708,9 @@
                 "team": "BRE",
                 "starter": false,
                 "captain": false,
-                "gw_points": 0,
+                "gw_points": 1,
                 "counted": 0,
-                "season_points": 46
+                "season_points": 47
               },
               {
                 "player_id": 82,
@@ -1718,9 +1718,9 @@
                 "team": "BRE",
                 "starter": false,
                 "captain": false,
-                "gw_points": 0,
+                "gw_points": 6,
                 "counted": 0,
-                "season_points": 35
+                "season_points": 41
               },
               {
                 "player_id": 440,
@@ -1758,7 +1758,7 @@
               }
             ],
             "shared": 6,
-            "gw_swing": -4
+            "gw_swing": 2
           }
         },
         {
@@ -1768,9 +1768,9 @@
           "is_me": false,
           "rank": 11,
           "last_rank": 12,
-          "total": 585,
-          "gw_points": 46,
-          "gap_to_me": 166,
+          "total": 591,
+          "gw_points": 52,
+          "gap_to_me": 162,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Gro\u00df",
@@ -1807,6 +1807,16 @@
                 "season_points": 61
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -1814,16 +1824,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -1894,9 +1894,9 @@
                 "team": "BRE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 35
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 41
               },
               {
                 "player_id": 286,
@@ -1934,9 +1934,9 @@
                 "team": "EVE",
                 "starter": false,
                 "captain": false,
-                "gw_points": 0,
+                "gw_points": 1,
                 "counted": 0,
-                "season_points": 39
+                "season_points": 40
               }
             ],
             "multiplier_diffs": [
@@ -1960,7 +1960,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": -17
+            "gw_swing": -21
           }
         },
         {
@@ -1970,8 +1970,8 @@
           "is_me": false,
           "rank": 12,
           "last_rank": 11,
-          "total": 580,
-          "gw_points": 24,
+          "total": 582,
+          "gw_points": 26,
           "gap_to_me": 171,
           "transfer_cost": 4,
           "chip": "",
@@ -2108,7 +2108,7 @@
           "last_rank": 14,
           "total": 562,
           "gw_points": 36,
-          "gap_to_me": 189,
+          "gap_to_me": 191,
           "transfer_cost": 0,
           "chip": "",
           "captain": "N.Jackson",
@@ -2165,6 +2165,16 @@
                 "season_points": 57
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -2172,16 +2182,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -2257,24 +2257,24 @@
                 "season_points": 47
               },
               {
-                "player_id": 503,
-                "name": "Van de Ven",
-                "team": "TOT",
+                "player_id": 593,
+                "name": "Dedi\u0107",
+                "team": "NEW",
                 "starter": true,
                 "captain": false,
                 "gw_points": 0,
                 "counted": 0,
-                "season_points": 31
+                "season_points": 29
               },
               {
-                "player_id": 593,
-                "name": "Dedi\u0107",
-                "team": "NEW",
+                "player_id": 503,
+                "name": "Van de Ven",
+                "team": "TOT",
                 "starter": false,
                 "captain": false,
                 "gw_points": 0,
                 "counted": 0,
-                "season_points": 29
+                "season_points": 31
               },
               {
                 "player_id": 605,
@@ -2306,7 +2306,7 @@
               }
             ],
             "shared": 6,
-            "gw_swing": -7
+            "gw_swing": -5
           }
         },
         {
@@ -2316,9 +2316,9 @@
           "is_me": false,
           "rank": 14,
           "last_rank": 13,
-          "total": 554,
-          "gw_points": 26,
-          "gap_to_me": 197,
+          "total": 560,
+          "gw_points": 32,
+          "gap_to_me": 193,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Haaland",
@@ -2365,6 +2365,16 @@
                 "season_points": 57
               },
               {
+                "player_id": 249,
+                "name": "Barry",
+                "team": "EVE",
+                "starter": true,
+                "captain": false,
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
+              },
+              {
                 "player_id": 399,
                 "name": "Cherki",
                 "team": "MCI",
@@ -2372,16 +2382,6 @@
                 "captain": false,
                 "gw_points": 1,
                 "counted": 1,
-                "season_points": 55
-              },
-              {
-                "player_id": 249,
-                "name": "Barry",
-                "team": "EVE",
-                "starter": true,
-                "captain": false,
-                "gw_points": 0,
-                "counted": 0,
                 "season_points": 55
               },
               {
@@ -2452,9 +2452,9 @@
                 "team": "BRE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 34
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 40
               },
               {
                 "player_id": 330,
@@ -2508,7 +2508,7 @@
               }
             ],
             "shared": 7,
-            "gw_swing": 3
+            "gw_swing": -1
           }
         },
         {
@@ -2518,9 +2518,9 @@
           "is_me": false,
           "rank": 15,
           "last_rank": 15,
-          "total": 467,
-          "gw_points": 15,
-          "gap_to_me": 284,
+          "total": 479,
+          "gw_points": 27,
+          "gap_to_me": 274,
           "transfer_cost": 0,
           "chip": "",
           "captain": "Jo\u00e3o Pedro",
@@ -2612,9 +2612,9 @@
                 "team": "EVE",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 55
+                "gw_points": 2,
+                "counted": 2,
+                "season_points": 57
               },
               {
                 "player_id": 68,
@@ -2665,18 +2665,18 @@
                 "starter": true,
                 "captain": false,
                 "gw_points": 2,
-                "counted": 2,
+                "counted": 4,
                 "season_points": 47
               },
               {
-                "player_id": 165,
-                "name": "Jo\u00e3o Pedro",
-                "team": "CHE",
+                "player_id": 88,
+                "name": "Kayode",
+                "team": "BRE",
                 "starter": true,
-                "captain": true,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 47
+                "captain": false,
+                "gw_points": 6,
+                "counted": 6,
+                "season_points": 40
               },
               {
                 "player_id": 61,
@@ -2739,14 +2739,14 @@
                 "season_points": 23
               },
               {
-                "player_id": 19,
-                "name": "Zubimendi",
-                "team": "ARS",
+                "player_id": 256,
+                "name": "Tete",
+                "team": "FUL",
                 "starter": true,
                 "captain": false,
-                "gw_points": 0,
-                "counted": 0,
-                "season_points": 7
+                "gw_points": 4,
+                "counted": 4,
+                "season_points": 8
               },
               {
                 "player_id": 109,
@@ -2759,24 +2759,24 @@
                 "season_points": 59
               },
               {
-                "player_id": 88,
-                "name": "Kayode",
-                "team": "BRE",
+                "player_id": 165,
+                "name": "Jo\u00e3o Pedro",
+                "team": "CHE",
+                "starter": false,
+                "captain": true,
+                "gw_points": 0,
+                "counted": 0,
+                "season_points": 47
+              },
+              {
+                "player_id": 19,
+                "name": "Zubimendi",
+                "team": "ARS",
                 "starter": false,
                 "captain": false,
                 "gw_points": 0,
                 "counted": 0,
-                "season_points": 34
-              },
-              {
-                "player_id": 256,
-                "name": "Tete",
-                "team": "FUL",
-                "starter": false,
-                "captain": false,
-                "gw_points": 4,
-                "counted": 0,
-                "season_points": 8
+                "season_points": 7
               },
               {
                 "player_id": 248,
@@ -2791,7 +2791,7 @@
             ],
             "multiplier_diffs": [],
             "shared": 2,
-            "gw_swing": 14
+            "gw_swing": 4
           }
         }
       ],
@@ -2833,7 +2833,7 @@
           11,
           11,
           10,
-          8
+          9
         ],
         "224075": [
           2,
@@ -3014,8 +3014,8 @@
           "share": 0.133,
           "captained_by": 0,
           "i_own": true,
-          "season_points": 55,
-          "gw_points": 0
+          "season_points": 57,
+          "gw_points": 2
         }
       ],
       "template_players_i_miss": [],

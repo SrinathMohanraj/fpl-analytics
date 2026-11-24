@@ -157,7 +157,7 @@ gameweek,player_id,squad_slot,is_captain,is_vice_captain,started,multiplier,play
 11,40,6,False,False,True,1,5.0,5.0,0.0
 11,399,7,False,False,True,1,1.0,1.0,0.0
 11,124,8,False,False,True,1,4.0,4.0,0.0
-11,249,9,False,False,True,1,0.0,0.0,0.0
+11,249,9,False,False,True,1,2.0,2.0,0.0
 11,79,10,False,False,True,1,6.0,6.0,0.0
 11,411,11,False,True,True,1,2.0,2.0,0.0
 11,497,12,False,False,False,0,0.0,0.0,0.0
