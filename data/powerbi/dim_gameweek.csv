@@ -9,7 +9,7 @@ gameweek,name,deadline_date,finished,is_current
 8,Gameweek 8,2026-10-23,True,False
 9,Gameweek 9,2026-10-31,True,False
 10,Gameweek 10,2026-11-06,True,False
-11,Gameweek 11,2026-11-21,False,True
+11,Gameweek 11,2026-11-21,True,True
 12,Gameweek 12,2026-11-27,False,False
 13,Gameweek 13,2026-12-01,False,False
 14,Gameweek 14,2026-12-05,False,False
