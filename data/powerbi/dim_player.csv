@@ -1,20 +1,20 @@
 player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,total_points,status
-1,Raya,David Raya Martín,1,GKP,6.2,44.9,4.0,61,d
+1,Raya,David Raya Martín,1,GKP,6.2,43.5,4.0,61,d
 2,Arrizabalaga,Kepa Arrizabalaga Revuelta,1,GKP,4.9,0.1,0.3,1,a
 3,Meslier,Illan Meslier,1,GKP,4.9,0.0,0.0,0,a
 4,Gabriel,Gabriel dos Santos Magalhães,1,DEF,8.1,26.9,5.0,67,a
-5,J.Timber,Jurriën Timber,1,DEF,6.5,1.1,4.0,15,a
+5,J.Timber,Jurriën Timber,1,DEF,6.5,1.2,4.0,15,a
 6,Saliba,William Saliba,1,DEF,5.9,0.5,0.0,0,a
 7,Lewis-Skelly,Myles Lewis-Skelly,1,MID,5.3,0.4,0.3,14,a
-8,Calafiori,Riccardo Calafiori,1,DEF,5.9,48.1,4.3,58,a
+8,Calafiori,Riccardo Calafiori,1,DEF,5.9,47.6,4.3,58,a
 9,Hincapie,Piero Hincapié,1,DEF,5.2,0.7,0.7,5,a
-10,White,Benjamin White,1,DEF,5.3,3.8,0.0,42,a
+10,White,Benjamin White,1,DEF,5.3,3.7,0.0,42,a
 11,Mosquera,Cristhian Mosquera,1,DEF,5.1,1.1,0.0,12,a
-12,Saka,Bukayo Saka,1,MID,9.4,5.1,0.0,37,i
-13,Rice,Declan Rice,1,MID,7.5,13.6,4.7,53,a
+12,Saka,Bukayo Saka,1,MID,9.4,5.0,0.0,37,i
+13,Rice,Declan Rice,1,MID,7.5,13.5,4.7,53,a
 14,Eze,Eberechi Eze,1,MID,6.2,1.0,3.7,19,a
-15,Ødegaard,Martin Ødegaard,1,MID,6.7,16.7,6.3,55,a
-16,Madueke,Noni Madueke,1,MID,6.2,0.7,6.0,30,a
+15,Ødegaard,Martin Ødegaard,1,MID,6.7,16.6,6.3,55,a
+16,Madueke,Noni Madueke,1,MID,6.2,0.8,6.0,30,a
 17,Merino,Mikel Merino Zazón,1,MID,5.6,0.4,1.0,12,a
 18,Martinelli,Gabriel Martinelli Silva,1,MID,6.3,0.1,0.0,0,u
 19,Zubimendi,Martín Zubimendi Ibáñez,1,MID,5.2,0.4,0.3,7,i
@@ -25,14 +25,14 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 25,Gyökeres,Viktor Gyökeres,1,FWD,7.0,2.9,0.7,11,a
 26,Havertz,Kai Havertz,1,FWD,7.4,5.7,5.3,40,a
 27,G.Jesus,Gabriel Fernando de Jesus,1,FWD,5.9,0.1,0.0,0,u
-31,Konsa,Ezri Konsa Ngoyo,1,DEF,4.9,25.2,6.3,58,a
-452,Bruno G.,Bruno Guimarães Rodriguez Moura,1,MID,6.7,2.1,2.7,30,a
-557,Tzolis,Christos Tzolis,1,MID,6.1,3.8,2.3,23,a
+31,Konsa,Ezri Konsa Ngoyo,1,DEF,4.9,24.9,6.3,58,a
+452,Bruno G.,Bruno Guimarães Rodriguez Moura,1,MID,6.7,2.0,2.7,30,a
+557,Tzolis,Christos Tzolis,1,MID,6.1,3.7,2.3,23,a
 29,M.Bizot,Marco Bizot,2,GKP,4.5,0.1,0.0,1,a
 30,Digne,Lucas Digne,2,DEF,4.5,0.0,0.0,0,u
-32,Cash,Matty Cash,2,DEF,4.3,3.2,0.3,18,d
+32,Cash,Matty Cash,2,DEF,4.3,3.1,0.3,18,d
 33,Mings,Tyrone Mings,2,DEF,4.5,0.4,0.0,18,a
-34,Pau,Pau Torres,2,DEF,4.4,0.3,3.7,17,a
+34,Pau,Pau Torres,2,DEF,4.4,0.4,3.7,17,a
 35,Bogarde,Lamare Bogarde,2,MID,4.9,0.1,0.0,1,a
 36,Maatsen,Ian Maatsen,2,DEF,4.4,0.5,2.3,18,a
 37,Lindelöf,Victor Lindelöf,2,DEF,4.5,0.7,1.3,26,a
@@ -46,17 +46,17 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 48,Onana,Amadou Onana,2,MID,4.9,0.0,0.0,0,i
 49,Iling Jr,Samuel Iling-Junior,2,MID,5.0,0.0,0.0,0,u
 50,Burrowes,Bradley Burrowes,2,MID,4.4,0.5,0.0,0,a
-51,George Hemmings,George Hemmings,2,MID,4.4,0.7,0.3,10,a
+51,George Hemmings,George Hemmings,2,MID,4.3,0.7,0.3,10,a
 52,Alysson,Alysson Edward Franco da Rocha dos Santos,2,MID,4.9,0.7,7.0,31,a
 53,Manzambi,Johan Manzambi,2,MID,6.2,8.7,3.3,41,a
 54,Gomes,Joao Gomes,2,MID,5.5,0.1,0.7,13,a
 55,Watkins,Ollie Watkins,2,FWD,7.8,2.2,0.0,0,u
 56,Abraham,Tammy Abraham,2,FWD,5.5,0.2,0.0,4,a
 160,Garnacho,Alejandro Garnacho Ferreyra,2,MID,5.7,0.3,0.3,4,a
-166,N.Jackson,Nicolas Jackson,2,FWD,7.3,36.6,7.3,56,a
+166,N.Jackson,Nicolas Jackson,2,FWD,7.3,37.0,7.3,56,a
 582,Madjo,Brian Madjo,2,FWD,5.3,0.1,0.7,2,a
 596,Ruggeri,Matteo Ruggeri,2,DEF,4.4,0.1,0.0,6,i
-597,Suzuki,Zion Suzuki,2,GKP,5.1,3.9,2.3,37,a
+597,Suzuki,Zion Suzuki,2,GKP,5.1,4.1,2.3,37,a
 606,Rowe,Triston Rowe,2,DEF,4.0,0.1,0.0,0,a
 607,Lynch,Luka Lynch,2,MID,4.5,0.1,0.0,0,u
 611,Wan-Bissaka,Aaron Wan-Bissaka,2,DEF,4.5,0.2,2.7,21,a
@@ -65,10 +65,10 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 631,Mbaye,Ibrahim Mbaye,2,MID,6.0,0.1,1.0,11,a
 667,Wright,James Wright,2,GKP,4.0,0.4,0.0,0,a
 672,Cissé,Modou Kéba Cissé,2,DEF,4.5,0.0,0.0,0,a
-57,Petrović,Đorđe Petrović,3,GKP,4.5,3.3,4.7,36,a
+57,Petrović,Đorđe Petrović,3,GKP,4.5,3.4,4.7,36,a
 58,Forster,Fraser Forster,3,GKP,4.0,3.2,0.0,0,a
 59,Dennis,Will Dennis,3,GKP,4.0,0.1,0.0,0,u
-60,Hill,James Hill,3,DEF,5.7,4.7,8.0,56,a
+60,Hill,James Hill,3,DEF,5.7,5.2,8.0,56,a
 61,Truffert,Adrien Truffert,3,DEF,5.4,3.5,4.7,39,a
 62,Diakité,Bafodé Diakité,3,DEF,4.9,0.1,1.0,5,a
 63,Milosavljević,Veljko Milosavljevic,3,DEF,4.9,0.0,0.0,0,i
@@ -76,9 +76,9 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 65,J.Araujo,Julián Araujo Zúñiga,3,DEF,4.4,0.0,0.0,0,i
 66,Soler,Julio Soler Barreto,3,DEF,4.0,0.2,0.0,1,a
 67,Rayan,Rayan Vitor Simplício Rocha,3,MID,6.3,2.4,2.7,33,a
-68,Tavernier,Marcus Tavernier,3,MID,6.8,33.7,4.7,66,a
+68,Tavernier,Marcus Tavernier,3,MID,6.8,34.1,4.7,66,a
 69,Scott,Alex Scott,3,MID,5.9,2.1,0.0,30,a
-70,Kluivert,Justin Kluivert,3,MID,5.9,1.2,6.0,40,a
+70,Kluivert,Justin Kluivert,3,MID,5.9,1.3,6.0,40,a
 71,Cook,Lewis Cook,3,MID,4.9,0.1,1.0,20,a
 72,Gannon-Doak,Ben Gannon-Doak,3,MID,4.8,0.0,0.3,8,a
 73,Adams,Tyler Adams,3,MID,5.0,0.3,3.0,29,a
@@ -86,11 +86,11 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 75,Christie,Ryan Christie,3,MID,5.0,0.1,4.7,25,a
 76,Tóth.A,Alex Tóth,3,MID,4.9,0.0,0.0,2,i
 77,Adli,Amine Adli,3,MID,4.8,0.0,3.0,11,a
-78,Kroupi.Jr,Junior Kroupi,3,MID,7.3,0.8,2.0,7,a
-79,Evanilson,Francisco Evanilson de Lima Barbosa,3,FWD,6.6,27.7,8.0,67,a
+78,Kroupi.Jr,Junior Kroupi,3,MID,7.3,0.8,2.0,7,d
+79,Evanilson,Francisco Evanilson de Lima Barbosa,3,FWD,6.6,28.2,8.0,67,a
 80,Enes Ünal,Enes Ünal,3,FWD,5.5,0.0,0.0,0,u
 81,Rodríguez,Álvaro Rodríguez,3,FWD,6.0,0.2,0.7,6,a
-566,Silva,António João Pereira de Albuquerque Tavares da Silva,3,DEF,5.1,4.2,6.3,48,a
+566,Silva,António João Pereira de Albuquerque Tavares da Silva,3,DEF,5.1,4.3,6.3,48,a
 573,Sanchez,Juanlu Sánchez,3,DEF,4.4,0.1,0.0,1,i
 608,Jebbison,Daniel Jebbison,3,FWD,5.0,0.1,0.0,3,a
 615,Di Gregorio,Michele Di Gregorio,3,GKP,4.5,0.0,0.0,0,a
@@ -98,14 +98,14 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 83,Valdimarsson,Hákon Rafn Valdimarsson,4,GKP,4.4,0.1,0.0,0,a
 84,Collins,Nathan Collins,4,DEF,5.4,0.7,0.3,11,i
 85,Van den Berg,Sepp van den Berg,4,DEF,4.9,0.1,5.7,20,a
-86,Lewis-Potter,Keane Lewis-Potter,4,MID,5.5,1.9,6.7,55,a
+86,Lewis-Potter,Keane Lewis-Potter,4,MID,5.5,2.1,6.7,55,a
 87,Ajer,Kristoffer Ajer,4,DEF,4.5,3.9,5.3,48,a
-88,Kayode,Michael Kayode,4,DEF,4.5,6.4,4.0,40,a
+88,Kayode,Michael Kayode,4,DEF,4.5,6.3,4.0,40,a
 89,Henry,Rico Henry,4,DEF,4.3,0.1,0.0,1,i
 90,Hickey,Aaron Hickey,4,DEF,4.5,0.1,0.3,9,i
 92,Ji-soo,Kim Ji-soo,4,DEF,4.4,0.0,0.0,0,a
 93,Schuster,Jannik Schuster,4,DEF,4.4,0.4,0.0,22,a
-94,Schade,Kevin Schade,4,MID,6.1,11.5,1.7,47,a
+94,Schade,Kevin Schade,4,MID,6.1,11.0,1.7,47,a
 95,O.Dango,Dango Ouattara,4,MID,6.2,0.4,3.3,29,a
 96,Damsgaard,Mikkel Damsgaard,4,MID,5.2,0.3,1.3,22,a
 97,Jensen,Mathias Jensen,4,MID,5.4,0.1,2.7,18,a
@@ -115,19 +115,19 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 102,Yarmoliuk,Yehor Yarmoliuk,4,MID,4.7,0.4,1.3,19,a
 103,Dasilva,Josh Dasilva,4,MID,4.8,0.0,0.0,0,i
 105,Anthony,Jaidon Anthony,4,MID,5.9,0.2,4.7,37,a
-106,Thiago,Igor Thiago Nascimento Rodrigues,4,FWD,7.8,6.5,2.3,30,s
+106,Thiago,Igor Thiago Nascimento Rodrigues,4,FWD,7.7,6.3,2.3,30,s
 107,Furo,Kaye Furo,4,FWD,4.4,0.5,0.0,0,i
 108,Wilson,Callum Wilson,4,FWD,5.3,0.3,1.3,8,a
-565,M.Sangaré,Mamadou Sangaré,4,MID,5.3,5.5,1.7,33,a
+565,M.Sangaré,Mamadou Sangaré,4,MID,5.3,5.4,1.7,33,a
 620,Diouf,El Hadji Malick Diouf,4,DEF,4.4,0.1,0.7,7,a
 657,Nunes,Gustavo Nunes Fernandes Gomes,4,MID,4.5,0.0,0.0,0,a
 660,Fredrick,Benjamin Fredrick,4,DEF,4.0,0.0,0.0,0,a
 661,Balcombe,Ellery Balcombe,4,GKP,4.0,0.1,0.0,0,a
-109,Verbruggen,Bart Verbruggen,5,GKP,4.7,24.9,6.3,59,a
+109,Verbruggen,Bart Verbruggen,5,GKP,4.7,25.2,6.3,59,a
 111,Steele,Jason Steele,5,GKP,3.9,3.3,0.0,0,a
 113,F.Kadıoğlu,Ferdi Kadıoğlu,5,DEF,4.3,1.2,0.0,29,a
-114,Boscagli,Olivier Boscagli,5,DEF,4.5,0.8,6.0,51,d
-115,De Cuyper,Maxim De Cuyper,5,DEF,5.5,50.3,5.3,76,a
+114,Boscagli,Olivier Boscagli,5,DEF,4.5,0.7,6.0,51,d
+115,De Cuyper,Maxim De Cuyper,5,DEF,5.6,50.7,5.3,76,a
 116,Dunk,Lewis Dunk,5,DEF,4.5,1.5,4.0,42,a
 117,Coppola,Diego Coppola,5,DEF,4.5,0.0,0.0,0,a
 118,Igor,Igor Julio dos Santos de Paulo,5,DEF,4.5,0.0,0.0,0,u
@@ -136,7 +136,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 121,Mitoma,Mitoma Kaoru,5,MID,5.9,0.0,0.0,0,i
 122,Minteh,Yankuba Minteh,5,MID,5.8,0.0,0.7,2,a
 123,Hinshelwood,Jack Hinshelwood,5,MID,5.9,0.6,1.0,26,a
-124,Groß,Pascal Groß,5,MID,6.3,49.6,5.3,74,a
+124,Groß,Pascal Groß,5,MID,6.3,49.7,5.3,74,a
 125,Georginio,Georginio Rutter,5,FWD,5.2,0.4,1.3,16,a
 126,O'Riley,Matt O'Riley,5,MID,5.4,0.1,0.0,2,a
 127,Gomez,Diego Gómez Amarilla,5,MID,5.1,4.6,5.0,54,a
@@ -148,20 +148,20 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 134,Oriola,Nehemiah Oriola,5,MID,4.3,0.2,0.0,0,a
 135,Yohanna,Zadok Yohanna,5,MID,4.7,0.0,0.0,1,i
 137,Tzimas,Stefanos Tzimas,5,FWD,5.4,0.0,0.0,0,i
-138,Kostoulas,Charalampos Kostoulas,5,FWD,5.7,8.6,1.7,48,a
+138,Kostoulas,Charalampos Kostoulas,5,FWD,5.7,8.3,1.7,48,a
 139,Ferguson,Evan Ferguson,5,FWD,4.9,0.0,0.0,0,i
 328,Struijk,Pascal Struijk,5,DEF,4.9,0.1,0.0,5,a
-504,Vuskovic,Luka Vušković,5,DEF,5.3,11.8,6.0,70,a
+504,Vuskovic,Luka Vušković,5,DEF,5.3,12.1,6.0,70,a
 594,David,Promise David,5,FWD,5.9,0.2,0.0,1,a
 600,Osman,Ibrahim Osman,5,MID,4.9,0.0,0.3,4,a
-605,Yalcouyé,Malick Yalcouyé,5,MID,4.4,2.4,0.7,25,i
-614,Hadjam,Jaouen Hadjam,5,DEF,4.5,0.1,0.3,9,d
+605,Yalcouyé,Malick Yalcouyé,5,MID,4.4,2.3,0.7,25,i
+614,Hadjam,Jaouen Hadjam,5,DEF,4.5,0.0,0.3,9,d
 624,Cozier-Duberry,Amario Cozier-Duberry,5,MID,5.0,0.0,0.0,0,u
 639,Andrés,José María Andrés Baixauli,5,MID,5.5,0.1,1.0,21,a
 652,Azeez,Femi Azeez,5,MID,5.5,0.0,0.0,0,a
 658,Ibrahim,Younes Ibrahim,5,MID,4.5,0.0,0.0,0,a
 28,Martinez,Emiliano Martínez Romero,6,GKP,4.9,3.1,0.3,21,a
-40,Rogers,Morgan Rogers,6,MID,8.3,54.6,5.3,57,a
+40,Rogers,Morgan Rogers,6,MID,8.3,54.5,5.3,57,a
 101,Henderson,Jordan Henderson,6,MID,4.9,1.2,1.3,29,a
 136,Welbeck,Danny Welbeck,6,FWD,5.8,0.7,1.0,10,a
 140,Sánchez,Robert Lynch Sánchez,6,GKP,4.9,0.5,0.0,2,u
@@ -176,15 +176,15 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 150,M.Sarr,Mamadou Sarr,6,DEF,4.5,0.0,0.0,0,u
 151,Acheampong,Josh Acheampong,6,DEF,4.5,0.5,3.3,25,a
 152,Palestra,Marco Palestra,6,DEF,5.3,0.5,2.7,10,a
-154,Palmer,Cole Palmer,6,MID,9.8,27.0,4.0,49,a
-156,Neto,Pedro Lomba Neto,6,MID,6.6,4.5,1.7,42,a
+154,Palmer,Cole Palmer,6,MID,9.8,26.3,4.0,49,a
+156,Neto,Pedro Lomba Neto,6,MID,6.6,4.3,1.7,42,a
 157,Estêvão,Estêvão Almeida de Oliveira Gonçalves,6,MID,6.3,0.7,2.0,12,a
 158,Gittens,Jamie Bynoe-Gittens,6,MID,5.8,0.0,0.0,0,i
-159,Caicedo,Moisés Caicedo Corozo,6,MID,5.3,1.0,2.3,15,d
+159,Caicedo,Moisés Caicedo Corozo,6,MID,5.3,1.0,2.3,15,a
 161,Lavia,Roméo Lavia,6,MID,5.0,0.2,3.7,24,a
 163,D.Essugo,Dário Luís Essugo,6,MID,4.5,0.1,0.0,0,u
 164,Quenda,Geovany Quenda,6,MID,5.2,0.0,1.0,9,a
-165,João Pedro,João Pedro Junqueira de Jesus,6,FWD,7.6,27.4,0.0,47,i
+165,João Pedro,João Pedro Junqueira de Jesus,6,FWD,7.6,26.8,0.0,47,i
 168,Marc Guiu,Marc Guiu Paz,6,FWD,5.0,0.1,0.0,0,u
 169,Mheuka,Shumaira Mheuka,6,FWD,4.5,0.4,0.0,0,a
 170,Emegha,Emmanuel Emegha,6,FWD,4.9,0.1,3.0,9,a
@@ -201,7 +201,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 110,Rushworth,Carl Rushworth,7,GKP,4.5,0.8,2.0,28,a
 171,Dovin,Oliver Dovin,7,GKP,4.0,0.7,0.0,0,u
 172,Wilson,Ben Wilson,7,GKP,4.4,0.3,0.0,0,a
-173,Thomas,Bobby Thomas,7,DEF,4.0,6.8,1.0,35,a
+173,Thomas,Bobby Thomas,7,DEF,4.0,6.7,1.0,35,a
 174,Kitching,Liam Kitching,7,DEF,4.0,0.2,0.0,0,u
 175,van Ewijk,Milan van Ewijk,7,DEF,3.9,6.7,2.0,21,a
 176,Dasilva,Jay Dasilva,7,DEF,4.0,1.4,1.0,30,a
@@ -211,7 +211,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 180,Woolfenden,Luke Woolfenden,7,DEF,3.9,0.1,0.0,0,i
 181,Brau,Miguel Brau,7,DEF,4.0,0.0,0.0,0,u
 182,Amenda,Aurèle Amenda,7,DEF,3.9,0.4,0.0,4,i
-183,Rudoni,Jack Rudoni,7,MID,5.0,1.9,7.0,49,a
+183,Rudoni,Jack Rudoni,7,MID,5.0,2.0,7.0,49,a
 184,Grimes,Matt Grimes,7,MID,4.7,0.1,1.0,20,a
 185,Sakamoto,Tatsuhiro Sakamoto,7,MID,4.8,0.1,5.0,21,a
 186,Mason-Clark,Ephron Mason-Clark,7,MID,5.3,0.1,0.0,10,d
@@ -226,7 +226,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 195,Simms,Ellis Simms,7,FWD,4.8,0.5,0.0,10,a
 196,Markelo,Jahnoah Markelo,7,FWD,5.0,0.0,0.0,0,u
 197,Bassette,Norman Bassette,7,FWD,4.5,0.0,0.0,0,u
-492,Awoniyi,Taiwo Awoniyi,7,FWD,5.4,0.3,5.3,21,d
+492,Awoniyi,Taiwo Awoniyi,7,FWD,5.4,0.3,5.3,21,i
 575,Yirenkyi,Caleb Yirenkyi,7,MID,4.8,0.1,1.0,19,d
 584,Hamer,Gustavo Hamer,7,MID,5.2,0.1,0.7,7,a
 599,Cherif,Sidiki Cherif,7,FWD,5.0,0.4,1.0,19,a
@@ -242,7 +242,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 204,Mitchell,Tyrick Mitchell,8,DEF,4.4,4.4,1.7,34,a
 205,Sosa,Borna Sosa,8,DEF,4.5,0.0,0.0,0,u
 206,Chadi Riad,Chadi Riad Dnanou,8,DEF,4.3,0.0,0.0,1,i
-207,Mingueza,Oscar Mingueza,8,DEF,4.2,0.0,0.3,3,d
+207,Mingueza,Oscar Mingueza,8,DEF,4.2,0.0,0.3,3,a
 208,Sarr,Ismaïla Sarr,8,MID,6.2,0.5,0.0,2,i
 210,Wharton,Adam Wharton,8,MID,5.3,0.6,2.3,30,a
 211,Yeremy,Yéremy Pino Santos,8,MID,5.5,0.3,4.7,40,s
@@ -274,14 +274,14 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 226,Pickford,Jordan Pickford,9,GKP,5.5,8.3,3.7,40,a
 227,Travers,Mark Travers,9,GKP,5.0,0.0,0.0,0,a
 228,King,Tom King,9,GKP,4.5,0.0,0.0,0,a
-229,Tarkowski,James Tarkowski,9,DEF,6.2,17.2,1.3,52,s
+229,Tarkowski,James Tarkowski,9,DEF,6.2,16.2,1.3,52,s
 230,Branthwaite,Jarrad Branthwaite,9,DEF,5.5,2.1,4.7,45,a
 231,Keane,Michael Keane,9,DEF,4.7,0.6,1.0,4,a
 232,O'Brien,Jake O'Brien,9,DEF,4.8,0.3,3.0,15,a
-233,Mykolenko,Vitalii Mykolenko,9,DEF,4.6,2.5,5.0,43,a
+233,Mykolenko,Vitalii Mykolenko,9,DEF,4.6,2.4,5.0,43,a
 234,Patterson,Nathan Patterson,9,DEF,4.5,0.0,0.0,0,u
 235,Aznou,Adam Aznou,9,DEF,4.0,0.1,0.0,0,u
-236,Dewsbury-Hall,Kiernan Dewsbury-Hall,9,MID,6.7,7.0,5.0,52,a
+236,Dewsbury-Hall,Kiernan Dewsbury-Hall,9,MID,6.7,6.8,5.0,52,a
 238,Grealish,Jack Grealish,9,MID,6.5,0.4,0.3,11,a
 239,Garner,James Garner,9,MID,6.0,0.2,3.0,29,a
 242,George,Tyrique George,9,MID,5.5,0.4,2.7,31,a
@@ -291,7 +291,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 246,Röhl,Merlin Röhl,9,MID,4.9,0.0,2.3,17,a
 247,Hackney,Hayden Hackney,9,MID,5.3,0.1,1.0,15,a
 248,Beto,Norberto Bercique Gomes Betuncal,9,FWD,5.4,0.4,0.0,2,u
-249,Barry,Thierno Barry,9,FWD,5.7,11.4,9.0,57,a
+249,Barry,Thierno Barry,9,FWD,5.7,11.1,9.0,57,a
 649,Maitland-Niles,Ainsley Maitland-Niles,9,DEF,4.5,1.1,0.0,26,a
 654,Graham,Braiden Graham,9,MID,4.4,0.1,0.0,0,a
 250,Leno,Bernd Leno,10,GKP,4.5,4.2,2.3,41,a
@@ -303,18 +303,18 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 256,Tete,Kenny Tete,10,DEF,4.4,0.2,2.0,8,a
 257,Bassey,Calvin Bassey,10,DEF,4.5,1.2,1.3,37,a
 258,Castagne,Timothy Castagne,10,DEF,4.5,1.1,3.0,44,a
-261,Iwobi,Alex Iwobi,10,MID,5.4,1.4,3.0,41,a
+261,Iwobi,Alex Iwobi,10,MID,5.4,1.3,3.0,41,a
 262,Smith Rowe,Emile Smith Rowe,10,MID,5.2,0.2,0.0,3,i
 263,Kevin,Kevin Santos Lopes de Macedo,10,MID,5.2,0.0,0.0,5,a
 264,Bobb,Oscar Bobb,10,MID,5.5,0.5,3.7,41,a
 265,Berge,Sander Berge,10,MID,4.8,0.3,3.3,29,a
 266,Cairney,Tom Cairney,10,MID,4.9,0.0,0.3,3,a
-268,King,Josh King,10,MID,5.4,2.7,2.3,41,a
+268,King,Josh King,10,MID,5.4,2.6,2.3,41,a
 269,Sessegnon,Ryan Sessegnon,10,DEF,4.3,0.2,1.0,11,a
 270,Reed,Harrison Reed,10,MID,4.3,1.0,0.0,0,a
 271,Muniz,Rodrigo Muniz Carvalho,10,FWD,5.3,0.4,5.3,21,a
-272,Kusi-Asare,Jonah Kusi-Asare,10,FWD,4.3,4.0,0.0,0,a
-569,Gonzalo,Gonzalo García,10,FWD,5.8,3.0,1.7,25,a
+272,Kusi-Asare,Jonah Kusi-Asare,10,FWD,4.3,3.9,0.0,0,a
+569,Gonzalo,Gonzalo García,10,FWD,5.8,2.9,1.7,25,a
 570,Palacios,César Palacios,10,MID,5.2,0.1,2.0,20,a
 580,Charles,Shea Charles,10,MID,5.0,0.1,2.3,28,a
 610,De Fougerolles,Luc De Fougerolles,10,DEF,4.0,0.1,0.0,0,u
@@ -328,7 +328,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 274,Butland,Jack Butland,11,GKP,4.4,0.1,0.0,0,a
 275,Cartwright,Harvey Cartwright,11,GKP,4.0,0.0,0.0,0,u
 276,Lo-Tutala,Thimothée Lo-Tutala,11,GKP,4.0,0.0,0.0,0,u
-277,Egan,John Egan,11,DEF,4.0,6.2,1.0,38,a
+277,Egan,John Egan,11,DEF,4.0,6.1,1.0,38,a
 278,Hughes,Charlie Hughes,11,DEF,3.9,0.1,0.0,0,i
 279,Ajayi,Semi Ajayi,11,DEF,4.2,11.8,4.7,48,a
 280,Coyle,Lewie Coyle,11,DEF,4.0,0.6,4.0,31,a
@@ -337,16 +337,16 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 283,Jacob,Matty Jacob,11,DEF,4.0,0.0,0.0,0,u
 284,McCarthy,Cathal McCarthy,11,DEF,4.0,0.1,0.0,0,a
 285,McNair,Paddy McNair,11,DEF,3.9,0.1,0.0,1,a
-286,Belloumi,Mohamed Belloumi,11,MID,5.2,8.9,4.0,55,a
+286,Belloumi,Mohamed Belloumi,11,MID,5.2,9.0,4.0,55,a
 287,Millar,Liam Millar,11,MID,5.0,0.0,0.0,6,u
 288,Dowell,Kieran Dowell,11,MID,4.3,0.2,0.0,0,a
 289,Crooks,Matt Crooks,11,MID,4.4,0.5,1.0,9,a
-290,Slater,Regan Slater,11,MID,4.5,4.1,2.3,27,a
+290,Slater,Regan Slater,11,MID,4.5,4.0,2.3,27,a
 291,Matazo,Eliot Matazo,11,MID,4.5,0.0,0.0,0,i
 292,Ömür,Abdülkadir Ömür,11,MID,4.8,0.0,0.0,0,a
 293,Kamara,Abu Kamara,11,MID,5.0,0.0,0.0,0,u
 294,Zambrano,Óscar Zambrano,11,MID,4.4,0.1,0.0,0,a
-295,McBurnie,Oli McBurnie,11,FWD,5.5,2.1,9.0,51,a
+295,McBurnie,Oli McBurnie,11,FWD,5.5,2.2,9.0,51,a
 296,Akintola,David Akintola,11,MID,5.0,0.0,0.0,0,u
 297,Gyabi,Darko Gyabi,11,MID,4.4,0.0,0.0,0,d
 298,Destan,Enis Destan,11,FWD,4.5,0.1,0.0,0,u
@@ -354,7 +354,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 340,Gelhardt,Joe Gelhardt,11,MID,5.0,0.0,0.7,13,i
 556,Targett,Matt Targett,11,DEF,3.9,1.1,0.0,1,i
 563,Morita,Hidemasa Morita,11,MID,4.9,0.0,0.3,5,i
-572,Tzolakis,Konstantinos Tzolakis,11,GKP,4.7,13.8,5.7,59,a
+572,Tzolakis,Konstantinos Tzolakis,11,GKP,4.7,14.0,5.7,59,a
 574,Hjertø-Dahl,Jens Hjertø-Dahl,11,MID,4.7,0.0,0.3,2,a
 576,Stroud,Elliot Stroud,11,MID,4.9,0.1,2.0,21,a
 585,Herrington,Lucas Herrington,11,DEF,3.9,0.5,0.3,10,a
@@ -366,14 +366,14 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 638,Norton-Cuffy,Brooke Norton-Cuffy,11,DEF,3.9,0.4,0.7,6,a
 642,Thomas,Sorba Thomas,11,MID,5.5,0.0,0.3,14,a
 645,Mouzakitis,Christos Mouzakitis,11,MID,5.0,0.0,0.3,1,a
-259,Diop,Issa Diop,12,DEF,3.9,9.4,1.0,21,a
+259,Diop,Issa Diop,12,DEF,3.9,9.3,1.0,21,a
 267,Lukić,Saša Lukić,12,MID,4.9,0.1,1.3,19,a
 300,Walton,Christian Walton,12,GKP,4.4,0.5,2.0,15,a
-301,Palmer,Alex Palmer,12,GKP,3.9,3.3,0.0,0,a
+301,Palmer,Alex Palmer,12,GKP,3.9,3.2,0.0,0,a
 302,Button,David Button,12,GKP,4.0,0.5,0.0,0,a
 303,Kipré,Cédric Kipré,12,DEF,3.9,0.7,0.0,0,a
 304,O'Shea,Dara O'Shea,12,DEF,4.0,2.6,1.7,31,a
-305,Davis,Leif Davis,12,DEF,4.0,6.0,0.3,29,d
+305,Davis,Leif Davis,12,DEF,4.0,5.9,0.3,29,d
 306,Greaves,Jacob Greaves,12,DEF,3.8,1.0,0.3,5,a
 307,Johnson,Ben Johnson,12,DEF,4.0,0.0,0.0,0,u
 308,Furlong,Darnell Furlong,12,DEF,3.9,0.5,0.3,2,a
@@ -389,9 +389,9 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 318,Philogene,Jaden Philogene,12,MID,5.4,0.1,1.0,9,a
 319,Szmodics,Sam Szmodics,12,MID,5.0,0.0,0.0,0,u
 320,Akpom,Chuba Akpom,12,FWD,5.0,0.7,0.7,12,a
-321,Walle Egeli,Sindre Walle Egeli,12,FWD,4.4,2.4,0.0,2,a
+321,Walle Egeli,Sindre Walle Egeli,12,FWD,4.4,2.3,0.0,2,a
 322,Al-Hamadi,Ali Al-Hamadi,12,FWD,5.0,0.0,0.0,0,u
-323,McAteer,Kasey McAteer,12,MID,4.3,0.9,0.0,3,a
+323,McAteer,Kasey McAteer,12,MID,4.3,0.8,0.0,3,a
 324,Mehmeti,Anis Mehmeti,12,MID,4.7,0.0,0.0,0,a
 554,Van Oevelen,Kayne van Oevelen,12,GKP,4.5,0.0,0.0,0,u
 562,Maeda,Daizen Maeda,12,MID,5.2,0.2,1.3,22,a
@@ -406,13 +406,13 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 326,Perri,Lucas Estella Perri,13,GKP,4.5,0.2,0.0,0,u
 327,Bijol,Jaka Bijol,13,DEF,5.0,0.5,0.0,21,a
 329,Rodon,Joe Rodon,13,DEF,4.2,0.4,0.7,9,a
-330,Bogle,Jayden Bogle,13,DEF,4.8,12.1,4.0,62,a
+330,Bogle,Jayden Bogle,13,DEF,4.8,12.5,4.0,62,a
 331,Gudmundsson,Gabriel Gudmundsson,13,DEF,4.5,0.1,1.3,29,a
-332,Justin,James Justin,13,DEF,4.5,2.7,5.0,55,a
+332,Justin,James Justin,13,DEF,4.5,2.8,5.0,55,a
 333,Bornauw,Sebastiaan Bornauw,13,DEF,4.5,0.0,0.0,0,u
-334,Muharemović,Tarik Muharemović,13,DEF,5.1,7.7,5.0,58,a
+334,Muharemović,Tarik Muharemović,13,DEF,5.2,8.7,5.0,58,a
 335,Stach,Anton Stach,13,MID,6.0,1.5,0.7,34,a
-336,Okafor,Noah Okafor,13,MID,5.7,1.5,6.7,43,a
+336,Okafor,Noah Okafor,13,MID,5.8,2.1,6.7,43,a
 337,Aaronson,Brenden Aaronson,13,MID,5.2,0.3,2.7,19,a
 338,Ampadu,Ethan Ampadu,13,MID,5.3,0.7,4.3,38,a
 339,Longstaff,Sean Longstaff,13,MID,4.8,0.1,1.3,8,a
@@ -421,11 +421,11 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 343,James,Daniel James,13,MID,4.9,0.1,0.7,5,a
 344,Gruev,Ilia Gruev,13,MID,5.0,0.0,0.3,1,a
 345,Tanaka,Tanaka Ao,13,MID,4.9,0.3,3.0,29,a
-346,Calvert-Lewin,Dominic Calvert-Lewin,13,FWD,6.0,17.6,4.3,48,a
+346,Calvert-Lewin,Dominic Calvert-Lewin,13,FWD,6.0,18.8,4.3,48,a
 347,Nmecha,Lukas Nmecha,13,FWD,5.2,0.4,1.0,13,a
 348,Piroe,Joël Piroe,13,FWD,5.0,0.0,0.0,0,u
 349,Mateo Joseph,Mateo Joseph Fernández-Regatillo,13,FWD,4.4,0.0,0.0,0,i
-385,Trafford,James Trafford,13,GKP,5.1,8.2,4.7,56,a
+385,Trafford,James Trafford,13,GKP,5.1,9.0,4.7,56,a
 598,Elvedi,Nico Elvedi,13,DEF,4.5,0.1,4.7,30,a
 603,Lienou,Jayden Lienou,13,DEF,4.0,0.1,0.0,0,a
 604,Cresswell,Alfie Cresswell,13,MID,4.5,0.1,0.0,0,a
@@ -433,25 +433,25 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 629,Zetterer,Michael Zetterer,13,GKP,4.0,0.7,0.0,0,a
 641,Bard,Melvin Bard,13,DEF,4.5,0.0,0.7,3,a
 648,Bahoya,Jean-Mattéo Bahoya,13,MID,4.8,0.0,0.3,3,a
-350,A.Becker,Alisson Becker,14,GKP,5.5,4.5,4.3,49,a
+350,A.Becker,Alisson Becker,14,GKP,5.5,4.7,4.3,49,a
 351,Mamardashvili,Giorgi Mamardashvili,14,GKP,4.8,0.1,0.0,0,a
 352,Woodman,Freddie Woodman,14,GKP,3.9,0.9,0.0,0,a
 353,Pecsi,Armin Pecsi,14,GKP,4.0,0.0,0.0,0,u
 354,Jaros,Vitezslav Jaros,14,GKP,4.0,0.0,0.0,0,i
-355,Davies,Harvey Davies,14,GKP,4.0,0.2,0.0,0,a
-356,Virgil,Virgil van Dijk,14,DEF,6.4,14.7,3.7,49,a
+355,Davies,Harvey Davies,14,GKP,4.0,0.1,0.0,0,a
+356,Virgil,Virgil van Dijk,14,DEF,6.4,14.9,3.7,49,a
 357,Frimpong,Jeremie Frimpong,14,DEF,5.1,1.1,0.3,5,a
 358,Kerkez,Milos Kerkez,14,DEF,5.2,1.8,3.0,31,a
 359,Gomez,Joe Gomez,14,DEF,4.9,0.0,0.7,4,a
 360,Bradley,Conor Bradley,14,DEF,4.9,0.0,0.0,0,i
 361,Lucky,Wellity Lucky,14,DEF,3.9,0.1,0.0,0,a
-362,Jacquet,Jeremy Jacquet,14,DEF,5.1,4.9,4.0,50,a
+362,Jacquet,Jeremy Jacquet,14,DEF,5.1,5.0,4.0,50,a
 363,Leoni,Giovanni Leoni,14,DEF,3.9,0.0,0.0,0,i
 364,Tsimikas,Kostas Tsimikas,14,DEF,4.8,0.1,0.3,4,a
 365,Ramsay,Calvin Ramsay,14,DEF,4.0,0.1,0.0,0,u
-366,Wirtz,Florian Wirtz,14,MID,7.4,11.3,9.7,60,a
-367,Gakpo,Cody Gakpo,14,MID,7.1,6.4,1.7,40,i
-368,Szoboszlai,Dominik Szoboszlai,14,MID,6.7,14.0,5.7,38,a
+366,Wirtz,Florian Wirtz,14,MID,7.5,14.1,9.7,60,a
+367,Gakpo,Cody Gakpo,14,MID,7.1,6.1,1.7,40,i
+368,Szoboszlai,Dominik Szoboszlai,14,MID,6.7,14.2,5.7,38,a
 369,Ngumoha,Rio Ngumoha,14,MID,5.7,0.7,5.0,22,a
 370,Chiesa,Federico Chiesa,14,MID,5.3,0.0,0.0,1,a
 371,Gravenberch,Ryan Gravenberch,14,MID,5.8,0.8,0.0,11,i
@@ -462,31 +462,31 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 376,Bajcetic,Stefan Bajčetić Maquieira,14,MID,5.0,0.0,0.0,0,u
 377,Munoz,Victor Munoz,14,MID,6.5,0.6,2.3,33,d
 378,McConnell,James McConnell,14,MID,4.3,0.2,0.0,0,a
-379,Isak,Alexander Isak,14,FWD,9.4,27.5,5.0,66,a
+379,Isak,Alexander Isak,14,FWD,9.4,28.5,5.0,66,a
 380,Ekitiké,Hugo Ekitiké,14,FWD,7.4,0.1,0.0,0,i
 381,Koumas,Lewis Koumas,14,MID,5.0,0.1,1.0,10,a
 382,Danns,Jayden Danns,14,FWD,4.5,0.2,0.0,0,a
 383,Elliott,Harvey Elliott,14,MID,5.4,0.0,0.0,0,u
-579,Araujo,Ronald Araujo,14,DEF,5.5,5.0,5.7,50,a
+579,Araujo,Ronald Araujo,14,DEF,5.5,5.2,5.7,50,a
 627,Barcola,Bradley Barcola,14,MID,8.1,4.5,3.7,30,a
 155,Enzo,Enzo Fernández,15,MID,6.9,3.3,1.7,24,a
-237,Ndiaye,Iliman Ndiaye,15,MID,5.7,5.1,2.0,39,a
-384,Donnarumma,Gianluigi Donnarumma,15,GKP,5.4,6.9,1.7,35,a
+237,Ndiaye,Iliman Ndiaye,15,MID,5.7,4.9,2.0,39,a
+384,Donnarumma,Gianluigi Donnarumma,15,GKP,5.4,6.8,1.7,35,a
 386,Bettinelli,Marcus Bettinelli,15,GKP,4.4,0.0,0.0,0,a
-387,O'Reilly,Nico O'Reilly,15,DEF,6.2,8.0,1.3,17,a
-388,Guéhi,Marc Guéhi,15,DEF,5.9,12.2,0.7,39,a
+387,O'Reilly,Nico O'Reilly,15,DEF,6.2,7.9,1.3,17,a
+388,Guéhi,Marc Guéhi,15,DEF,5.9,12.1,0.7,39,a
 389,Matheus N.,Matheus Nunes,15,DEF,5.9,0.9,1.0,22,a
-390,Rúben,Rúben dos Santos Gato Alves Dias,15,DEF,5.5,2.0,1.7,30,a
-391,Gvardiol,Joško Gvardiol,15,DEF,5.5,19.3,1.0,45,a
+390,Rúben,Rúben dos Santos Gato Alves Dias,15,DEF,5.5,1.9,1.7,30,a
+391,Gvardiol,Joško Gvardiol,15,DEF,5.5,18.7,1.0,45,a
 392,Aït-Nouri,Rayan Aït-Nouri,15,DEF,5.1,0.3,0.0,0,a
 393,Khusanov,Abdukodir Khusanov,15,DEF,5.3,1.2,2.3,20,a
 394,Alleyne,Max Alleyne,15,DEF,5.0,0.0,0.0,0,u
 395,Lewis,Rico Lewis,15,DEF,4.3,0.2,0.0,2,a
 396,Vitor Reis,Vitor de Oliveira Nunes dos Reis,15,DEF,4.4,0.0,0.0,1,a
 397,Semenyo,Antoine Semenyo,15,MID,8.1,5.2,0.0,37,i
-398,Foden,Phil Foden,15,MID,6.8,2.0,1.3,23,a
-399,Cherki,Rayan Cherki,15,MID,7.8,31.3,3.7,55,a
-400,Doku,Jérémy Doku,15,MID,7.5,4.0,2.0,27,a
+398,Foden,Phil Foden,15,MID,6.8,1.9,1.3,23,a
+399,Cherki,Rayan Cherki,15,MID,7.8,30.2,3.7,55,a
+400,Doku,Jérémy Doku,15,MID,7.5,3.8,2.0,27,a
 402,Rodrigo,Rodrigo 'Rodri' Hernandez Cascante,15,MID,6.5,0.0,0.0,0,u
 404,Reijnders,Tijjani Reijnders,15,MID,6.0,0.0,0.0,0,u
 406,Kovačić,Mateo Kovačić,15,MID,5.3,0.1,0.0,7,a
@@ -494,8 +494,8 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 408,Phillips,Kalvin Phillips,15,MID,5.0,0.0,0.0,0,u
 409,Mukasa,Divine Mukasa,15,MID,4.5,0.1,0.0,0,u
 410,Monga,Jeremy Monga,15,MID,4.9,0.0,0.0,0,u
-411,Haaland,Erling Haaland,15,FWD,15.8,77.1,2.0,72,a
-481,Anderson,Elliot Anderson,15,MID,6.2,3.6,5.3,39,a
+411,Haaland,Erling Haaland,15,FWD,15.7,75.8,2.0,72,a
+481,Anderson,Elliot Anderson,15,MID,6.2,3.5,5.3,39,a
 587,Rulli,Gerónimo Rulli,15,GKP,4.9,0.0,0.0,0,a
 616,Bouaddi,Ayyoub Bouaddi,15,MID,5.5,0.2,1.0,7,a
 621,McAidoo,Ryan McAidoo,15,MID,4.4,0.1,0.0,2,a
@@ -506,7 +506,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 131,Baleba,Carlos Baleba,16,MID,4.9,0.2,0.3,8,i
 162,Andrey Santos,Andrey Nascimento dos Santos,16,MID,4.6,0.4,1.0,11,a
 325,Darlow,Karl Darlow,16,GKP,4.4,0.0,0.0,0,a
-412,Lammens,Senne Lammens,16,GKP,4.8,6.9,2.0,23,a
+412,Lammens,Senne Lammens,16,GKP,4.8,6.8,2.0,23,a
 413,Bayindir,Altay Bayındır,16,GKP,4.5,0.0,0.0,0,u
 414,Heaton,Tom Heaton,16,GKP,4.0,0.1,0.0,0,a
 415,Dorgu,Patrick Dorgu,16,MID,5.7,0.3,4.3,23,a
@@ -517,11 +517,11 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 420,Yoro,Leny Yoro,16,DEF,4.8,0.4,-0.3,9,a
 421,Heaven,Ayden Heaven,16,DEF,4.2,0.2,0.0,2,a
 422,Mazraoui,Noussair Mazraoui,16,DEF,4.3,0.4,1.0,9,a
-423,Shaw,Luke Shaw,16,DEF,4.2,3.0,0.0,12,a
+423,Shaw,Luke Shaw,16,DEF,4.2,2.9,0.0,12,a
 424,Amass,Harry Amass,16,DEF,3.9,0.2,0.0,0,a
 425,Fredricson,Tyler Fredricson,16,DEF,4.0,0.0,0.0,0,u
-426,B.Fernandes,Bruno Borges Fernandes,16,MID,11.6,20.1,4.7,47,a
-427,Mbeumo,Bryan Mbeumo,16,MID,7.8,17.3,1.3,47,a
+426,B.Fernandes,Bruno Borges Fernandes,16,MID,11.6,20.6,4.7,47,a
+427,Mbeumo,Bryan Mbeumo,16,MID,7.8,17.0,1.3,47,a
 428,Cunha,Matheus Santos Carneiro da Cunha,16,MID,7.8,5.5,2.7,46,a
 429,Rashford,Marcus Rashford,16,MID,6.8,0.9,0.0,11,i
 430,Mount,Mason Mount,16,MID,5.4,0.0,1.0,7,a
@@ -542,12 +542,12 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 444,Jaouen,Ewen Jaouen,17,GKP,4.4,0.0,0.0,0,i
 445,Thiaw,Malick Thiaw,17,DEF,4.9,1.3,3.0,25,a
 446,Schär,Fabian Schär,17,DEF,4.9,0.2,1.0,12,a
-447,Botman,Sven Botman,17,DEF,5.0,0.7,0.3,27,a
+447,Botman,Sven Botman,17,DEF,5.0,0.6,0.3,27,a
 448,Burn,Dan Burn,17,DEF,4.8,0.7,2.3,15,a
-449,Hall,Lewis Hall,17,DEF,5.2,15.9,2.3,47,d
-450,Livramento,Tino Livramento,17,DEF,4.8,0.0,0.3,5,a
+449,Hall,Lewis Hall,17,DEF,5.2,15.3,2.3,47,d
+450,Livramento,Tino Livramento,17,DEF,4.8,0.1,0.3,5,a
 451,A.Murphy,Alex Murphy,17,DEF,4.0,0.0,0.0,0,u
-453,Barnes,Harvey Barnes,17,MID,6.0,5.6,3.7,51,a
+453,Barnes,Harvey Barnes,17,MID,6.0,5.4,3.7,51,a
 454,Elanga,Anthony Elanga,17,MID,6.0,2.2,1.3,23,a
 456,J.Ramsey,Jacob Ramsey,17,MID,4.8,0.1,-0.3,7,a
 457,J.Murphy,Jacob Murphy,17,MID,5.9,0.1,4.0,22,a
@@ -557,7 +557,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 461,Touré,Bazoumana Touré,17,MID,5.7,0.1,0.3,11,a
 462,Steur,Sean Steur,17,MID,4.7,0.1,1.7,14,a
 463,Woltemade,Nick Woltemade,17,FWD,5.9,0.4,0.0,4,u
-464,Wissa,Yoane Wissa,17,FWD,5.9,7.3,1.3,23,a
+464,Wissa,Yoane Wissa,17,FWD,5.9,7.2,1.3,23,a
 465,Osula,William Osula,17,FWD,5.8,0.4,3.0,23,a
 466,Neave,Sean Neave,17,FWD,4.5,0.3,0.0,0,u
 559,Bamba,Aladji Bamba,17,MID,4.8,0.1,0.0,3,a
@@ -571,10 +571,10 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 665,Mills,Michael Mills,17,MID,4.5,0.0,0.0,0,a
 666,Thompson,Kyran Thompson,17,MID,4.5,0.0,0.0,0,a
 167,Delap,Liam Delap,18,FWD,5.3,1.8,5.3,31,a
-201,Muñoz,Daniel Muñoz Mejía,18,DEF,5.2,4.0,0.7,17,a
+201,Muñoz,Daniel Muñoz Mejía,18,DEF,5.2,3.9,0.7,17,a
 467,Sels,Matz Sels,18,GKP,5.0,1.3,1.7,25,a
 468,John,John Victor Maciel Furtado,18,GKP,4.4,0.1,0.0,0,a
-469,N.Williams,Neco Williams,18,DEF,4.8,4.8,1.3,35,a
+469,N.Williams,Neco Williams,18,DEF,4.8,4.7,1.3,35,a
 470,Morato,Felipe Rodrigues da Silva,18,DEF,5.0,0.0,0.0,0,u
 471,Milenković,Nikola Milenković,18,DEF,5.4,0.7,0.3,15,a
 472,Murillo,Murillo Costa dos Santos,18,DEF,5.5,1.9,2.3,35,a
@@ -600,17 +600,17 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 558,Schlager,Xaver Schlager,18,MID,4.9,0.1,3.0,32,a
 581,Diomande,Ousmane Diomande,18,DEF,5.3,0.5,0.0,10,a
 590,Benda,Steven Benda,18,GKP,4.5,0.1,0.0,0,a
-112,Van Hecke,Jan Paul van Hecke,19,DEF,5.2,19.9,8.3,63,a
+112,Van Hecke,Jan Paul van Hecke,19,DEF,5.2,20.8,8.3,63,a
 147,Tosin,Tosin Adarabioyo,19,DEF,4.3,0.1,0.0,3,i
 401,Marmoush,Omar Marmoush,19,FWD,7.0,2.3,1.7,25,a
 403,Sávio,Sávio Moreira de Oliveira,19,MID,6.4,0.3,0.3,11,d
-455,Tonali,Sandro Tonali,19,MID,5.3,1.9,1.3,34,a
+455,Tonali,Sandro Tonali,19,MID,5.3,1.8,1.3,34,a
 494,Vicario,Guglielmo Vicario,19,GKP,4.5,0.1,0.0,0,u
 495,Austin,Brandon Austin,19,GKP,4.0,0.9,0.0,0,a
-496,Kinsky,Antonín Kinský,19,GKP,4.4,16.4,5.0,47,a
-497,Dubravka,Martin Dubravka,19,GKP,3.9,14.5,0.0,0,a
+496,Kinsky,Antonín Kinský,19,GKP,4.5,16.8,5.0,47,a
+497,Dubravka,Martin Dubravka,19,GKP,3.9,14.2,0.0,0,a
 498,Senesi,Marcos Senesi Barón,19,DEF,5.7,2.9,2.7,13,a
-499,Pedro Porro,Pedro Porro Sauceda,19,DEF,5.3,5.3,5.7,27,a
+499,Pedro Porro,Pedro Porro Sauceda,19,DEF,5.3,5.4,5.7,27,a
 500,Romero,Cristian Romero,19,DEF,5.0,0.1,0.0,0,u
 502,Robertson,Andrew Robertson,19,DEF,4.3,2.8,3.7,39,a
 503,Van de Ven,Micky van de Ven,19,DEF,5.0,3.9,2.3,31,a
@@ -635,7 +635,7 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 523,Moore,Mikey Moore,19,MID,5.0,0.0,0.0,3,u
 524,Olusesi,Callum Olusesi,19,MID,4.4,0.7,0.0,0,a
 525,Fernandes,Mateus Fernandes,19,MID,5.6,0.7,4.0,28,a
-526,Solanke,Dominic Solanke-Mitchell,19,FWD,5.8,1.4,3.3,29,a
+526,Solanke,Dominic Solanke-Mitchell,19,FWD,5.8,1.3,3.3,29,a
 527,Richarlison,Richarlison de Andrade,19,FWD,5.9,0.5,0.0,2,u
 528,Scarlett,Dane Scarlett,19,FWD,4.5,0.7,0.0,0,u
 578,Mudryk,Mykhailo Mudryk,19,MID,5.3,0.0,0.0,1,i
@@ -645,10 +645,10 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 529,Roefs,Robin Roefs,20,GKP,4.8,2.1,7.0,44,a
 530,Patterson,Anthony Patterson,20,GKP,4.0,0.1,0.0,0,u
 531,Ellborg,Melker Ellborg,20,GKP,4.4,0.1,0.0,0,a
-532,Ballard,Daniel Ballard,20,DEF,4.7,0.9,0.0,14,i
+532,Ballard,Daniel Ballard,20,DEF,4.7,0.8,0.0,14,i
 533,Mukiele,Nordi Mukiele,20,DEF,5.3,1.4,5.7,37,a
-534,Hume,Trai Hume,20,DEF,4.2,1.6,4.0,32,a
-535,Alderete,Omar Alderete,20,DEF,4.8,0.2,0.0,1,a
+534,Hume,Trai Hume,20,DEF,4.1,1.6,4.0,32,a
+535,Alderete,Omar Alderete,20,DEF,4.8,0.2,0.0,1,d
 536,Reinildo,Reinildo Mandava,20,DEF,4.4,0.2,4.3,28,a
 537,Seelt,Jenson Seelt,20,DEF,4.5,0.0,0.0,0,u
 538,Hjelde,Leo Fuhr Hjelde,20,DEF,4.0,0.0,0.0,0,u
@@ -665,11 +665,11 @@ player_id,web_name,full_name,team_id,position,price_m,selected_by_percent,form,t
 549,Talbi,Chemsdine Talbi,20,MID,5.2,0.1,2.3,9,a
 550,Jocelin.T,Djiamgone Jocelin Ta Bi,20,MID,4.9,0.0,0.0,1,a
 551,N.Angulo,Nilson Angulo,20,MID,5.0,0.1,0.3,22,a
-552,Brobbey,Brian Brobbey,20,FWD,5.7,3.9,2.0,32,i
+552,Brobbey,Brian Brobbey,20,FWD,5.6,3.8,2.0,32,i
 553,Isidor,Wilson Isidor,20,FWD,5.4,0.7,1.3,21,a
-612,Methalie,Dayann Méthalie,20,DEF,4.5,0.0,0.0,0,a
+612,Methalie,Dayann Méthalie,20,DEF,4.5,0.0,0.0,0,d
 613,Ahoka,Jules Ahoka,20,MID,4.4,0.2,3.0,10,a
 646,Fofana,Malick Fofana,20,MID,5.4,0.0,0.3,5,a
-651,J.Angulo,Juan Angulo,20,FWD,4.5,0.7,0.0,1,a
+651,J.Angulo,Juan Angulo,20,FWD,4.5,0.6,0.0,1,a
 668,Tutierov,Tymur Tutierov,20,MID,4.8,0.0,0.0,2,a
 673,Browne,Alan Browne,20,MID,4.5,0.0,0.0,0,a

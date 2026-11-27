@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:45:31.543058+00:00",
+  "generated_at": "2026-11-27T11:39:05.773830+00:00",
   "entry_id": 1702239,
   "current_gameweek": 11,
   "available_leagues": [
@@ -7,7 +7,7 @@
       "id": 16,
       "name": "Man Utd",
       "private": false,
-      "rank": 6177,
+      "rank": 6178,
       "size": 1841624
     },
     {
@@ -49,7 +49,7 @@
       "id": 431170,
       "name": "Adobe Express Badge League",
       "private": false,
-      "rank": 10583,
+      "rank": 10587,
       "size": 2927944
     },
     {
@@ -63,7 +63,7 @@
       "id": 2430021,
       "name": "Second Chance",
       "private": false,
-      "rank": 397392,
+      "rank": 397390,
       "size": 11261386
     }
   ],

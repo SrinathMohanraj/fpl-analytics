@@ -1,20 +1,20 @@
 id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_game,minutes,goals_scored,assists,clean_sheets,bonus,selected_by_percent,ict_index,status,chance_of_playing_next_round,points_per_million,form_per_million,value_score
-1,David Raya Martín,Raya,Arsenal,GKP,6.2,61,4.0,5.5,969,0,0,7,6,44.9,20.5,d,50.0,9.84,0.65,0.922
+1,David Raya Martín,Raya,Arsenal,GKP,6.2,61,4.0,5.5,969,0,0,7,6,43.5,20.5,d,50.0,9.84,0.65,0.922
 2,Kepa Arrizabalaga Revuelta,Arrizabalaga,Arsenal,GKP,4.9,1,0.3,1.0,20,0,0,0,0,0.1,0.3,a,,0.2,0.06,0.393
 3,Illan Meslier,Meslier,Arsenal,GKP,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 4,Gabriel dos Santos Magalhães,Gabriel,Arsenal,DEF,8.1,67,5.0,6.1,990,1,0,7,5,26.9,50.0,a,,8.27,0.62,0.893
-5,Jurriën Timber,J.Timber,Arsenal,DEF,6.5,15,4.0,2.1,425,0,0,2,0,1.1,19.3,a,100.0,2.31,0.62,0.679
+5,Jurriën Timber,J.Timber,Arsenal,DEF,6.5,15,4.0,2.1,425,0,0,2,0,1.2,19.3,a,100.0,2.31,0.62,0.678
 6,William Saliba,Saliba,Arsenal,DEF,5.9,0,0.0,0.0,0,0,0,0,0,0.5,0.0,a,100.0,0.0,0.0,0.188
 7,Myles Lewis-Skelly,Lewis-Skelly,Arsenal,MID,5.3,14,0.3,1.8,448,0,0,3,0,0.4,13.0,a,,2.64,0.06,0.558
-8,Riccardo Calafiori,Calafiori,Arsenal,DEF,5.9,58,4.3,5.3,857,1,2,6,3,48.1,43.1,a,100.0,9.83,0.73,0.934
+8,Riccardo Calafiori,Calafiori,Arsenal,DEF,5.9,58,4.3,5.3,857,1,2,6,3,47.6,43.1,a,100.0,9.83,0.73,0.934
 9,Piero Hincapié,Hincapie,Arsenal,DEF,5.2,5,0.7,1.0,67,0,0,0,0,0.7,4.0,a,100.0,0.96,0.13,0.488
-10,Benjamin White,White,Arsenal,DEF,5.3,42,0.0,6.0,532,0,3,4,4,3.8,29.1,a,100.0,7.92,0.0,0.64
+10,Benjamin White,White,Arsenal,DEF,5.3,42,0.0,6.0,532,0,3,4,4,3.7,29.1,a,100.0,7.92,0.0,0.64
 11,Cristhian Mosquera,Mosquera,Arsenal,DEF,5.1,12,0.0,6.0,168,0,0,2,0,1.1,2.7,a,100.0,2.35,0.0,0.438
-12,Bukayo Saka,Saka,Arsenal,MID,9.4,37,0.0,5.3,596,3,0,4,4,5.1,63.0,i,0.0,3.94,0.0,0.502
-13,Declan Rice,Rice,Arsenal,MID,7.5,53,4.7,4.8,912,0,5,7,7,13.6,61.4,a,100.0,7.07,0.63,0.862
+12,Bukayo Saka,Saka,Arsenal,MID,9.4,37,0.0,5.3,596,3,0,4,4,5.0,63.0,i,0.0,3.94,0.0,0.502
+13,Declan Rice,Rice,Arsenal,MID,7.5,53,4.7,4.8,912,0,5,7,7,13.5,61.4,a,100.0,7.07,0.63,0.862
 14,Eberechi Eze,Eze,Arsenal,MID,6.2,19,3.7,2.4,299,1,0,1,3,1.0,17.5,a,,3.06,0.6,0.703
-15,Martin Ødegaard,Ødegaard,Arsenal,MID,6.7,55,6.3,5.0,913,3,1,7,9,16.7,83.6,a,,8.21,0.94,0.927
-16,Noni Madueke,Madueke,Arsenal,MID,6.2,30,6.0,3.8,518,2,1,3,4,0.7,58.1,a,100.0,4.84,0.97,0.82
+15,Martin Ødegaard,Ødegaard,Arsenal,MID,6.7,55,6.3,5.0,913,3,1,7,9,16.6,83.6,a,,8.21,0.94,0.927
+16,Noni Madueke,Madueke,Arsenal,MID,6.2,30,6.0,3.8,518,2,1,3,4,0.8,58.1,a,100.0,4.84,0.97,0.82
 17,Mikel Merino Zazón,Merino,Arsenal,MID,5.6,12,1.0,1.1,203,0,0,1,0,0.4,11.9,a,,2.14,0.18,0.573
 18,Gabriel Martinelli Silva,Martinelli,Arsenal,MID,6.3,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 19,Martín Zubimendi Ibáñez,Zubimendi,Arsenal,MID,5.2,7,0.3,1.0,100,0,0,0,0,0.4,5.1,i,0.0,1.35,0.06,0.485
@@ -25,14 +25,14 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 25,Viktor Gyökeres,Gyökeres,Arsenal,FWD,7.0,11,0.7,1.4,181,0,1,1,0,2.9,14.8,a,,1.57,0.1,0.51
 26,Kai Havertz,Havertz,Arsenal,FWD,7.4,40,5.3,3.6,821,3,1,6,5,5.7,51.2,a,100.0,5.41,0.72,0.814
 27,Gabriel Fernando de Jesus,G.Jesus,Arsenal,FWD,5.9,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
-31,Ezri Konsa Ngoyo,Konsa,Arsenal,DEF,4.9,58,6.3,5.8,821,1,0,5,7,25.2,30.3,a,100.0,11.84,1.29,0.988
-452,Bruno Guimarães Rodriguez Moura,Bruno G.,Arsenal,MID,6.7,30,2.7,3.3,455,2,0,3,4,2.1,25.0,a,100.0,4.48,0.4,0.73
-557,Christos Tzolis,Tzolis,Arsenal,MID,6.1,23,2.3,2.9,533,0,2,4,1,3.8,35.3,a,100.0,3.77,0.38,0.687
+31,Ezri Konsa Ngoyo,Konsa,Arsenal,DEF,4.9,58,6.3,5.8,821,1,0,5,7,24.9,30.3,a,100.0,11.84,1.29,0.988
+452,Bruno Guimarães Rodriguez Moura,Bruno G.,Arsenal,MID,6.7,30,2.7,3.3,455,2,0,3,4,2.0,25.0,a,100.0,4.48,0.4,0.73
+557,Christos Tzolis,Tzolis,Arsenal,MID,6.1,23,2.3,2.9,533,0,2,4,1,3.7,35.3,a,100.0,3.77,0.38,0.687
 29,Marco Bizot,M.Bizot,Aston Villa,GKP,4.5,1,0.0,1.0,90,0,0,0,0,0.1,2.8,a,100.0,0.22,0.0,0.297
 30,Lucas Digne,Digne,Aston Villa,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-32,Matty Cash,Cash,Aston Villa,DEF,4.3,18,0.3,2.2,656,0,0,2,0,3.2,21.7,d,75.0,4.19,0.07,0.63
+32,Matty Cash,Cash,Aston Villa,DEF,4.3,18,0.3,2.2,656,0,0,2,0,3.1,21.7,d,75.0,4.19,0.07,0.63
 33,Tyrone Mings,Mings,Aston Villa,DEF,4.5,18,0.0,3.0,441,0,0,2,1,0.4,12.9,a,,4.0,0.0,0.506
-34,Pau Torres,Pau,Aston Villa,DEF,4.4,17,3.7,2.1,560,0,0,1,1,0.3,12.1,a,100.0,3.86,0.84,0.766
+34,Pau Torres,Pau,Aston Villa,DEF,4.4,17,3.7,2.1,560,0,0,1,1,0.4,12.1,a,100.0,3.86,0.84,0.765
 35,Lamare Bogarde,Bogarde,Aston Villa,MID,4.9,1,0.0,1.0,16,0,0,0,0,0.1,0.3,a,,0.2,0.0,0.289
 36,Ian Maatsen,Maatsen,Aston Villa,DEF,4.4,18,2.3,2.2,695,0,0,2,1,0.5,24.3,a,100.0,4.09,0.52,0.739
 37,Victor Lindelöf,Lindelöf,Aston Villa,DEF,4.5,26,1.3,2.6,900,0,0,2,1,0.7,25.9,a,100.0,5.78,0.29,0.756
@@ -46,17 +46,17 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 48,Amadou Onana,Onana,Aston Villa,MID,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 49,Samuel Iling-Junior,Iling Jr,Aston Villa,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 50,Bradley Burrowes,Burrowes,Aston Villa,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.5,0.0,a,,0.0,0.0,0.188
-51,George Hemmings,George Hemmings,Aston Villa,MID,4.4,10,0.3,1.7,316,0,0,1,0,0.7,9.2,a,100.0,2.27,0.07,0.548
+51,George Hemmings,George Hemmings,Aston Villa,MID,4.3,10,0.3,1.7,316,0,0,1,0,0.7,9.2,a,100.0,2.33,0.07,0.552
 52,Alysson Edward Franco da Rocha dos Santos,Alysson,Aston Villa,MID,4.9,31,7.0,3.1,419,2,2,1,3,0.7,28.1,a,100.0,6.33,1.43,0.901
 53,Johan Manzambi,Manzambi,Aston Villa,MID,6.2,41,3.3,5.1,520,2,3,2,7,8.7,51.7,a,100.0,6.61,0.53,0.836
 54,Joao Gomes,Gomes,Aston Villa,MID,5.5,13,0.7,1.9,402,0,1,1,0,0.1,13.1,a,100.0,2.36,0.13,0.567
 55,Ollie Watkins,Watkins,Aston Villa,FWD,7.8,0,0.0,0.0,0,0,0,0,0,2.2,0.0,u,0.0,0.0,0.0,0.188
 56,Tammy Abraham,Abraham,Aston Villa,FWD,5.5,4,0.0,1.0,71,0,0,0,0,0.2,1.1,a,100.0,0.73,0.0,0.346
 160,Alejandro Garnacho Ferreyra,Garnacho,Aston Villa,MID,5.7,4,0.3,1.0,34,0,0,0,0,0.3,2.9,a,,0.7,0.05,0.434
-166,Nicolas Jackson,N.Jackson,Aston Villa,FWD,7.3,56,7.3,5.6,794,6,1,3,12,36.6,71.5,a,,7.67,1.0,0.921
+166,Nicolas Jackson,N.Jackson,Aston Villa,FWD,7.3,56,7.3,5.6,794,6,1,3,12,37.0,71.5,a,,7.67,1.0,0.92
 582,Brian Madjo,Madjo,Aston Villa,FWD,5.3,2,0.7,0.7,29,0,0,0,0,0.1,1.3,a,100.0,0.38,0.13,0.441
 596,Matteo Ruggeri,Ruggeri,Aston Villa,DEF,4.4,6,0.0,1.5,158,0,0,0,0,0.1,6.3,i,0.0,1.36,0.0,0.382
-597,Zion Suzuki,Suzuki,Aston Villa,GKP,5.1,37,2.3,3.7,900,0,0,3,5,3.9,28.8,a,,7.25,0.45,0.833
+597,Zion Suzuki,Suzuki,Aston Villa,GKP,5.1,37,2.3,3.7,900,0,0,3,5,4.1,28.8,a,,7.25,0.45,0.833
 606,Triston Rowe,Rowe,Aston Villa,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 607,Luka Lynch,Lynch,Aston Villa,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 611,Aaron Wan-Bissaka,Wan-Bissaka,Aston Villa,DEF,4.5,21,2.7,3.0,363,0,0,2,2,0.2,15.3,a,100.0,4.67,0.6,0.769
@@ -65,10 +65,10 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 631,Ibrahim Mbaye,Mbaye,Aston Villa,MID,6.0,11,1.0,1.4,174,0,1,0,0,0.1,21.1,a,,1.83,0.17,0.547
 667,James Wright,Wright,Aston Villa,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.4,0.0,a,,0.0,0.0,0.188
 672,Modou Kéba Cissé,Cissé,Aston Villa,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
-57,Đorđe Petrović,Petrović,Bournemouth,GKP,4.5,36,4.7,3.3,990,0,0,4,0,3.3,15.6,a,,8.0,1.04,0.932
+57,Đorđe Petrović,Petrović,Bournemouth,GKP,4.5,36,4.7,3.3,990,0,0,4,0,3.4,15.6,a,,8.0,1.04,0.932
 58,Fraser Forster,Forster,Bournemouth,GKP,4.0,0,0.0,0.0,0,0,0,0,0,3.2,0.0,a,,0.0,0.0,0.188
 59,Will Dennis,Dennis,Bournemouth,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
-60,James Hill,Hill,Bournemouth,DEF,5.7,56,8.0,5.1,990,0,1,4,7,4.7,43.8,a,,9.82,1.4,0.977
+60,James Hill,Hill,Bournemouth,DEF,5.7,56,8.0,5.1,990,0,1,4,7,5.2,43.8,a,,9.82,1.4,0.977
 61,Adrien Truffert,Truffert,Bournemouth,DEF,5.4,39,4.7,3.5,983,0,1,4,3,3.5,39.6,a,,7.22,0.87,0.892
 62,Bafodé Diakité,Diakité,Bournemouth,DEF,4.9,5,1.0,1.0,20,0,0,0,0,0.1,1.1,a,,1.02,0.2,0.518
 63,Veljko Milosavljevic,Milosavljević,Bournemouth,DEF,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
@@ -76,21 +76,21 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 65,Julián Araujo Zúñiga,J.Araujo,Bournemouth,DEF,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 66,Julio Soler Barreto,Soler,Bournemouth,DEF,4.0,1,0.0,1.0,6,0,0,0,0,0.2,0.1,a,100.0,0.25,0.0,0.302
 67,Rayan Vitor Simplício Rocha,Rayan,Bournemouth,MID,6.3,33,2.7,3.0,963,1,0,4,0,2.4,59.9,a,,5.24,0.43,0.759
-68,Marcus Tavernier,Tavernier,Bournemouth,MID,6.8,66,4.7,6.0,930,5,1,4,14,33.7,92.4,a,,9.71,0.69,0.925
+68,Marcus Tavernier,Tavernier,Bournemouth,MID,6.8,66,4.7,6.0,930,5,1,4,14,34.1,92.4,a,,9.71,0.69,0.925
 69,Alex Scott,Scott,Bournemouth,MID,5.9,30,0.0,5.0,467,1,2,1,5,2.1,31.0,a,100.0,5.08,0.0,0.545
-70,Justin Kluivert,Kluivert,Bournemouth,MID,5.9,40,6.0,4.4,586,2,2,6,2,1.2,50.0,a,100.0,6.78,1.02,0.898
+70,Justin Kluivert,Kluivert,Bournemouth,MID,5.9,40,6.0,4.4,586,2,2,6,2,1.3,50.0,a,100.0,6.78,1.02,0.898
 71,Lewis Cook,Cook,Bournemouth,MID,4.9,20,1.0,1.8,398,0,1,4,0,0.1,13.8,a,,4.08,0.2,0.663
 72,Ben Gannon-Doak,Gannon-Doak,Bournemouth,MID,4.8,8,0.3,1.0,86,0,0,0,0,0.0,9.2,a,,1.67,0.06,0.503
 73,Tyler Adams,Adams,Bournemouth,MID,5.0,29,3.0,2.6,795,0,0,4,0,0.3,18.3,a,100.0,5.8,0.6,0.81
 74,David Brooks,Brooks,Bournemouth,MID,4.9,4,0.0,0.8,90,0,0,0,0,0.0,4.5,a,100.0,0.82,0.0,0.35
 75,Ryan Christie,Christie,Bournemouth,MID,5.0,25,4.7,2.5,480,0,1,4,1,0.1,25.5,a,100.0,5.0,0.94,0.82
 76,Alex Tóth,Tóth.A,Bournemouth,MID,4.9,2,0.0,1.0,17,0,0,0,0,0.0,0.3,i,0.0,0.41,0.0,0.316
-77,Amine Adli,Adli,Bournemouth,MID,4.8,11,3.0,2.8,21,1,0,0,2,0.0,7.7,a,100.0,2.29,0.62,0.678
-78,Junior Kroupi,Kroupi.Jr,Bournemouth,MID,7.3,7,2.0,1.8,68,0,1,0,0,0.8,6.5,a,100.0,0.96,0.27,0.538
-79,Francisco Evanilson de Lima Barbosa,Evanilson,Bournemouth,FWD,6.6,67,8.0,6.1,927,6,4,6,10,27.7,83.8,a,,10.15,1.21,0.976
+77,Amine Adli,Adli,Bournemouth,MID,4.8,11,3.0,2.8,21,1,0,0,2,0.0,7.7,a,100.0,2.29,0.62,0.677
+78,Junior Kroupi,Kroupi.Jr,Bournemouth,MID,7.3,7,2.0,1.8,68,0,1,0,0,0.8,6.5,d,75.0,0.96,0.27,0.538
+79,Francisco Evanilson de Lima Barbosa,Evanilson,Bournemouth,FWD,6.6,67,8.0,6.1,927,6,4,6,10,28.2,83.8,a,,10.15,1.21,0.976
 80,Enes Ünal,Enes Ünal,Bournemouth,FWD,5.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 81,Álvaro Rodríguez,Rodríguez,Bournemouth,FWD,6.0,6,0.7,1.0,58,0,0,0,0,0.2,5.3,a,100.0,1.0,0.12,0.486
-566,António João Pereira de Albuquerque Tavares da Silva,Silva,Bournemouth,DEF,5.1,48,6.3,4.4,990,0,0,4,3,4.2,40.5,a,,9.41,1.24,0.966
+566,António João Pereira de Albuquerque Tavares da Silva,Silva,Bournemouth,DEF,5.1,48,6.3,4.4,990,0,0,4,3,4.3,40.5,a,,9.41,1.24,0.966
 573,Juanlu Sánchez,Sanchez,Bournemouth,DEF,4.4,1,0.0,1.0,18,0,0,0,0,0.1,0.5,i,0.0,0.23,0.0,0.3
 608,Daniel Jebbison,Jebbison,Bournemouth,FWD,5.0,3,0.0,1.0,31,0,0,0,0,0.1,2.6,a,,0.6,0.0,0.331
 615,Michele Di Gregorio,Di Gregorio,Bournemouth,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
@@ -98,14 +98,14 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 83,Hákon Rafn Valdimarsson,Valdimarsson,Brentford,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 84,Nathan Collins,Collins,Brentford,DEF,5.4,11,0.3,2.8,241,0,0,1,0,0.7,12.8,i,0.0,2.04,0.06,0.527
 85,Sepp van den Berg,Van den Berg,Brentford,DEF,4.9,20,5.7,4.0,408,0,0,2,2,0.1,17.1,a,100.0,4.08,1.16,0.807
-86,Keane Lewis-Potter,Lewis-Potter,Brentford,MID,5.5,55,6.7,5.0,846,4,1,4,8,1.9,62.1,a,,10.0,1.22,0.975
-87,Kristoffer Ajer,Ajer,Brentford,DEF,4.5,48,5.3,4.4,990,1,0,4,1,3.9,39.7,a,,10.67,1.18,0.977
-88,Michael Kayode,Kayode,Brentford,DEF,4.5,40,4.0,3.6,834,1,0,4,1,6.4,35.7,a,,8.89,0.89,0.931
+86,Keane Lewis-Potter,Lewis-Potter,Brentford,MID,5.5,55,6.7,5.0,846,4,1,4,8,2.1,62.1,a,,10.0,1.22,0.975
+87,Kristoffer Ajer,Ajer,Brentford,DEF,4.5,48,5.3,4.4,990,1,0,4,1,3.9,39.7,a,,10.67,1.18,0.978
+88,Michael Kayode,Kayode,Brentford,DEF,4.5,40,4.0,3.6,834,1,0,4,1,6.3,35.7,a,,8.89,0.89,0.931
 89,Rico Henry,Henry,Brentford,DEF,4.3,1,0.0,1.0,2,0,0,0,0,0.1,0.0,i,0.0,0.23,0.0,0.3
 90,Aaron Hickey,Hickey,Brentford,DEF,4.5,9,0.3,0.9,350,0,0,0,0,0.1,9.8,i,0.0,2.0,0.07,0.537
 92,Kim Ji-soo,Ji-soo,Brentford,DEF,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 93,Jannik Schuster,Schuster,Brentford,DEF,4.4,22,0.0,5.5,298,0,1,1,3,0.4,13.6,a,100.0,5.0,0.0,0.541
-94,Kevin Schade,Schade,Brentford,MID,6.1,47,1.7,4.3,801,3,2,3,6,11.5,44.2,a,100.0,7.7,0.28,0.817
+94,Kevin Schade,Schade,Brentford,MID,6.1,47,1.7,4.3,801,3,2,3,6,11.0,44.2,a,100.0,7.7,0.28,0.816
 95,Dango Ouattara,O.Dango,Brentford,MID,6.2,29,3.3,2.6,505,1,1,3,3,0.4,34.5,a,,4.68,0.53,0.764
 96,Mikkel Damsgaard,Damsgaard,Brentford,MID,5.2,22,1.3,2.4,442,0,1,3,3,0.3,38.7,a,100.0,4.23,0.25,0.689
 97,Mathias Jensen,Jensen,Brentford,MID,5.4,18,2.7,2.6,332,0,2,2,0,0.1,21.0,a,100.0,3.33,0.5,0.697
@@ -115,19 +115,19 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 102,Yehor Yarmoliuk,Yarmoliuk,Brentford,MID,4.7,19,1.3,2.1,452,1,1,2,1,0.4,24.1,a,100.0,4.04,0.28,0.689
 103,Josh Dasilva,Dasilva,Brentford,MID,4.8,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 105,Jaidon Anthony,Anthony,Brentford,MID,5.9,37,4.7,3.7,553,1,4,3,3,0.2,51.4,a,,6.27,0.8,0.86
-106,Igor Thiago Nascimento Rodrigues,Thiago,Brentford,FWD,7.8,30,2.3,3.0,824,2,3,3,3,6.5,48.5,s,0.0,3.85,0.29,0.679
+106,Igor Thiago Nascimento Rodrigues,Thiago,Brentford,FWD,7.7,30,2.3,3.0,824,2,3,3,3,6.3,48.5,s,0.0,3.9,0.3,0.686
 107,Kaye Furo,Furo,Brentford,FWD,4.4,0,0.0,0.0,0,0,0,0,0,0.5,0.0,i,0.0,0.0,0.0,0.188
 108,Callum Wilson,Wilson,Brentford,FWD,5.3,8,1.3,1.0,147,0,0,1,0,0.3,13.0,a,,1.51,0.25,0.558
-565,Mamadou Sangaré,M.Sangaré,Brentford,MID,5.3,33,1.7,3.0,621,0,2,2,3,5.5,27.7,a,,6.23,0.32,0.781
+565,Mamadou Sangaré,M.Sangaré,Brentford,MID,5.3,33,1.7,3.0,621,0,2,2,3,5.4,27.7,a,,6.23,0.32,0.781
 620,El Hadji Malick Diouf,Diouf,Brentford,DEF,4.4,7,0.7,1.0,201,0,0,0,0,0.1,10.4,a,,1.59,0.16,0.528
 657,Gustavo Nunes Fernandes Gomes,Nunes,Brentford,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 660,Benjamin Fredrick,Fredrick,Brentford,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 661,Ellery Balcombe,Balcombe,Brentford,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
-109,Bart Verbruggen,Verbruggen,Brighton,GKP,4.7,59,6.3,5.4,990,0,0,7,5,24.9,28.2,a,,12.55,1.34,0.993
+109,Bart Verbruggen,Verbruggen,Brighton,GKP,4.7,59,6.3,5.4,990,0,0,7,5,25.2,28.2,a,,12.55,1.34,0.993
 111,Jason Steele,Steele,Brighton,GKP,3.9,0,0.0,0.0,0,0,0,0,0,3.3,0.0,a,,0.0,0.0,0.188
 113,Ferdi Kadıoğlu,F.Kadıoğlu,Brighton,DEF,4.3,29,0.0,3.6,527,0,0,4,1,1.2,17.6,a,100.0,6.74,0.0,0.609
-114,Olivier Boscagli,Boscagli,Brighton,DEF,4.5,51,6.0,4.6,848,0,1,8,2,0.8,43.8,d,75.0,11.33,1.33,0.985
-115,Maxim De Cuyper,De Cuyper,Brighton,DEF,5.5,76,5.3,6.9,912,2,4,7,9,50.3,73.1,a,,13.82,0.96,0.973
+114,Olivier Boscagli,Boscagli,Brighton,DEF,4.5,51,6.0,4.6,848,0,1,8,2,0.7,43.8,d,75.0,11.33,1.33,0.986
+115,Maxim De Cuyper,De Cuyper,Brighton,DEF,5.6,76,5.3,6.9,912,2,4,7,9,50.7,73.1,a,,13.57,0.95,0.972
 116,Lewis Dunk,Dunk,Brighton,DEF,4.5,42,4.0,4.2,839,1,0,5,1,1.5,30.9,a,100.0,9.33,0.89,0.939
 117,Diego Coppola,Coppola,Brighton,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 118,Igor Julio dos Santos de Paulo,Igor,Brighton,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
@@ -136,10 +136,10 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 121,Mitoma Kaoru,Mitoma,Brighton,MID,5.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 122,Yankuba Minteh,Minteh,Brighton,MID,5.8,2,0.7,1.0,31,0,0,0,0,0.0,0.7,a,100.0,0.34,0.12,0.433
 123,Jack Hinshelwood,Hinshelwood,Brighton,MID,5.9,26,1.0,4.3,180,3,0,1,3,0.6,24.6,a,100.0,4.41,0.17,0.667
-124,Pascal Groß,Groß,Brighton,MID,6.3,74,5.3,6.7,970,4,6,7,11,49.6,99.1,a,,11.75,0.84,0.954
+124,Pascal Groß,Groß,Brighton,MID,6.3,74,5.3,6.7,970,4,6,7,11,49.7,99.1,a,,11.75,0.84,0.954
 125,Georginio Rutter,Georginio,Brighton,FWD,5.2,16,1.3,2.0,220,0,2,2,0,0.4,25.3,a,100.0,3.08,0.25,0.639
 126,Matt O'Riley,O'Riley,Brighton,MID,5.4,2,0.0,1.0,10,0,0,0,0,0.1,3.8,a,,0.37,0.0,0.311
-127,Diego Gómez Amarilla,Gomez,Brighton,MID,5.1,54,5.0,4.9,952,2,3,8,1,4.6,75.4,a,,10.59,0.98,0.963
+127,Diego Gómez Amarilla,Gomez,Brighton,MID,5.1,54,5.0,4.9,952,2,3,8,1,4.6,75.4,a,,10.59,0.98,0.964
 128,Facundo Buonanotte,Buonanotte,Brighton,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 129,Yasin Ayari,Ayari,Brighton,MID,5.5,49,5.3,4.9,807,3,1,8,4,2.4,45.5,a,100.0,8.91,0.96,0.938
 130,Mats Wieffer,Wieffer,Brighton,DEF,4.8,8,0.3,2.0,227,0,0,1,1,0.1,10.0,a,100.0,1.67,0.06,0.503
@@ -148,20 +148,20 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 134,Nehemiah Oriola,Oriola,Brighton,MID,4.3,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,,0.0,0.0,0.188
 135,Zadok Yohanna,Yohanna,Brighton,MID,4.7,1,0.0,1.0,12,0,0,0,0,0.0,0.2,i,0.0,0.21,0.0,0.294
 137,Stefanos Tzimas,Tzimas,Brighton,FWD,5.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
-138,Charalampos Kostoulas,Kostoulas,Brighton,FWD,5.7,48,1.7,4.4,747,3,4,5,6,8.6,55.7,a,,8.42,0.3,0.839
+138,Charalampos Kostoulas,Kostoulas,Brighton,FWD,5.7,48,1.7,4.4,747,3,4,5,6,8.3,55.7,a,,8.42,0.3,0.838
 139,Evan Ferguson,Ferguson,Brighton,FWD,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 328,Pascal Struijk,Struijk,Brighton,DEF,4.9,5,0.0,1.2,154,0,0,1,0,0.1,4.9,a,100.0,1.02,0.0,0.365
-504,Luka Vušković,Vuskovic,Brighton,DEF,5.3,70,6.0,6.4,977,1,2,7,5,11.8,43.1,a,,13.21,1.13,0.985
+504,Luka Vušković,Vuskovic,Brighton,DEF,5.3,70,6.0,6.4,977,1,2,7,5,12.1,43.1,a,,13.21,1.13,0.986
 594,Promise David,David,Brighton,FWD,5.9,1,0.0,0.5,23,0,0,0,0,0.2,0.4,a,,0.17,0.0,0.285
 600,Ibrahim Osman,Osman,Brighton,MID,4.9,4,0.3,1.0,41,0,0,0,0,0.0,4.2,a,,0.82,0.06,0.453
-605,Malick Yalcouyé,Yalcouyé,Brighton,MID,4.4,25,0.7,2.5,322,2,0,1,1,2.4,34.1,i,0.0,5.68,0.16,0.706
-614,Jaouen Hadjam,Hadjam,Brighton,DEF,4.5,9,0.3,3.0,37,1,0,0,0,0.1,6.4,d,75.0,2.0,0.07,0.537
+605,Malick Yalcouyé,Yalcouyé,Brighton,MID,4.4,25,0.7,2.5,322,2,0,1,1,2.3,34.1,i,0.0,5.68,0.16,0.705
+614,Jaouen Hadjam,Hadjam,Brighton,DEF,4.5,9,0.3,3.0,37,1,0,0,0,0.0,6.4,d,75.0,2.0,0.07,0.537
 624,Amario Cozier-Duberry,Cozier-Duberry,Brighton,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 639,José María Andrés Baixauli,Andrés,Brighton,MID,5.5,21,1.0,2.6,540,1,1,4,0,0.1,22.2,a,100.0,3.82,0.18,0.636
 652,Femi Azeez,Azeez,Brighton,MID,5.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,100.0,0.0,0.0,0.188
 658,Younes Ibrahim,Ibrahim,Brighton,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 28,Emiliano Martínez Romero,Martinez,Chelsea,GKP,4.9,21,0.3,3.0,614,0,0,1,1,3.1,26.4,a,100.0,4.29,0.06,0.624
-40,Morgan Rogers,Rogers,Chelsea,MID,8.3,57,5.3,5.2,970,5,2,2,3,54.6,79.6,a,,6.87,0.64,0.858
+40,Morgan Rogers,Rogers,Chelsea,MID,8.3,57,5.3,5.2,970,5,2,2,3,54.5,79.6,a,,6.87,0.64,0.858
 101,Jordan Henderson,Henderson,Chelsea,MID,4.9,29,1.3,4.8,514,2,1,1,3,1.2,31.4,a,100.0,5.92,0.27,0.756
 136,Danny Welbeck,Welbeck,Chelsea,FWD,5.8,10,1.0,1.1,152,0,0,0,0,0.7,7.9,a,100.0,1.72,0.17,0.543
 140,Robert Lynch Sánchez,Sánchez,Chelsea,GKP,4.9,2,0.0,2.0,90,0,0,0,0,0.5,2.1,u,0.0,0.41,0.0,0.316
@@ -171,20 +171,20 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 144,Malo Gusto,Gusto,Chelsea,DEF,4.8,8,1.0,1.0,322,0,0,0,0,0.7,15.9,a,100.0,1.67,0.21,0.557
 145,Wesley Fofana,Fofana,Chelsea,DEF,5.0,22,4.7,3.1,582,0,1,1,2,0.3,22.8,a,100.0,4.4,0.94,0.805
 146,Benoît Badiashile Mukinayi,B.Badiashile,Chelsea,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-148,Jorrel Hato,Hato,Chelsea,DEF,4.4,25,0.0,4.2,412,0,3,2,2,0.5,17.8,i,0.0,5.68,0.0,0.57
+148,Jorrel Hato,Hato,Chelsea,DEF,4.4,25,0.0,4.2,412,0,3,2,2,0.5,17.8,i,0.0,5.68,0.0,0.569
 149,Levi Samuels Colwill,Colwill,Chelsea,DEF,4.8,20,2.0,2.0,836,0,0,2,0,0.9,23.2,a,,4.17,0.42,0.719
 150,Mamadou Sarr,M.Sarr,Chelsea,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 151,Josh Acheampong,Acheampong,Chelsea,DEF,4.5,25,3.3,2.8,653,0,0,2,3,0.5,19.2,a,100.0,5.56,0.73,0.82
 152,Marco Palestra,Palestra,Chelsea,DEF,5.3,10,2.7,2.0,178,0,0,1,0,0.5,4.0,a,100.0,1.89,0.51,0.64
-154,Cole Palmer,Palmer,Chelsea,MID,9.8,49,4.0,4.5,968,3,4,2,3,27.0,83.6,a,100.0,5.0,0.41,0.745
-156,Pedro Lomba Neto,Neto,Chelsea,MID,6.6,42,1.7,3.8,764,3,1,2,3,4.5,71.3,a,,6.36,0.26,0.772
+154,Cole Palmer,Palmer,Chelsea,MID,9.8,49,4.0,4.5,968,3,4,2,3,26.3,83.6,a,100.0,5.0,0.41,0.745
+156,Pedro Lomba Neto,Neto,Chelsea,MID,6.6,42,1.7,3.8,764,3,1,2,3,4.3,71.3,a,,6.36,0.26,0.772
 157,Estêvão Almeida de Oliveira Gonçalves,Estêvão,Chelsea,MID,6.3,12,2.0,1.3,241,0,0,1,0,0.7,27.3,a,,1.9,0.32,0.608
 158,Jamie Bynoe-Gittens,Gittens,Chelsea,MID,5.8,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
-159,Moisés Caicedo Corozo,Caicedo,Chelsea,MID,5.3,15,2.3,2.1,461,0,0,2,0,1.0,13.6,d,75.0,2.83,0.43,0.668
+159,Moisés Caicedo Corozo,Caicedo,Chelsea,MID,5.3,15,2.3,2.1,461,0,0,2,0,1.0,13.6,a,100.0,2.83,0.43,0.668
 161,Roméo Lavia,Lavia,Chelsea,MID,5.0,24,3.7,2.7,547,1,1,1,0,0.2,29.3,a,,4.8,0.74,0.797
 163,Dário Luís Essugo,D.Essugo,Chelsea,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 164,Geovany Quenda,Quenda,Chelsea,MID,5.2,9,1.0,1.3,128,0,0,1,0,0.0,4.8,a,100.0,1.73,0.19,0.553
-165,João Pedro Junqueira de Jesus,João Pedro,Chelsea,FWD,7.6,47,0.0,7.8,521,5,3,1,9,27.4,53.9,i,0.0,6.18,0.0,0.587
+165,João Pedro Junqueira de Jesus,João Pedro,Chelsea,FWD,7.6,47,0.0,7.8,521,5,3,1,9,26.8,53.9,i,0.0,6.18,0.0,0.587
 168,Marc Guiu Paz,Marc Guiu,Chelsea,FWD,5.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 169,Shumaira Mheuka,Mheuka,Chelsea,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.4,0.0,a,,0.0,0.0,0.188
 170,Emmanuel Emegha,Emegha,Chelsea,FWD,4.9,9,3.0,4.5,66,1,0,0,2,0.1,5.5,a,100.0,1.84,0.61,0.649
@@ -201,17 +201,17 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 110,Carl Rushworth,Rushworth,Coventry City,GKP,4.5,28,2.0,2.5,990,0,1,1,2,0.8,22.6,a,,6.22,0.44,0.801
 171,Oliver Dovin,Dovin,Coventry City,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.7,0.0,u,0.0,0.0,0.0,0.188
 172,Ben Wilson,Wilson,Coventry City,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.3,0.0,a,,0.0,0.0,0.188
-173,Bobby Thomas,Thomas,Coventry City,DEF,4.0,35,1.0,3.9,766,0,0,2,3,6.8,32.0,a,100.0,8.75,0.25,0.826
+173,Bobby Thomas,Thomas,Coventry City,DEF,4.0,35,1.0,3.9,766,0,0,2,3,6.7,32.0,a,100.0,8.75,0.25,0.826
 174,Liam Kitching,Kitching,Coventry City,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.2,0.0,u,0.0,0.0,0.0,0.188
 175,Milan van Ewijk,van Ewijk,Coventry City,DEF,3.9,21,2.0,2.1,900,0,1,0,0,6.7,34.2,a,100.0,5.38,0.51,0.778
-176,Jay Dasilva,Dasilva,Coventry City,DEF,4.0,30,1.0,3.0,894,1,1,1,3,1.4,36.9,a,,7.5,0.25,0.799
+176,Jay Dasilva,Dasilva,Coventry City,DEF,4.0,30,1.0,3.0,894,1,1,1,3,1.4,36.9,a,,7.5,0.25,0.8
 177,Kaine Kesler-Hayden,Kesler-Hayden,Coventry City,DEF,3.9,1,0.0,1.0,3,0,0,0,0,0.1,0.3,a,100.0,0.26,0.0,0.305
 178,Jake Bidwell,Bidwell,Coventry City,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 179,Joel Latibeaudiere,Latibeaudiere,Coventry City,DEF,3.9,1,0.0,1.0,1,0,0,0,0,0.0,0.7,a,,0.26,0.0,0.305
 180,Luke Woolfenden,Woolfenden,Coventry City,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.1,0.0,i,0.0,0.0,0.0,0.188
 181,Miguel Brau,Brau,Coventry City,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 182,Aurèle Amenda,Amenda,Coventry City,DEF,3.9,4,0.0,1.0,360,0,0,0,0,0.4,9.4,i,0.0,1.03,0.0,0.367
-183,Jack Rudoni,Rudoni,Coventry City,MID,5.0,49,7.0,4.5,820,3,2,2,4,1.9,77.1,a,100.0,9.8,1.4,0.976
+183,Jack Rudoni,Rudoni,Coventry City,MID,5.0,49,7.0,4.5,820,3,2,2,4,2.0,77.1,a,100.0,9.8,1.4,0.976
 184,Matt Grimes,Grimes,Coventry City,MID,4.7,20,1.0,1.8,786,0,0,1,0,0.1,19.6,a,,4.26,0.21,0.677
 185,Tatsuhiro Sakamoto,Sakamoto,Coventry City,MID,4.8,21,5.0,3.0,488,2,0,0,0,0.1,21.4,a,,4.38,1.04,0.814
 186,Ephron Mason-Clark,Mason-Clark,Coventry City,MID,5.3,10,0.0,1.4,326,0,0,1,0,0.1,15.1,d,75.0,1.89,0.0,0.415
@@ -226,7 +226,7 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 195,Ellis Simms,Simms,Coventry City,FWD,4.8,10,0.0,2.5,116,1,0,0,1,0.5,11.8,a,,2.08,0.0,0.427
 196,Jahnoah Markelo,Markelo,Coventry City,FWD,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 197,Norman Bassette,Bassette,Coventry City,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-492,Taiwo Awoniyi,Awoniyi,Coventry City,FWD,5.4,21,5.3,2.3,487,2,0,0,3,0.3,29.9,d,75.0,3.89,0.98,0.783
+492,Taiwo Awoniyi,Awoniyi,Coventry City,FWD,5.4,21,5.3,2.3,487,2,0,0,3,0.3,29.9,i,0.0,3.89,0.98,0.782
 575,Caleb Yirenkyi,Yirenkyi,Coventry City,MID,4.8,19,1.0,1.9,647,0,0,3,0,0.1,12.2,d,75.0,3.96,0.21,0.661
 584,Gustavo Hamer,Hamer,Coventry City,MID,5.2,7,0.7,1.0,71,0,0,0,0,0.1,5.1,a,,1.35,0.13,0.51
 599,Sidiki Cherif,Cherif,Coventry City,FWD,5.0,19,1.0,2.7,298,1,1,1,3,0.4,10.1,a,,3.8,0.2,0.645
@@ -239,12 +239,12 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 199,Walter Benítez,Benitez,Crystal Palace,GKP,4.5,13,0.0,2.6,450,0,0,1,0,0.1,10.7,a,,2.89,0.0,0.463
 202,Chris Richards,Richards,Crystal Palace,DEF,4.9,30,2.3,2.7,990,0,0,1,0,0.5,38.8,a,,6.12,0.47,0.803
 203,Jaydee Canvot,Canvot,Crystal Palace,DEF,4.7,16,1.3,1.8,737,0,0,1,0,0.2,23.7,a,,3.4,0.28,0.66
-204,Tyrick Mitchell,Mitchell,Crystal Palace,DEF,4.4,34,1.7,3.1,959,2,0,1,3,4.4,50.1,a,,7.73,0.39,0.836
+204,Tyrick Mitchell,Mitchell,Crystal Palace,DEF,4.4,34,1.7,3.1,959,2,0,1,3,4.4,50.1,a,,7.73,0.39,0.835
 205,Borna Sosa,Sosa,Crystal Palace,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 206,Chadi Riad Dnanou,Chadi Riad,Crystal Palace,DEF,4.3,1,0.0,1.0,72,0,0,0,0,0.0,1.4,i,0.0,0.23,0.0,0.3
-207,Oscar Mingueza,Mingueza,Crystal Palace,DEF,4.2,3,0.3,0.8,161,0,0,0,0,0.0,5.3,d,75.0,0.71,0.07,0.461
+207,Oscar Mingueza,Mingueza,Crystal Palace,DEF,4.2,3,0.3,0.8,161,0,0,0,0,0.0,5.3,a,100.0,0.71,0.07,0.461
 208,Ismaïla Sarr,Sarr,Crystal Palace,MID,6.2,2,0.0,1.0,15,0,0,0,0,0.5,0.3,i,0.0,0.32,0.0,0.308
-210,Adam Wharton,Wharton,Crystal Palace,MID,5.3,30,2.3,2.7,973,0,1,1,2,0.6,41.6,a,100.0,5.66,0.43,0.775
+210,Adam Wharton,Wharton,Crystal Palace,MID,5.3,30,2.3,2.7,973,0,1,1,2,0.6,41.6,a,100.0,5.66,0.43,0.774
 211,Yéremy Pino Santos,Yeremy,Crystal Palace,MID,5.5,40,4.7,3.6,762,2,3,1,6,0.3,56.9,s,0.0,7.27,0.85,0.894
 212,Will Hughes,Hughes,Crystal Palace,MID,4.3,4,0.3,1.0,40,0,0,0,0,5.3,2.5,a,,0.93,0.07,0.472
 213,Jefferson Lerma Solís,Lerma,Crystal Palace,MID,4.8,15,1.7,2.1,268,1,0,0,0,0.1,18.8,a,,3.12,0.35,0.662
@@ -274,14 +274,14 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 226,Jordan Pickford,Pickford,Everton,GKP,5.5,40,3.7,3.6,990,0,0,4,2,8.3,25.0,a,,7.27,0.67,0.873
 227,Mark Travers,Travers,Everton,GKP,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 228,Tom King,King,Everton,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
-229,James Tarkowski,Tarkowski,Everton,DEF,6.2,52,1.3,4.7,939,1,1,4,7,17.2,36.6,s,0.0,8.39,0.21,0.809
+229,James Tarkowski,Tarkowski,Everton,DEF,6.2,52,1.3,4.7,939,1,1,4,7,16.2,36.6,s,0.0,8.39,0.21,0.809
 230,Jarrad Branthwaite,Branthwaite,Everton,DEF,5.5,45,4.7,4.5,889,0,0,4,3,2.1,44.9,a,100.0,8.18,0.85,0.917
 231,Michael Keane,Keane,Everton,DEF,4.7,4,1.0,1.0,120,0,0,0,0,0.6,5.1,a,,0.85,0.21,0.512
 232,Jake O'Brien,O'Brien,Everton,DEF,4.8,15,3.0,2.1,315,0,0,1,0,0.3,13.0,a,,3.12,0.62,0.712
-233,Vitalii Mykolenko,Mykolenko,Everton,DEF,4.6,43,5.0,4.3,883,0,1,4,4,2.5,36.8,a,100.0,9.35,1.09,0.957
+233,Vitalii Mykolenko,Mykolenko,Everton,DEF,4.6,43,5.0,4.3,883,0,1,4,4,2.4,36.8,a,100.0,9.35,1.09,0.957
 234,Nathan Patterson,Patterson,Everton,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 235,Adam Aznou,Aznou,Everton,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
-236,Kiernan Dewsbury-Hall,Dewsbury-Hall,Everton,MID,6.7,52,5.0,4.7,963,3,1,4,9,7.0,81.3,a,,7.76,0.75,0.902
+236,Kiernan Dewsbury-Hall,Dewsbury-Hall,Everton,MID,6.7,52,5.0,4.7,963,3,1,4,9,6.8,81.3,a,,7.76,0.75,0.901
 238,Jack Grealish,Grealish,Everton,MID,6.5,11,0.3,1.6,349,0,0,1,0,0.4,23.6,a,100.0,1.69,0.05,0.494
 239,James Garner,Garner,Everton,MID,6.0,29,3.0,2.6,862,0,0,3,0,0.2,38.1,a,100.0,4.83,0.5,0.76
 242,Tyrique George,George,Everton,MID,5.5,31,2.7,2.8,682,1,1,3,3,0.4,44.5,a,,5.64,0.49,0.786
@@ -291,62 +291,62 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 246,Merlin Röhl,Röhl,Everton,MID,4.9,17,2.3,2.1,659,0,0,2,0,0.0,19.5,a,100.0,3.47,0.47,0.699
 247,Hayden Hackney,Hackney,Everton,MID,5.3,15,1.0,1.5,204,0,1,1,0,0.1,16.6,a,100.0,2.83,0.19,0.608
 248,Norberto Bercique Gomes Betuncal,Beto,Everton,FWD,5.4,2,0.0,1.0,31,0,0,0,0,0.4,0.8,u,0.0,0.37,0.0,0.311
-249,Thierno Barry,Barry,Everton,FWD,5.7,57,9.0,5.2,919,6,1,4,8,11.4,92.5,a,,10.0,1.58,0.982
+249,Thierno Barry,Barry,Everton,FWD,5.7,57,9.0,5.2,919,6,1,4,8,11.1,92.5,a,,10.0,1.58,0.982
 649,Ainsley Maitland-Niles,Maitland-Niles,Everton,DEF,4.5,26,0.0,5.2,308,1,1,2,2,1.1,17.0,a,,5.78,0.0,0.572
 654,Braiden Graham,Graham,Everton,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 250,Bernd Leno,Leno,Fulham,GKP,4.5,41,2.3,3.7,990,0,0,3,4,4.2,25.3,a,,9.11,0.51,0.886
 251,Benjamin Lecomte,Lecomte,Fulham,GKP,4.0,0,0.0,0.0,0,0,0,0,0,1.0,0.0,i,0.0,0.0,0.0,0.188
 252,Alfie McNally,McNally,Fulham,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 253,Joachim Andersen,Andersen,Fulham,DEF,5.0,3,0.0,1.0,190,0,0,0,0,0.2,9.6,a,100.0,0.6,0.0,0.331
-254,Antonee Robinson,Robinson,Fulham,DEF,4.4,33,2.3,3.3,809,0,0,3,1,1.2,37.1,a,100.0,7.5,0.52,0.856
+254,Antonee Robinson,Robinson,Fulham,DEF,4.4,33,2.3,3.3,809,0,0,3,1,1.2,37.1,a,100.0,7.5,0.52,0.857
 255,Jorge Cuenca Barreno,J.Cuenca,Fulham,DEF,4.4,3,0.0,3.0,90,0,0,0,0,0.0,5.4,a,,0.68,0.0,0.339
 256,Kenny Tete,Tete,Fulham,DEF,4.4,8,2.0,1.3,240,0,0,0,0,0.2,11.4,a,100.0,1.82,0.45,0.62
 257,Calvin Bassey,Bassey,Fulham,DEF,4.5,37,1.3,3.4,990,0,1,3,1,1.2,32.7,a,,8.22,0.29,0.834
 258,Timothy Castagne,Castagne,Fulham,DEF,4.5,44,3.0,4.9,750,0,2,5,4,1.1,35.9,a,,9.78,0.67,0.92
-261,Alex Iwobi,Iwobi,Fulham,MID,5.4,41,3.0,3.7,890,1,1,5,7,1.4,72.8,a,,7.59,0.56,0.864
+261,Alex Iwobi,Iwobi,Fulham,MID,5.4,41,3.0,3.7,890,1,1,5,7,1.3,72.8,a,,7.59,0.56,0.864
 262,Emile Smith Rowe,Smith Rowe,Fulham,MID,5.2,3,0.0,0.8,41,0,0,0,0,0.2,4.0,i,0.0,0.58,0.0,0.329
 263,Kevin Santos Lopes de Macedo,Kevin,Fulham,MID,5.2,5,0.0,1.0,75,0,0,0,0,0.0,6.2,a,,0.96,0.0,0.359
-264,Oscar Bobb,Bobb,Fulham,MID,5.5,41,3.7,3.7,805,1,1,7,4,0.5,68.5,a,,7.45,0.67,0.877
+264,Oscar Bobb,Bobb,Fulham,MID,5.5,41,3.7,3.7,805,1,1,7,4,0.5,68.5,a,,7.45,0.67,0.878
 265,Sander Berge,Berge,Fulham,MID,4.8,29,3.3,2.6,826,0,1,3,0,0.3,38.7,a,,6.04,0.69,0.84
 266,Tom Cairney,Cairney,Fulham,MID,4.9,3,0.3,0.8,43,0,0,0,0,0.0,4.2,a,100.0,0.61,0.06,0.437
-268,Josh King,King,Fulham,MID,5.4,41,2.3,3.7,875,2,1,6,3,2.7,65.3,a,100.0,7.59,0.43,0.839
+268,Josh King,King,Fulham,MID,5.4,41,2.3,3.7,875,2,1,6,3,2.6,65.3,a,100.0,7.59,0.43,0.839
 269,Ryan Sessegnon,Sessegnon,Fulham,DEF,4.3,11,1.0,1.6,247,1,0,0,0,0.2,17.3,a,100.0,2.56,0.23,0.612
 270,Harrison Reed,Reed,Fulham,MID,4.3,0,0.0,0.0,0,0,0,0,0,1.0,0.0,a,,0.0,0.0,0.188
 271,Rodrigo Muniz Carvalho,Muniz,Fulham,FWD,5.3,21,5.3,2.3,178,2,0,0,4,0.4,21.5,a,,3.96,1.0,0.789
-272,Jonah Kusi-Asare,Kusi-Asare,Fulham,FWD,4.3,0,0.0,0.0,0,0,0,0,0,4.0,0.0,a,,0.0,0.0,0.188
-569,Gonzalo García,Gonzalo,Fulham,FWD,5.8,25,1.7,2.3,832,1,0,6,0,3.0,37.3,a,,4.31,0.29,0.707
+272,Jonah Kusi-Asare,Kusi-Asare,Fulham,FWD,4.3,0,0.0,0.0,0,0,0,0,0,3.9,0.0,a,,0.0,0.0,0.188
+569,Gonzalo García,Gonzalo,Fulham,FWD,5.8,25,1.7,2.3,832,1,0,6,0,2.9,37.3,a,,4.31,0.29,0.706
 570,César Palacios,Palacios,Fulham,MID,5.2,20,2.0,2.2,283,1,1,0,1,0.1,17.3,a,,3.85,0.38,0.692
 580,Shea Charles,Charles,Fulham,MID,5.0,28,2.3,2.5,823,0,0,4,0,0.1,36.3,a,,5.6,0.46,0.777
 610,Luc De Fougerolles,De Fougerolles,Fulham,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 626,Macaulay Zepa,Zepa,Fulham,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.4,0.0,a,,0.0,0.0,0.188
 635,Hugo Larsson,Larsson,Fulham,MID,5.0,9,0.7,1.3,125,0,0,1,0,0.0,4.0,a,100.0,1.8,0.14,0.539
 636,Manuel Ángel Morán Ibáñez,Ángel,Fulham,MID,5.0,0,0.0,0.0,19,0,0,0,0,0.0,0.1,a,,0.0,0.0,0.188
-650,David Affengruber,Affengruber,Fulham,DEF,4.5,36,3.0,4.5,720,0,0,3,0,0.5,26.4,a,100.0,8.0,0.67,0.892
+650,David Affengruber,Affengruber,Fulham,DEF,4.5,36,3.0,4.5,720,0,0,3,0,0.5,26.4,a,100.0,8.0,0.67,0.893
 674,Dino Kaiser,Kaiser,Fulham,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 240,Tim Iroegbunam,Iroegbunam,Hull City,MID,5.0,24,3.7,2.7,405,1,1,0,3,0.1,14.4,i,0.0,4.8,0.74,0.797
 273,Dillon Phillips,Phillips,Hull City,GKP,3.9,0,0.0,0.0,0,0,0,0,0,1.2,0.0,a,,0.0,0.0,0.188
 274,Jack Butland,Butland,Hull City,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,100.0,0.0,0.0,0.188
 275,Harvey Cartwright,Cartwright,Hull City,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 276,Thimothée Lo-Tutala,Lo-Tutala,Hull City,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-277,John Egan,Egan,Hull City,DEF,4.0,38,1.0,3.8,842,0,0,3,1,6.2,27.1,a,,9.5,0.25,0.839
+277,John Egan,Egan,Hull City,DEF,4.0,38,1.0,3.8,842,0,0,3,1,6.1,27.1,a,,9.5,0.25,0.839
 278,Charlie Hughes,Hughes,Hull City,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.1,0.0,i,0.0,0.0,0.0,0.188
 279,Semi Ajayi,Ajayi,Hull City,DEF,4.2,48,4.7,4.4,941,1,0,5,2,11.8,29.1,a,100.0,11.43,1.12,0.978
-280,Lewie Coyle,Coyle,Hull City,DEF,4.0,31,4.0,2.8,811,0,0,4,0,0.6,11.8,a,100.0,7.75,1.0,0.924
+280,Lewie Coyle,Coyle,Hull City,DEF,4.0,31,4.0,2.8,811,0,0,4,0,0.6,11.8,a,100.0,7.75,1.0,0.923
 281,Cody Drameh,Drameh,Hull City,DEF,4.0,2,0.0,1.0,65,0,0,0,0,0.0,0.8,u,0.0,0.5,0.0,0.325
 282,Ryan Giles,Giles,Hull City,DEF,4.0,32,1.0,2.9,721,0,1,3,2,2.3,27.9,a,,8.0,0.25,0.814
 283,Matty Jacob,Jacob,Hull City,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 284,Cathal McCarthy,McCarthy,Hull City,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 285,Paddy McNair,McNair,Hull City,DEF,3.9,1,0.0,1.0,26,0,0,0,0,0.1,0.4,a,100.0,0.26,0.0,0.305
-286,Mohamed Belloumi,Belloumi,Hull City,MID,5.2,55,4.0,5.5,775,3,4,4,3,8.9,60.2,a,100.0,10.58,0.77,0.942
+286,Mohamed Belloumi,Belloumi,Hull City,MID,5.2,55,4.0,5.5,775,3,4,4,3,9.0,60.2,a,100.0,10.58,0.77,0.943
 287,Liam Millar,Millar,Hull City,MID,5.0,6,0.0,3.0,50,1,0,0,0,0.0,5.2,u,0.0,1.2,0.0,0.373
 288,Kieran Dowell,Dowell,Hull City,MID,4.3,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,,0.0,0.0,0.188
 289,Matt Crooks,Crooks,Hull City,MID,4.4,9,1.0,1.3,446,0,0,2,0,0.5,10.8,a,100.0,2.05,0.23,0.589
-290,Regan Slater,Slater,Hull City,MID,4.5,27,2.3,2.5,944,0,1,4,0,4.1,35.9,a,,6.0,0.51,0.806
+290,Regan Slater,Slater,Hull City,MID,4.5,27,2.3,2.5,944,0,1,4,0,4.0,35.9,a,,6.0,0.51,0.806
 291,Eliot Matazo,Matazo,Hull City,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 292,Abdülkadir Ömür,Ömür,Hull City,MID,4.8,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 293,Abu Kamara,Kamara,Hull City,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 294,Óscar Zambrano,Zambrano,Hull City,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,100.0,0.0,0.0,0.188
-295,Oli McBurnie,McBurnie,Hull City,FWD,5.5,51,9.0,4.6,976,4,3,4,8,2.1,61.7,a,,9.27,1.64,0.971
+295,Oli McBurnie,McBurnie,Hull City,FWD,5.5,51,9.0,4.6,976,4,3,4,8,2.2,61.7,a,,9.27,1.64,0.971
 296,David Akintola,Akintola,Hull City,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 297,Darko Gyabi,Gyabi,Hull City,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,d,75.0,0.0,0.0,0.188
 298,Enis Destan,Destan,Hull City,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
@@ -354,7 +354,7 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 340,Joe Gelhardt,Gelhardt,Hull City,MID,5.0,13,0.7,2.2,128,1,0,0,1,0.0,13.9,i,0.0,2.6,0.14,0.584
 556,Matt Targett,Targett,Hull City,DEF,3.9,1,0.0,1.0,5,0,0,0,0,1.1,0.0,i,0.0,0.26,0.0,0.305
 563,Hidemasa Morita,Morita,Hull City,MID,4.9,5,0.3,1.0,106,0,0,0,0,0.0,5.1,i,0.0,1.02,0.06,0.469
-572,Konstantinos Tzolakis,Tzolakis,Hull City,GKP,4.7,59,5.7,5.4,990,0,0,4,9,13.8,38.3,a,,12.55,1.21,0.988
+572,Konstantinos Tzolakis,Tzolakis,Hull City,GKP,4.7,59,5.7,5.4,990,0,0,4,9,14.0,38.3,a,,12.55,1.21,0.988
 574,Jens Hjertø-Dahl,Hjertø-Dahl,Hull City,MID,4.7,2,0.3,1.0,30,0,0,0,0,0.0,1.7,a,,0.43,0.06,0.423
 576,Elliot Stroud,Stroud,Hull City,MID,4.9,21,2.0,2.3,565,0,1,3,0,0.1,14.6,a,,4.29,0.41,0.724
 585,Lucas Herrington,Herrington,Hull City,DEF,3.9,10,0.3,1.2,353,0,0,0,0,0.5,13.4,a,,2.56,0.08,0.567
@@ -366,14 +366,14 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 638,Brooke Norton-Cuffy,Norton-Cuffy,Hull City,DEF,3.9,6,0.7,0.9,174,0,0,0,0,0.4,6.9,a,100.0,1.54,0.18,0.531
 642,Sorba Thomas,Thomas,Hull City,MID,5.5,14,0.3,2.3,316,0,1,0,2,0.0,16.4,a,,2.55,0.05,0.538
 645,Christos Mouzakitis,Mouzakitis,Hull City,MID,5.0,1,0.3,1.0,15,0,0,0,0,0.0,0.3,a,,0.2,0.06,0.393
-259,Issa Diop,Diop,Ipswich Town,DEF,3.9,21,1.0,1.9,990,0,0,0,0,9.4,27.6,a,,5.38,0.26,0.728
-267,Saša Lukić,Lukić,Ipswich Town,MID,4.9,19,1.3,2.7,580,0,1,0,0,0.1,24.4,a,100.0,3.88,0.27,0.677
+259,Issa Diop,Diop,Ipswich Town,DEF,3.9,21,1.0,1.9,990,0,0,0,0,9.3,27.6,a,,5.38,0.26,0.728
+267,Saša Lukić,Lukić,Ipswich Town,MID,4.9,19,1.3,2.7,580,0,1,0,0,0.1,24.4,a,100.0,3.88,0.27,0.676
 300,Christian Walton,Walton,Ipswich Town,GKP,4.4,15,2.0,2.1,630,0,0,0,0,0.5,18.4,a,,3.41,0.45,0.693
-301,Alex Palmer,Palmer,Ipswich Town,GKP,3.9,0,0.0,0.0,0,0,0,0,0,3.3,0.0,a,,0.0,0.0,0.188
+301,Alex Palmer,Palmer,Ipswich Town,GKP,3.9,0,0.0,0.0,0,0,0,0,0,3.2,0.0,a,,0.0,0.0,0.188
 302,David Button,Button,Ipswich Town,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.5,0.0,a,,0.0,0.0,0.188
 303,Cédric Kipré,Kipré,Ipswich Town,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.7,0.0,a,,0.0,0.0,0.188
-304,Dara O'Shea,O'Shea,Ipswich Town,DEF,4.0,31,1.7,2.8,990,1,0,0,3,2.6,47.3,a,,7.75,0.42,0.843
-305,Leif Davis,Davis,Ipswich Town,DEF,4.0,29,0.3,2.6,982,2,2,0,1,6.0,51.9,d,75.0,7.25,0.08,0.739
+304,Dara O'Shea,O'Shea,Ipswich Town,DEF,4.0,31,1.7,2.8,990,1,0,0,3,2.6,47.3,a,,7.75,0.42,0.842
+305,Leif Davis,Davis,Ipswich Town,DEF,4.0,29,0.3,2.6,982,2,2,0,1,5.9,51.9,d,75.0,7.25,0.08,0.739
 306,Jacob Greaves,Greaves,Ipswich Town,DEF,3.8,5,0.3,0.8,454,0,0,0,0,1.0,12.3,a,,1.32,0.08,0.497
 307,Ben Johnson,Johnson,Ipswich Town,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 308,Darnell Furlong,Furlong,Ipswich Town,DEF,3.9,2,0.3,1.0,107,0,0,0,0,0.5,1.2,a,,0.51,0.08,0.445
@@ -389,9 +389,9 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 318,Jaden Philogene,Philogene,Ipswich Town,MID,5.4,9,1.0,1.5,295,0,0,0,0,0.1,11.6,a,100.0,1.67,0.19,0.547
 319,Sam Szmodics,Szmodics,Ipswich Town,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 320,Chuba Akpom,Akpom,Ipswich Town,FWD,5.0,12,0.7,1.5,119,1,0,0,0,0.7,7.7,a,,2.4,0.14,0.575
-321,Sindre Walle Egeli,Walle Egeli,Ipswich Town,FWD,4.4,2,0.0,1.0,19,0,0,0,0,2.4,2.0,a,,0.45,0.0,0.321
+321,Sindre Walle Egeli,Walle Egeli,Ipswich Town,FWD,4.4,2,0.0,1.0,19,0,0,0,0,2.3,2.0,a,,0.45,0.0,0.321
 322,Ali Al-Hamadi,Al-Hamadi,Ipswich Town,FWD,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-323,Kasey McAteer,McAteer,Ipswich Town,MID,4.3,3,0.0,1.0,42,0,0,0,0,0.9,1.4,a,,0.7,0.0,0.342
+323,Kasey McAteer,McAteer,Ipswich Town,MID,4.3,3,0.0,1.0,42,0,0,0,0,0.8,1.4,a,,0.7,0.0,0.342
 324,Anis Mehmeti,Mehmeti,Ipswich Town,MID,4.7,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 554,Kayne van Oevelen,Van Oevelen,Ipswich Town,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 562,Daizen Maeda,Maeda,Ipswich Town,MID,5.2,22,1.3,2.0,565,1,0,0,0,0.2,20.4,a,,4.23,0.25,0.689
@@ -406,13 +406,13 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 326,Lucas Estella Perri,Perri,Leeds,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.2,0.0,u,0.0,0.0,0.0,0.188
 327,Jaka Bijol,Bijol,Leeds,DEF,5.0,21,0.0,4.2,258,0,0,2,2,0.5,10.3,a,,4.2,0.0,0.515
 329,Joe Rodon,Rodon,Leeds,DEF,4.2,9,0.7,2.2,128,0,0,1,0,0.4,5.0,a,100.0,2.14,0.17,0.568
-330,Jayden Bogle,Bogle,Leeds,DEF,4.8,62,4.0,5.6,895,2,1,6,7,12.1,55.9,a,,12.92,0.83,0.958
+330,Jayden Bogle,Bogle,Leeds,DEF,4.8,62,4.0,5.6,895,2,1,6,7,12.5,55.9,a,,12.92,0.83,0.958
 331,Gabriel Gudmundsson,Gudmundsson,Leeds,DEF,4.5,29,1.3,3.2,721,0,1,3,0,0.1,22.2,a,100.0,6.44,0.29,0.784
-332,James Justin,Justin,Leeds,DEF,4.5,55,5.0,5.0,971,1,0,4,5,2.7,44.6,a,,12.22,1.11,0.981
+332,James Justin,Justin,Leeds,DEF,4.5,55,5.0,5.0,971,1,0,4,5,2.8,44.6,a,,12.22,1.11,0.981
 333,Sebastiaan Bornauw,Bornauw,Leeds,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-334,Tarik Muharemović,Muharemović,Leeds,DEF,5.1,58,5.0,5.3,990,0,2,4,3,7.7,46.7,a,,11.37,0.98,0.967
-335,Anton Stach,Stach,Leeds,MID,6.0,34,0.7,3.4,680,1,0,3,3,1.5,41.2,a,100.0,5.67,0.12,0.692
-336,Noah Okafor,Okafor,Leeds,MID,5.7,43,6.7,4.3,552,4,0,3,4,1.5,39.4,a,100.0,7.54,1.18,0.926
+334,Tarik Muharemović,Muharemović,Leeds,DEF,5.2,58,5.0,5.3,990,0,2,4,3,8.7,46.7,a,,11.15,0.96,0.964
+335,Anton Stach,Stach,Leeds,MID,6.0,34,0.7,3.4,680,1,0,3,3,1.5,41.2,a,100.0,5.67,0.12,0.691
+336,Noah Okafor,Okafor,Leeds,MID,5.8,43,6.7,4.3,552,4,0,3,4,2.1,39.4,a,100.0,7.41,1.16,0.923
 337,Brenden Aaronson,Aaronson,Leeds,MID,5.2,19,2.7,2.1,300,1,0,2,1,0.3,11.7,a,,3.65,0.52,0.714
 338,Ethan Ampadu,Ampadu,Leeds,MID,5.3,38,4.3,3.5,990,0,2,4,0,0.7,34.1,a,,7.17,0.81,0.885
 339,Sean Longstaff,Longstaff,Leeds,MID,4.8,8,1.3,1.1,225,0,0,1,0,0.1,15.0,a,,1.67,0.27,0.577
@@ -421,11 +421,11 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 343,Daniel James,James,Leeds,MID,4.9,5,0.7,1.2,116,0,0,0,0,0.1,4.4,a,100.0,1.02,0.14,0.498
 344,Ilia Gruev,Gruev,Leeds,MID,5.0,1,0.3,1.0,1,0,0,0,0,0.0,0.0,a,100.0,0.2,0.06,0.393
 345,Tanaka Ao,Tanaka,Leeds,MID,4.9,29,3.0,2.9,718,0,2,4,0,0.3,20.9,a,,5.92,0.61,0.817
-346,Dominic Calvert-Lewin,Calvert-Lewin,Leeds,FWD,6.0,48,4.3,4.4,953,4,2,5,7,17.6,61.1,a,100.0,8.0,0.72,0.9
+346,Dominic Calvert-Lewin,Calvert-Lewin,Leeds,FWD,6.0,48,4.3,4.4,953,4,2,5,7,18.8,61.1,a,100.0,8.0,0.72,0.901
 347,Lukas Nmecha,Nmecha,Leeds,FWD,5.2,13,1.0,1.4,197,0,1,1,0,0.4,12.6,a,,2.5,0.19,0.593
 348,Joël Piroe,Piroe,Leeds,FWD,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 349,Mateo Joseph Fernández-Regatillo,Mateo Joseph,Leeds,FWD,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
-385,James Trafford,Trafford,Leeds,GKP,5.1,56,4.7,5.1,990,0,0,4,11,8.2,28.8,a,,10.98,0.92,0.959
+385,James Trafford,Trafford,Leeds,GKP,5.1,56,4.7,5.1,990,0,0,4,11,9.0,28.8,a,,10.98,0.92,0.959
 598,Nico Elvedi,Elvedi,Leeds,DEF,4.5,30,4.7,3.3,771,0,0,2,0,0.1,29.6,a,100.0,6.67,1.04,0.897
 603,Jayden Lienou,Lienou,Leeds,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 604,Alfie Cresswell,Cresswell,Leeds,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
@@ -433,26 +433,26 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 629,Michael Zetterer,Zetterer,Leeds,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.7,0.0,a,,0.0,0.0,0.188
 641,Melvin Bard,Bard,Leeds,DEF,4.5,3,0.7,1.0,64,0,0,0,0,0.0,2.7,a,,0.67,0.16,0.474
 648,Jean-Mattéo Bahoya,Bahoya,Leeds,MID,4.8,3,0.3,1.0,11,0,0,0,0,0.0,1.4,a,100.0,0.62,0.06,0.439
-350,Alisson Becker,A.Becker,Liverpool,GKP,5.5,49,4.3,4.5,990,0,0,5,5,4.5,20.6,a,,8.91,0.78,0.922
+350,Alisson Becker,A.Becker,Liverpool,GKP,5.5,49,4.3,4.5,990,0,0,5,5,4.7,20.6,a,,8.91,0.78,0.922
 351,Giorgi Mamardashvili,Mamardashvili,Liverpool,GKP,4.8,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
 352,Freddie Woodman,Woodman,Liverpool,GKP,3.9,0,0.0,0.0,0,0,0,0,0,0.9,0.0,a,,0.0,0.0,0.188
 353,Armin Pecsi,Pecsi,Liverpool,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 354,Vitezslav Jaros,Jaros,Liverpool,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
-355,Harvey Davies,Davies,Liverpool,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,,0.0,0.0,0.188
-356,Virgil van Dijk,Virgil,Liverpool,DEF,6.4,49,3.7,4.5,990,0,0,5,1,14.7,41.4,a,100.0,7.66,0.58,0.869
+355,Harvey Davies,Davies,Liverpool,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
+356,Virgil van Dijk,Virgil,Liverpool,DEF,6.4,49,3.7,4.5,990,0,0,5,1,14.9,41.4,a,100.0,7.66,0.58,0.868
 357,Jeremie Frimpong,Frimpong,Liverpool,DEF,5.1,5,0.3,0.8,211,0,0,0,0,1.1,14.7,a,100.0,0.98,0.06,0.465
 358,Milos Kerkez,Kerkez,Liverpool,DEF,5.2,31,3.0,2.8,912,0,0,4,0,1.8,32.1,a,,5.96,0.58,0.814
 359,Joe Gomez,Gomez,Liverpool,DEF,4.9,4,0.7,1.0,19,0,0,0,0,0.0,1.3,a,100.0,0.82,0.14,0.482
 360,Conor Bradley,Bradley,Liverpool,DEF,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 361,Wellity Lucky,Lucky,Liverpool,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
-362,Jeremy Jacquet,Jacquet,Liverpool,DEF,5.1,50,4.0,4.5,952,0,0,5,3,4.9,39.6,a,100.0,9.8,0.78,0.937
+362,Jeremy Jacquet,Jacquet,Liverpool,DEF,5.1,50,4.0,4.5,952,0,0,5,3,5.0,39.6,a,100.0,9.8,0.78,0.937
 363,Giovanni Leoni,Leoni,Liverpool,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 364,Kostas Tsimikas,Tsimikas,Liverpool,DEF,4.8,4,0.3,1.0,75,0,0,0,0,0.1,3.0,a,,0.83,0.06,0.456
 365,Calvin Ramsay,Ramsay,Liverpool,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
-366,Florian Wirtz,Wirtz,Liverpool,MID,7.4,60,9.7,5.5,881,2,6,5,6,11.3,94.6,a,100.0,8.11,1.31,0.947
-367,Cody Gakpo,Gakpo,Liverpool,MID,7.1,40,1.7,5.0,601,1,3,4,5,6.4,50.1,i,0.0,5.63,0.24,0.731
-368,Dominik Szoboszlai,Szoboszlai,Liverpool,MID,6.7,38,5.7,4.2,661,2,1,5,3,14.0,63.2,a,100.0,5.67,0.85,0.839
-369,Rio Ngumoha,Ngumoha,Liverpool,MID,5.7,22,5.0,2.4,279,1,1,1,2,0.7,26.8,a,,3.86,0.88,0.771
+366,Florian Wirtz,Wirtz,Liverpool,MID,7.5,60,9.7,5.5,881,2,6,5,6,14.1,94.6,a,100.0,8.0,1.29,0.945
+367,Cody Gakpo,Gakpo,Liverpool,MID,7.1,40,1.7,5.0,601,1,3,4,5,6.1,50.1,i,0.0,5.63,0.24,0.73
+368,Dominik Szoboszlai,Szoboszlai,Liverpool,MID,6.7,38,5.7,4.2,661,2,1,5,3,14.2,63.2,a,100.0,5.67,0.85,0.838
+369,Rio Ngumoha,Ngumoha,Liverpool,MID,5.7,22,5.0,2.4,279,1,1,1,2,0.7,26.8,a,,3.86,0.88,0.77
 370,Federico Chiesa,Chiesa,Liverpool,MID,5.3,1,0.0,1.0,2,0,0,0,0,0.0,0.0,a,100.0,0.19,0.0,0.286
 371,Ryan Gravenberch,Gravenberch,Liverpool,MID,5.8,11,0.0,1.6,341,0,1,1,0,0.8,17.3,i,0.0,1.9,0.0,0.418
 372,Alexis Mac Allister,Mac Allister,Liverpool,MID,5.4,30,4.3,2.7,827,1,0,4,1,1.4,45.7,a,,5.56,0.8,0.827
@@ -462,31 +462,31 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 376,Stefan Bajčetić Maquieira,Bajcetic,Liverpool,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 377,Victor Munoz,Munoz,Liverpool,MID,6.5,33,2.3,3.3,473,3,1,1,2,0.6,40.4,d,75.0,5.08,0.35,0.738
 378,James McConnell,McConnell,Liverpool,MID,4.3,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,,0.0,0.0,0.188
-379,Alexander Isak,Isak,Liverpool,FWD,9.4,66,5.0,6.6,831,7,1,6,16,27.5,81.2,a,100.0,7.02,0.53,0.845
+379,Alexander Isak,Isak,Liverpool,FWD,9.4,66,5.0,6.6,831,7,1,6,16,28.5,81.2,a,100.0,7.02,0.53,0.845
 380,Hugo Ekitiké,Ekitiké,Liverpool,FWD,7.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,i,0.0,0.0,0.0,0.188
 381,Lewis Koumas,Koumas,Liverpool,MID,5.0,10,1.0,1.1,135,0,0,0,0,0.1,7.9,a,,2.0,0.2,0.574
 382,Jayden Danns,Danns,Liverpool,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,100.0,0.0,0.0,0.188
 383,Harvey Elliott,Elliott,Liverpool,MID,5.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-579,Ronald Araujo,Araujo,Liverpool,DEF,5.5,50,5.7,4.5,747,0,0,6,3,5.0,26.5,a,,9.09,1.04,0.95
+579,Ronald Araujo,Araujo,Liverpool,DEF,5.5,50,5.7,4.5,747,0,0,6,3,5.2,26.5,a,,9.09,1.04,0.95
 627,Bradley Barcola,Barcola,Liverpool,MID,8.1,30,3.7,3.3,650,0,4,5,0,4.5,41.4,a,,3.7,0.46,0.702
 155,Enzo Fernández,Enzo,Man City,MID,6.9,24,1.7,2.4,625,1,0,3,0,3.3,43.7,a,,3.48,0.25,0.654
-237,Iliman Ndiaye,Ndiaye,Man City,MID,5.7,39,2.0,3.5,843,0,4,2,1,5.1,59.7,a,,6.84,0.35,0.804
-384,Gianluigi Donnarumma,Donnarumma,Man City,GKP,5.4,35,1.7,3.2,990,0,0,3,1,6.9,22.5,a,,6.48,0.31,0.79
+237,Iliman Ndiaye,Ndiaye,Man City,MID,5.7,39,2.0,3.5,843,0,4,2,1,4.9,59.7,a,,6.84,0.35,0.803
+384,Gianluigi Donnarumma,Donnarumma,Man City,GKP,5.4,35,1.7,3.2,990,0,0,3,1,6.8,22.5,a,,6.48,0.31,0.79
 386,Marcus Bettinelli,Bettinelli,Man City,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
-387,Nico O'Reilly,O'Reilly,Man City,DEF,6.2,17,1.3,1.9,436,0,0,1,0,8.0,22.9,a,100.0,2.74,0.21,0.614
-388,Marc Guéhi,Guéhi,Man City,DEF,5.9,39,0.7,3.9,810,1,1,3,4,12.2,37.5,a,100.0,6.61,0.12,0.73
+387,Nico O'Reilly,O'Reilly,Man City,DEF,6.2,17,1.3,1.9,436,0,0,1,0,7.9,22.9,a,100.0,2.74,0.21,0.614
+388,Marc Guéhi,Guéhi,Man City,DEF,5.9,39,0.7,3.9,810,1,1,3,4,12.1,37.5,a,100.0,6.61,0.12,0.73
 389,Matheus Nunes,Matheus N.,Man City,DEF,5.9,22,1.0,3.1,513,0,0,2,1,0.9,20.9,a,100.0,3.73,0.17,0.627
-390,Rúben dos Santos Gato Alves Dias,Rúben,Man City,DEF,5.5,30,1.7,2.7,990,0,0,3,0,2.0,36.3,a,,5.45,0.31,0.745
-391,Joško Gvardiol,Gvardiol,Man City,DEF,5.5,45,1.0,4.1,712,1,4,2,6,19.3,43.1,a,100.0,8.18,0.18,0.79
+390,Rúben dos Santos Gato Alves Dias,Rúben,Man City,DEF,5.5,30,1.7,2.7,990,0,0,3,0,1.9,36.3,a,,5.45,0.31,0.745
+391,Joško Gvardiol,Gvardiol,Man City,DEF,5.5,45,1.0,4.1,712,1,4,2,6,18.7,43.1,a,100.0,8.18,0.18,0.79
 392,Rayan Aït-Nouri,Aït-Nouri,Man City,DEF,5.1,0,0.0,0.0,0,0,0,0,0,0.3,0.0,a,,0.0,0.0,0.188
 393,Abdukodir Khusanov,Khusanov,Man City,DEF,5.3,20,2.3,2.5,642,0,0,1,0,1.2,25.2,a,100.0,3.77,0.43,0.698
 394,Max Alleyne,Alleyne,Man City,DEF,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 395,Rico Lewis,Lewis,Man City,DEF,4.3,2,0.0,1.0,101,0,0,0,0,0.2,6.6,a,,0.47,0.0,0.322
 396,Vitor de Oliveira Nunes dos Reis,Vitor Reis,Man City,DEF,4.4,1,0.0,1.0,1,0,0,0,0,0.0,0.2,a,,0.23,0.0,0.3
-397,Antoine Semenyo,Semenyo,Man City,MID,8.1,37,0.0,5.3,553,2,3,3,2,5.2,46.3,i,0.0,4.57,0.0,0.531
-398,Phil Foden,Foden,Man City,MID,6.8,23,1.3,2.6,430,1,2,0,3,2.0,45.5,a,100.0,3.38,0.19,0.624
-399,Rayan Cherki,Cherki,Man City,MID,7.8,55,3.7,5.5,582,5,2,2,9,31.3,82.8,a,,7.05,0.47,0.834
-400,Jérémy Doku,Doku,Man City,MID,7.5,27,2.0,3.9,485,1,2,0,4,4.0,54.1,a,100.0,3.6,0.27,0.662
+397,Antoine Semenyo,Semenyo,Man City,MID,8.1,37,0.0,5.3,553,2,3,3,2,5.2,46.3,i,0.0,4.57,0.0,0.53
+398,Phil Foden,Foden,Man City,MID,6.8,23,1.3,2.6,430,1,2,0,3,1.9,45.5,a,100.0,3.38,0.19,0.624
+399,Rayan Cherki,Cherki,Man City,MID,7.8,55,3.7,5.5,582,5,2,2,9,30.2,82.8,a,,7.05,0.47,0.834
+400,Jérémy Doku,Doku,Man City,MID,7.5,27,2.0,3.9,485,1,2,0,4,3.8,54.1,a,100.0,3.6,0.27,0.662
 402,Rodrigo 'Rodri' Hernandez Cascante,Rodrigo,Man City,MID,6.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 404,Tijjani Reijnders,Reijnders,Man City,MID,6.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 406,Mateo Kovačić,Kovačić,Man City,MID,5.3,7,0.0,2.3,91,0,1,0,1,0.1,8.2,a,100.0,1.32,0.0,0.378
@@ -494,8 +494,8 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 408,Kalvin Phillips,Phillips,Man City,MID,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 409,Divine Mukasa,Mukasa,Man City,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 410,Jeremy Monga,Monga,Man City,MID,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-411,Erling Haaland,Haaland,Man City,FWD,15.8,72,2.0,6.5,979,9,0,3,14,77.1,97.0,a,100.0,4.56,0.13,0.659
-481,Elliot Anderson,Anderson,Man City,MID,6.2,39,5.3,3.5,876,1,1,3,3,3.6,55.4,a,100.0,6.29,0.85,0.866
+411,Erling Haaland,Haaland,Man City,FWD,15.7,72,2.0,6.5,979,9,0,3,14,75.8,97.0,a,100.0,4.59,0.13,0.66
+481,Elliot Anderson,Anderson,Man City,MID,6.2,39,5.3,3.5,876,1,1,3,3,3.5,55.4,a,100.0,6.29,0.85,0.866
 587,Gerónimo Rulli,Rulli,Man City,GKP,4.9,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 616,Ayyoub Bouaddi,Bouaddi,Man City,MID,5.5,7,1.0,1.2,260,0,0,0,0,0.2,8.5,a,,1.27,0.18,0.518
 621,Ryan McAidoo,McAidoo,Man City,MID,4.4,2,0.0,0.7,32,0,0,0,0,0.1,3.8,a,,0.45,0.0,0.321
@@ -506,7 +506,7 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 131,Carlos Baleba,Baleba,Man Utd,MID,4.9,8,0.3,2.0,232,0,0,0,0,0.2,5.5,i,0.0,1.63,0.06,0.499
 162,Andrey Nascimento dos Santos,Andrey Santos,Man Utd,MID,4.6,11,1.0,1.6,330,0,0,0,0,0.4,14.2,a,,2.39,0.22,0.602
 325,Karl Darlow,Darlow,Man Utd,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,100.0,0.0,0.0,0.188
-412,Senne Lammens,Lammens,Man Utd,GKP,4.8,23,2.0,2.1,990,0,0,0,0,6.9,30.9,a,,4.79,0.42,0.739
+412,Senne Lammens,Lammens,Man Utd,GKP,4.8,23,2.0,2.1,990,0,0,0,0,6.8,30.9,a,,4.79,0.42,0.739
 413,Altay Bayındır,Bayindir,Man Utd,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 414,Tom Heaton,Heaton,Man Utd,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,100.0,0.0,0.0,0.188
 415,Patrick Dorgu,Dorgu,Man Utd,MID,5.7,23,4.3,3.3,259,1,2,0,2,0.3,29.7,a,100.0,4.04,0.75,0.77
@@ -517,11 +517,11 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 420,Leny Yoro,Yoro,Man Utd,DEF,4.8,9,-0.3,1.1,447,0,0,0,0,0.4,16.1,a,100.0,1.88,-0.06,0.322
 421,Ayden Heaven,Heaven,Man Utd,DEF,4.2,2,0.0,0.4,224,0,0,0,0,0.2,5.4,a,100.0,0.48,0.0,0.323
 422,Noussair Mazraoui,Mazraoui,Man Utd,DEF,4.3,9,1.0,1.5,257,0,1,0,0,0.4,17.2,a,100.0,2.09,0.23,0.592
-423,Luke Shaw,Shaw,Man Utd,DEF,4.2,12,0.0,2.4,425,0,1,0,0,3.0,23.1,a,100.0,2.86,0.0,0.461
+423,Luke Shaw,Shaw,Man Utd,DEF,4.2,12,0.0,2.4,425,0,1,0,0,2.9,23.1,a,100.0,2.86,0.0,0.461
 424,Harry Amass,Amass,Man Utd,DEF,3.9,0,0.0,0.0,0,0,0,0,0,0.2,0.0,a,,0.0,0.0,0.188
 425,Tyler Fredricson,Fredricson,Man Utd,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-426,Bruno Borges Fernandes,B.Fernandes,Man Utd,MID,11.6,47,4.7,4.7,900,4,2,0,3,20.1,98.5,a,,4.05,0.41,0.712
-427,Bryan Mbeumo,Mbeumo,Man Utd,MID,7.8,47,1.3,4.3,913,4,1,0,5,17.3,75.8,a,,6.03,0.17,0.722
+426,Bruno Borges Fernandes,B.Fernandes,Man Utd,MID,11.6,47,4.7,4.7,900,4,2,0,3,20.6,98.5,a,,4.05,0.41,0.712
+427,Bryan Mbeumo,Mbeumo,Man Utd,MID,7.8,47,1.3,4.3,913,4,1,0,5,17.0,75.8,a,,6.03,0.17,0.722
 428,Matheus Santos Carneiro da Cunha,Cunha,Man Utd,MID,7.8,46,2.7,4.2,748,1,4,1,7,5.5,54.6,a,,5.9,0.35,0.769
 429,Marcus Rashford,Rashford,Man Utd,MID,6.8,11,0.0,1.8,352,0,0,1,0,0.9,37.4,i,0.0,1.62,0.0,0.394
 430,Mason Mount,Mount,Man Utd,MID,5.4,7,1.0,1.2,189,0,0,0,0,0.0,14.0,a,100.0,1.3,0.19,0.524
@@ -542,12 +542,12 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 444,Ewen Jaouen,Jaouen,Newcastle,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.0,0.0,i,0.0,0.0,0.0,0.188
 445,Malick Thiaw,Thiaw,Newcastle,DEF,4.9,25,3.0,2.5,805,1,0,1,0,1.3,29.2,a,,5.1,0.61,0.787
 446,Fabian Schär,Schär,Newcastle,DEF,4.9,12,1.0,2.4,210,0,0,1,0,0.2,11.5,a,100.0,2.45,0.2,0.596
-447,Sven Botman,Botman,Newcastle,DEF,5.0,27,0.3,3.4,631,1,0,1,0,0.7,29.5,a,,5.4,0.06,0.658
+447,Sven Botman,Botman,Newcastle,DEF,5.0,27,0.3,3.4,631,1,0,1,0,0.6,29.5,a,,5.4,0.06,0.658
 448,Dan Burn,Burn,Newcastle,DEF,4.8,15,2.3,2.5,362,0,0,1,0,0.7,11.2,a,100.0,3.12,0.48,0.689
-449,Lewis Hall,Hall,Newcastle,DEF,5.2,47,2.3,4.3,989,1,1,2,6,15.9,54.1,d,75.0,9.04,0.44,0.869
-450,Tino Livramento,Livramento,Newcastle,DEF,4.8,5,0.3,1.7,78,0,1,0,0,0.0,2.1,a,100.0,1.04,0.06,0.472
+449,Lewis Hall,Hall,Newcastle,DEF,5.2,47,2.3,4.3,989,1,1,2,6,15.3,54.1,d,75.0,9.04,0.44,0.869
+450,Tino Livramento,Livramento,Newcastle,DEF,4.8,5,0.3,1.7,78,0,1,0,0,0.1,2.1,a,100.0,1.04,0.06,0.472
 451,Alex Murphy,A.Murphy,Newcastle,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
-453,Harvey Barnes,Barnes,Newcastle,MID,6.0,51,3.7,4.6,976,3,3,2,4,5.6,68.5,a,,8.5,0.62,0.896
+453,Harvey Barnes,Barnes,Newcastle,MID,6.0,51,3.7,4.6,976,3,3,2,4,5.4,68.5,a,,8.5,0.62,0.896
 454,Anthony Elanga,Elanga,Newcastle,MID,6.0,23,1.3,3.3,370,2,0,1,2,2.2,24.4,a,100.0,3.83,0.22,0.655
 456,Jacob Ramsey,J.Ramsey,Newcastle,MID,4.8,7,-0.3,1.2,142,1,0,0,0,0.1,10.1,a,100.0,1.46,-0.06,0.294
 457,Jacob Murphy,J.Murphy,Newcastle,MID,5.9,22,4.0,2.2,478,1,1,1,3,0.1,32.0,a,,3.73,0.68,0.742
@@ -555,9 +555,9 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 459,Lewis Miley,L.Miley,Newcastle,MID,5.5,18,1.0,2.0,663,0,0,1,0,0.1,23.0,a,100.0,3.27,0.18,0.615
 460,Joe Willock,Willock,Newcastle,MID,5.0,35,2.7,3.2,647,2,1,2,3,0.4,39.5,a,,7.0,0.54,0.846
 461,Bazoumana Touré,Touré,Newcastle,MID,5.7,11,0.3,1.8,118,1,0,0,0,0.1,13.2,a,100.0,1.93,0.05,0.512
-462,Sean Steur,Steur,Newcastle,MID,4.7,14,1.7,1.6,372,0,0,2,0,0.1,14.0,a,,2.98,0.36,0.66
+462,Sean Steur,Steur,Newcastle,MID,4.7,14,1.7,1.6,372,0,0,2,0,0.1,14.0,a,,2.98,0.36,0.659
 463,Nick Woltemade,Woltemade,Newcastle,FWD,5.9,4,0.0,4.0,19,0,1,0,0,0.4,4.0,u,0.0,0.68,0.0,0.339
-464,Yoane Wissa,Wissa,Newcastle,FWD,5.9,23,1.3,2.1,714,1,1,2,2,7.3,35.4,a,,3.9,0.22,0.662
+464,Yoane Wissa,Wissa,Newcastle,FWD,5.9,23,1.3,2.1,714,1,1,2,2,7.2,35.4,a,,3.9,0.22,0.662
 465,William Osula,Osula,Newcastle,FWD,5.8,23,3.0,3.3,441,1,2,1,3,0.4,24.4,a,100.0,3.97,0.52,0.732
 466,Sean Neave,Neave,Newcastle,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.3,0.0,u,0.0,0.0,0.0,0.188
 559,Aladji Bamba,Bamba,Newcastle,MID,4.8,3,0.0,1.0,27,0,0,0,0,0.1,1.2,a,,0.62,0.0,0.335
@@ -571,10 +571,10 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 665,Michael Mills,Mills,Newcastle,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 666,Kyran Thompson,Thompson,Newcastle,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 167,Liam Delap,Delap,Nott'm Forest,FWD,5.3,31,5.3,3.1,768,3,0,1,3,1.8,43.0,a,,5.85,1.0,0.861
-201,Daniel Muñoz Mejía,Muñoz,Nott'm Forest,DEF,5.2,17,0.7,1.7,717,0,1,0,2,4.0,44.3,a,,3.27,0.13,0.6
+201,Daniel Muñoz Mejía,Muñoz,Nott'm Forest,DEF,5.2,17,0.7,1.7,717,0,1,0,2,3.9,44.3,a,,3.27,0.13,0.6
 467,Matz Sels,Sels,Nott'm Forest,GKP,5.0,25,1.7,2.3,990,0,0,1,0,1.3,20.9,a,,5.0,0.34,0.733
 468,John Victor Maciel Furtado,John,Nott'm Forest,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
-469,Neco Williams,N.Williams,Nott'm Forest,DEF,4.8,35,1.3,3.2,964,1,1,1,1,4.8,49.7,a,100.0,7.29,0.27,0.803
+469,Neco Williams,N.Williams,Nott'm Forest,DEF,4.8,35,1.3,3.2,964,1,1,1,1,4.7,49.7,a,100.0,7.29,0.27,0.803
 470,Felipe Rodrigues da Silva,Morato,Nott'm Forest,DEF,5.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 471,Nikola Milenković,Milenković,Nott'm Forest,DEF,5.4,15,0.3,2.1,630,0,0,1,0,0.7,16.5,a,100.0,2.78,0.06,0.562
 472,Murillo Costa dos Santos,Murillo,Nott'm Forest,DEF,5.5,35,2.3,3.2,989,0,1,1,0,1.9,50.3,a,100.0,6.36,0.42,0.802
@@ -600,17 +600,17 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 558,Xaver Schlager,Schlager,Nott'm Forest,MID,4.9,32,3.0,2.9,801,0,1,1,0,0.1,32.7,a,100.0,6.53,0.61,0.843
 581,Ousmane Diomande,Diomande,Nott'm Forest,DEF,5.3,10,0.0,2.0,343,0,0,0,0,0.5,9.9,a,,1.89,0.0,0.415
 590,Steven Benda,Benda,Nott'm Forest,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
-112,Jan Paul van Hecke,Van Hecke,Spurs,DEF,5.2,63,8.3,5.7,990,2,0,5,6,19.9,70.8,a,100.0,12.12,1.6,0.994
+112,Jan Paul van Hecke,Van Hecke,Spurs,DEF,5.2,63,8.3,5.7,990,2,0,5,6,20.8,70.8,a,100.0,12.12,1.6,0.994
 147,Tosin Adarabioyo,Tosin,Spurs,DEF,4.3,3,0.0,1.5,75,0,0,0,0,0.1,2.7,i,0.0,0.7,0.0,0.342
 401,Omar Marmoush,Marmoush,Spurs,FWD,7.0,25,1.7,2.5,679,1,0,5,3,2.3,34.5,a,100.0,3.57,0.24,0.65
 403,Sávio Moreira de Oliveira,Sávio,Spurs,MID,6.4,11,0.3,2.2,355,0,0,2,0,0.3,34.6,d,75.0,1.72,0.05,0.495
-455,Sandro Tonali,Tonali,Spurs,MID,5.3,34,1.3,3.4,877,0,1,4,2,1.9,37.7,a,100.0,6.42,0.25,0.77
+455,Sandro Tonali,Tonali,Spurs,MID,5.3,34,1.3,3.4,877,0,1,4,2,1.8,37.7,a,100.0,6.42,0.25,0.77
 494,Guglielmo Vicario,Vicario,Spurs,GKP,4.5,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 495,Brandon Austin,Austin,Spurs,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.9,0.0,a,,0.0,0.0,0.188
-496,Antonín Kinský,Kinsky,Spurs,GKP,4.4,47,5.0,4.3,990,0,0,5,2,16.4,24.1,a,,10.68,1.14,0.976
-497,Martin Dubravka,Dubravka,Spurs,GKP,3.9,0,0.0,0.0,0,0,0,0,0,14.5,0.0,a,,0.0,0.0,0.188
-498,Marcos Senesi Barón,Senesi,Spurs,DEF,5.7,13,2.7,4.3,268,0,0,1,0,2.9,13.0,a,,2.28,0.47,0.652
-499,Pedro Porro Sauceda,Pedro Porro,Spurs,DEF,5.3,27,5.7,3.9,422,0,1,3,3,5.3,24.8,a,100.0,5.09,1.08,0.838
+496,Antonín Kinský,Kinsky,Spurs,GKP,4.5,47,5.0,4.3,990,0,0,5,2,16.8,24.1,a,,10.44,1.11,0.971
+497,Martin Dubravka,Dubravka,Spurs,GKP,3.9,0,0.0,0.0,0,0,0,0,0,14.2,0.0,a,,0.0,0.0,0.188
+498,Marcos Senesi Barón,Senesi,Spurs,DEF,5.7,13,2.7,4.3,268,0,0,1,0,2.9,13.0,a,,2.28,0.47,0.651
+499,Pedro Porro Sauceda,Pedro Porro,Spurs,DEF,5.3,27,5.7,3.9,422,0,1,3,3,5.4,24.8,a,100.0,5.09,1.08,0.838
 500,Cristian Romero,Romero,Spurs,DEF,5.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 502,Andrew Robertson,Robertson,Spurs,DEF,4.3,39,3.7,3.9,675,0,2,3,3,2.8,49.2,a,100.0,9.07,0.86,0.932
 503,Micky van de Ven,Van de Ven,Spurs,DEF,5.0,31,2.3,3.4,736,0,0,4,3,3.9,22.9,a,100.0,6.2,0.46,0.804
@@ -635,20 +635,20 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 523,Mikey Moore,Moore,Spurs,MID,5.0,3,0.0,1.5,89,0,0,0,0,0.0,7.5,u,0.0,0.6,0.0,0.331
 524,Callum Olusesi,Olusesi,Spurs,MID,4.4,0,0.0,0.0,0,0,0,0,0,0.7,0.0,a,,0.0,0.0,0.188
 525,Mateus Fernandes,Fernandes,Spurs,MID,5.6,28,4.0,2.5,603,0,1,5,0,0.7,37.5,a,,5.0,0.71,0.799
-526,Dominic Solanke-Mitchell,Solanke,Spurs,FWD,5.8,29,3.3,2.6,550,2,1,3,2,1.4,43.7,a,,5.0,0.57,0.776
+526,Dominic Solanke-Mitchell,Solanke,Spurs,FWD,5.8,29,3.3,2.6,550,2,1,3,2,1.3,43.7,a,,5.0,0.57,0.776
 527,Richarlison de Andrade,Richarlison,Spurs,FWD,5.9,2,0.0,2.0,67,0,0,0,0,0.5,0.2,u,0.0,0.34,0.0,0.309
 528,Dane Scarlett,Scarlett,Spurs,FWD,4.5,0,0.0,0.0,0,0,0,0,0,0.7,0.0,u,0.0,0.0,0.0,0.188
 578,Mykhailo Mudryk,Mudryk,Spurs,MID,5.3,1,0.0,1.0,16,0,0,0,0,0.0,0.1,i,0.0,0.19,0.0,0.286
-601,Luca Williams-Barnett,Williams-Barnett,Spurs,MID,4.4,15,5.0,5.0,72,1,1,1,3,0.4,23.1,a,,3.41,1.14,0.775
+601,Luca Williams-Barnett,Williams-Barnett,Spurs,MID,4.4,15,5.0,5.0,72,1,1,1,3,0.4,23.1,a,,3.41,1.14,0.776
 671,Luca Gunter,Gunter,Spurs,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
 501,Kevin Danso,Danso,Sunderland,DEF,5.0,1,0.0,0.2,376,0,0,0,0,0.1,16.0,n,0.0,0.2,0.0,0.289
 529,Robin Roefs,Roefs,Sunderland,GKP,4.8,44,7.0,4.0,990,0,0,4,7,2.1,22.7,a,,9.17,1.46,0.968
 530,Anthony Patterson,Patterson,Sunderland,GKP,4.0,0,0.0,0.0,0,0,0,0,0,0.1,0.0,u,0.0,0.0,0.0,0.188
 531,Melker Ellborg,Ellborg,Sunderland,GKP,4.4,0,0.0,0.0,0,0,0,0,0,0.1,0.0,a,,0.0,0.0,0.188
-532,Daniel Ballard,Ballard,Sunderland,DEF,4.7,14,0.0,2.8,450,0,0,1,0,0.9,16.3,i,0.0,2.98,0.0,0.465
+532,Daniel Ballard,Ballard,Sunderland,DEF,4.7,14,0.0,2.8,450,0,0,1,0,0.8,16.3,i,0.0,2.98,0.0,0.465
 533,Nordi Mukiele,Mukiele,Sunderland,DEF,5.3,37,5.7,4.1,771,0,0,3,2,1.4,37.0,a,100.0,6.98,1.08,0.904
-534,Trai Hume,Hume,Sunderland,DEF,4.2,32,4.0,3.2,730,0,0,4,0,1.6,23.2,a,,7.62,0.95,0.912
-535,Omar Alderete,Alderete,Sunderland,DEF,4.8,1,0.0,0.2,209,0,0,0,0,0.2,4.5,a,100.0,0.21,0.0,0.294
+534,Trai Hume,Hume,Sunderland,DEF,4.1,32,4.0,3.2,730,0,0,4,0,1.6,23.2,a,,7.8,0.98,0.923
+535,Omar Alderete,Alderete,Sunderland,DEF,4.8,1,0.0,0.2,209,0,0,0,0,0.2,4.5,d,75.0,0.21,0.0,0.294
 536,Reinildo Mandava,Reinildo,Sunderland,DEF,4.4,28,4.3,2.8,882,0,0,4,0,0.2,25.6,a,100.0,6.36,0.98,0.881
 537,Jenson Seelt,Seelt,Sunderland,DEF,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
 538,Leo Fuhr Hjelde,Hjelde,Sunderland,DEF,4.0,0,0.0,0.0,0,0,0,0,0,0.0,0.0,u,0.0,0.0,0.0,0.188
@@ -665,11 +665,11 @@ id,full_name,web_name,team_name,position,price_m,total_points,form,points_per_ga
 549,Chemsdine Talbi,Talbi,Sunderland,MID,5.2,9,2.3,1.8,252,0,0,2,0,0.1,6.6,a,,1.73,0.44,0.616
 550,Djiamgone Jocelin Ta Bi,Jocelin.T,Sunderland,MID,4.9,1,0.0,1.0,17,0,0,0,0,0.0,0.5,a,,0.2,0.0,0.289
 551,Nilson Angulo,N.Angulo,Sunderland,MID,5.0,22,0.3,2.2,534,1,1,2,0,0.1,24.4,a,,4.4,0.06,0.63
-552,Brian Brobbey,Brobbey,Sunderland,FWD,5.7,32,2.0,4.0,619,3,1,3,3,3.9,39.5,i,0.0,5.61,0.35,0.756
-553,Wilson Isidor,Isidor,Sunderland,FWD,5.4,21,1.3,2.3,339,1,1,1,3,0.7,14.0,a,100.0,3.89,0.24,0.667
-612,Dayann Méthalie,Methalie,Sunderland,DEF,4.5,0,0.0,0.0,107,0,0,0,0,0.0,1.9,a,100.0,0.0,0.0,0.188
+552,Brian Brobbey,Brobbey,Sunderland,FWD,5.6,32,2.0,4.0,619,3,1,3,3,3.8,39.5,i,0.0,5.71,0.36,0.765
+553,Wilson Isidor,Isidor,Sunderland,FWD,5.4,21,1.3,2.3,339,1,1,1,3,0.7,14.0,a,100.0,3.89,0.24,0.666
+612,Dayann Méthalie,Methalie,Sunderland,DEF,4.5,0,0.0,0.0,107,0,0,0,0,0.0,1.9,d,75.0,0.0,0.0,0.188
 613,Jules Ahoka,Ahoka,Sunderland,MID,4.4,10,3.0,3.3,201,0,0,2,0,0.2,4.0,a,,2.27,0.68,0.686
 646,Malick Fofana,Fofana,Sunderland,MID,5.4,5,0.3,1.0,131,0,0,0,0,0.0,9.8,a,,0.93,0.06,0.46
-651,Juan Angulo,J.Angulo,Sunderland,FWD,4.5,1,0.0,1.0,9,0,0,0,0,0.7,0.0,a,,0.22,0.0,0.297
+651,Juan Angulo,J.Angulo,Sunderland,FWD,4.5,1,0.0,1.0,9,0,0,0,0,0.6,0.0,a,,0.22,0.0,0.297
 668,Tymur Tutierov,Tutierov,Sunderland,MID,4.8,2,0.0,1.0,83,0,0,0,0,0.0,1.4,a,,0.42,0.0,0.318
 673,Alan Browne,Browne,Sunderland,MID,4.5,0,0.0,0.0,0,0,0,0,0,0.0,0.0,a,,0.0,0.0,0.188
